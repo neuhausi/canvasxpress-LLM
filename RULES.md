@@ -22,7 +22,7 @@ While the complete data for CanvasXpress visualizations is structured as a two-d
 ## Steps to Generate CanvasXpress JSON Configuration
 Always follow these steps to create a valid CanvasXpress JSON configuration based on the provided English description and headers/column names:
 1.  **Select the Graph Type**: Based on the visualization requirements, choose an appropriate graph type from the valid options.
-2.  **Configure the Axes**: Specify the `xAxis` and `yAxis` parameters based on the headers or column names provided. If the graph type is one-dimensional, only use `xAxis`.
+2.  **Configure the Axes**: Specify the `xAxis` and `yAxis` parameters based on the headers or column names provided. If the graph type is **One-dimensional**, only use `xAxis` regardless of orientation. Never include the `yAxis` for **One-Dimensional Graph Types** or **Combined Graph Types** or any other parameters associated with the y-axis.
 3.  **Set Decorations**: If decorations are required, configure them according to the rules specified in the "Decorations Rules" section.
 4.  **Filter Data**: If filtering is needed, use the `filterData` parameter to specify the filtering criteria.
 5.  **Sort Data**: If sorting is required, use the `sortData` parameter to define the sorting order based on the headers or column names.
@@ -41,8 +41,8 @@ Always follow these steps to create a valid CanvasXpress JSON configuration base
 
 ### Axis Configuration - Second Step
 -   Set the `xAxis` and `yAxis` parameters using column names identified in the English description. You may need to assign multiple column names to a single axis parameter. If no matching column name is found, omit these parameters from the configuration, as CanvasXpress will assign them automatically based on the data. If both `xAxis` and `yAxis` are present, ensure that `xAxis` is always listed before `yAxis`.
--   For **One-Dimensional Graph Types**, only the `xAxis` parameter should be used in the configuration to define the plotted data, as a `yAxis` will not be included regardless of orientation.
--   For **Combined Graph Types**, specify both a primary x-axis (`xAxis`) and a secondary x-axis (`xAxis2`), allowing for greater flexibility and precision in your visualizations. If there is ambiguity in the English description regarding which axis to use, default to using the first column for `xAxis` and the second column for `xAxis2`.
+-   For **One-Dimensional Graph Types**, only the `xAxis` parameter should be used in the configuration to define the plotted data. Regardless of orientation, the `yAxis` should never be included, as `xAxis` is solely responsible for all data representation. Avoid including any parameters related to the `yAxis` for  **One-Dimensional Graph Types**.
+-   For **Combined Graph Types**, specify both a primary x-axis (`xAxis`) and a secondary x-axis (`xAxis2`), allowing for greater flexibility and precision in your visualizations. If there is ambiguity in the English description regarding which axis to use, default to using the first column for `xAxis` and the second column for `xAxis2`. Regardless of orientation, the `yAxis` should never be included, as `xAxis` and `xAxis2` are solely responsible for all data representation. Avoid including any parameters related to the `yAxis` for  **Combined Graph Types**.
 -   For **Multi-Dimensional Graph Types**, ensure that both `xAxis` and `yAxis` are defined, with `xAxis` always listed before `yAxis` for consistency.
 
 ### Setting Decorations - Third Step
