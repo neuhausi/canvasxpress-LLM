@@ -12,6 +12,7 @@ If the English description is ambiguous or does not provide enough information t
 
 Start with data dimensionality:
 
+```
 ONE-DIMENSIONAL DATA:
 ├── Goal: Compare categories/values
 │   ├── Few categories
@@ -111,3 +112,4 @@ SPECIAL PURPOSE:
 ├── Circular layout → Circular
 ├── Measurement gauge → Meter
 └── Tornado analysis → Tornado
+```
