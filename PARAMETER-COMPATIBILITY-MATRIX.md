@@ -1,117 +1,241 @@
 # CanvasXpress Parameter Compatibility Matrix
 
-This matrix shows which parameters are compatible with different CanvasXpress graph types, helping to ensure valid configurations.
+This document reorganizes the parameter information to show which parameters are compatible with each graph type.
 
-## Matrix Legend
+## CanvasXpress Key Definitions used in this file
+- **All Graphs**: The following are all supported graph types in CanvasXpress: Alluvial, Area, AreaLine, Bar, BarLine, Boxplot, Bin, Binplot, Bubble, Bullet, Bump, CDF, Chord, Circular, Cleveland, Contour, Correlation, Density, Distribution, Donut, DotLine, Dotplot, Dumbbell, Gantt, Heatmap, Hex, Hexplot, Histogram, KaplanMeier, Line, Lollipop, Map, Meter, Network, ParallelCoordinates, Pareto, Pie, QQ, Quantile, Radar, Ribbon, Ridgeline, Sankey, Scatter2D, Scatter3D, ScatterBubble2D, Spaghetti, Stacked, StackedLine, StackedPercent, StackedPercentLine, Streamgraph, Sunburst, TagCloud, TimeSeries, Tornado, Tree, Treemap, Upset, Violin, Volcano, Venn, Waterfall, WordCloud.
+- **Single-Dimensional Graphs**: The followings graph types are considered Single-Dimensional because they only need the `xAxis` parameter. No `yAxis` or `zAxis` is allowed: Alluvial, Area, Bar, Boxplot, Bin, Binplot, Bubble, Bullet, CDF, Chord, Circular, Cleveland, Correlation, Density, Distribution, Donut, Dotplot, Dumbbell, Gantt, Heatmap, Hex, Hexplot, Histogram, Line, Lollipop, Meter, ParallelCoordinates, Pie, QQ, Quantile, Radar, Ribbon, Ridgeline, Sankey, Stacked, StackedPercent, TagCloud, Tornado, Tree, Treemap, Violin, Venn, Waterfall, WordCloud.
+- **Combined Graphs**: The following graph types are considered Combined because they need both `xAxis` and `xAxis2` parameters. No `yAxis` or `zAxis` is allowed: AreaLine, BarLine, DotLine, Pareto, StackedLine, StackedPercentLine.
+- **Multi-Dimensional Graphs**: The following graph types are considered Multi-Dimensional. They need both `xAxis` and `yAxis` parameters. They may have `zAxis`: Bump, Contour, Scatter2D, Scatter3D, ScatterBubble2D, Spaghetti, Streamgraph, Volcano.
+- **Three-Dimensional Graphs**: The following graph types are considered Three-Dimensional because they need `xAxis`, `yAxis`, and `zAxis` parameters: ScatterBubble2D, Scatter3D.
 
-- ✓ : Parameter is fully compatible and commonly used with this graph type
-- ○ : Parameter is compatible but less commonly used or has limited functionality
-- ✗ : Parameter is incompatible or not applicable to this graph type
+## Graph-Specific Parameters
+This section lists parameters that are exclusive to or primarily define a particular graph type.
 
-## Core Parameters by Graph Type Category
+### Area
+- areaType
 
-| Parameter | One-Dimensional<br>(Bar, Boxplot, Pie) | Combined<br>(BarLine, AreaLine) | Multi-Dimensional<br>(Scatter2D, Scatter3D) | Distribution<br>(Histogram, Density) | Network<br>(Network, Tree) | Map<br>(Map) |
-|-----------|---------------------------------------|--------------------------------|-------------------------------------------|-------------------------------------|----------------------------|--------------|
-| **xAxis** | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| **yAxis** | ✗ | ✓ | ✓ | ○ | ✗ | ✗ |
-| **zAxis** | ✗ | ✗ | ○ (Scatter3D only) | ✗ | ✗ | ✗ |
-| **xAxis2** | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ |
-| **groupingFactors** | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| **colorBy** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| **shapeBy** | ✗ | ✗ | ✓ | ✗ | ○ | ✗ |
-| **sizeBy** | ✗ | ✗ | ✓ | ✗ | ○ | ○ |
-| **stackBy** | ○ (Bar, Stacked only) | ○ | ✗ | ✗ | ✗ | ✗ |
-| **ridgeBy** | ✗ | ✗ | ○ (Ridgeline only) | ✓ (Ridgeline only) | ✗ | ✗ |
-| **segregateSamplesBy** | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| **segregateVariablesBy** | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| **showRegressionFit** | ✗ | ✗ | ✓ (Scatter2D only) | ✗ | ✗ | ✗ |
-| **showLoessFit** | ✗ | ✗ | ✓ (Scatter2D only) | ✗ | ✗ | ✗ |
-| **transformData** | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ |
-| **transposeData** | ✓ | ✓ | ○ | ○ | ✗ | ✗ |
-| **samplesClustered** | ✓ | ✓ | ○ | ○ | ✗ | ✗ |
-| **variablesClustered** | ✓ | ✓ | ○ | ○ | ✗ | ✗ |
-| **showHistogram** | ✗ | ✗ | ✓ | ✓ | ✗ | ✗ |
-| **mapId** | ✗ | ✗ | ✗ | ✗ | ✗ | ✓ |
+### Bar
+- barZero
+- stackBy
 
-## Detailed Parameter Compatibility by Specific Graph Types
+### Bin, Binplot, Hex, Hexplot
+- binplotBinWidth
+- binplotBins
+- binplotShape
 
-### One-Dimensional Graph Types
+### Boxplot, Violin
+- boxplotConnect
+- boxplotNotched
+- boxplotType
+- boxplotWhiskersType
+- showBoxplotOriginalData
 
-| Parameter | Bar | Boxplot | Violin | Pie | Donut | Heatmap | Line |
-|-----------|-----|---------|--------|-----|-------|---------|------|
-| **graphOrientation** | ✓ | ✓ | ✓ | ✗ | ✗ | ✓ | ✓ |
-| **barType** | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **barZero** | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **boxplotNotched** | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **boxplotType** | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **boxplotWhiskersType** | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **showBoxplotOriginalData** | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **showViolinBoxplot** | ✗ | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ |
-| **violinScale** | ✗ | ✗ | ✓ | ✗ | ✗ | ✗ | ✗ |
-| **lineType** | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✓ |
-| **lineErrorType** | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | ✓ |
-| **circularType** | ✗ | ✗ | ✗ | ✓ | ✓ | ✗ | ✗ |
+### Bullet
+- bulletTargetVarName
 
-### Multi-Dimensional Graph Types
+### Circular
+- circularType
+- rAxis
+- rAxisShow
+- rAxisTextColor
+- rAxisTextFontStyle
+- rAxisTextScaleFontFactor
+- rAxisTitle
+- rAxisTitleColor
+- rAxisTitleFontStyle
+- rAxisTitleScaleFontFactor
+- rAxisTransform
+- setMaxR
+- setMinR
 
-| Parameter | Scatter2D | Scatter3D | ScatterBubble2D | Contour | Spaghetti | Streamgraph |
-|-----------|-----------|-----------|-----------------|---------|-----------|-------------|
-| **scatterType** | ✓ | ✗ | ✓ | ✗ | ✗ | ✗ |
-| **showContourDataPoints** | ✗ | ✗ | ✗ | ✓ | ✗ | ✗ |
-| **contourFilled** | ✗ | ✗ | ✗ | ✓ | ✗ | ✗ |
-| **isContour** | ✗ | ✗ | ✗ | ✓ | ✗ | ✗ |
-| **showConfidenceIntervals** | ✓ | ✗ | ✓ | ✗ | ✓ | ✗ |
-| **showQuantileRegressionFit** | ✓ | ✗ | ✓ | ✗ | ✗ | ✗ |
-| **binplotBinWidth** | ○ | ✗ | ○ | ✗ | ✗ | ✗ |
-| **binplotBins** | ○ | ✗ | ○ | ✗ | ✗ | ✗ |
-| **binplotShape** | ○ | ✗ | ○ | ✗ | ✗ | ✗ |
-| **jitter** | ✓ | ✗ | ✓ | ✗ | ✗ | ✗ |
+### Contour
+- contourFilled
+- showContourDataPoints
 
-### Distribution Graph Types
+### Density
+- densityPosition
 
-| Parameter | Histogram | Density | Ridgeline | CDF | QQ | Quantile |
-|-----------|-----------|---------|-----------|-----|----|----|
-| **histogramType** | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **showFilledHistogramDensity** | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| **showHistogramBars** | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **showHistogramDensity** | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| **showHistogramMedian** | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| **showHistogramQuantiles** | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| **densityPosition** | ✗ | ✓ | ✓ | ✗ | ✗ | ✗ |
+### Dumbbell
+- dumbbellType
 
-### Network and Hierarchical Graph Types
+### Histogram
+- histogramType
+- showFilledHistogramDensity
+- showHistogram
+- showHistogramBars
+- showHistogramDensity
+- showHistogramMedian
+- showHistogramQuantiles
 
-| Parameter | Network | Tree | Treemap | Sunburst | Chord | Sankey | Alluvial |
-|-----------|---------|------|---------|----------|-------|--------|----------|
-| **connections** | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| **hierarchy** | ✗ | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |
-| **sankeyAxes** | ✗ | ✗ | ✗ | ✗ | ✗ | ✓ | ✓ |
-| **sankeyTextShow** | ✗ | ✗ | ✗ | ✗ | ✗ | ✓ | ✓ |
-| **sankeyTitleShow** | ✗ | ✗ | ✗ | ✗ | ✗ | ✓ | ✓ |
+### Line, BarLine, DotLine, StackedLine, StackedPercentLine, Scatter2D
+- lineErrorType
+- lineType
 
-### Universal Parameters (Compatible with Most Graph Types)
+### Map
+- mapColor
+- mapConfig
+- mapId
+- topoJSON
+- useLeaflet
 
-| Parameter | Compatibility |
-|-----------|---------------|
-| **title** | ✓ All graph types |
-| **subtitle** | ✓ All graph types |
-| **colorScheme** | ✓ All graph types |
-| **theme** | ✓ All graph types |
-| **background** | ✓ All graph types |
-| **legendPosition** | ✓ All graph types |
-| **legendInside** | ✓ All graph types |
-| **showLegend** | ✓ All graph types |
-| **legendColumns** | ✓ All graph types |
-| **citation** | ✓ All graph types |
-| **dataPointSize** | ✓ Most graph types |
-| **sortData** | ✓ Most graph types except: Bin, Binplot, CDF, Contour, Density, Hex, Hexplot, Histogram, KaplanMeier, QQ, Quantile, Ridgeline, Scatter2D, ScatterBubble2D, Streamgraph |
-| **filterData** | ✓ All data-driven graph types |
+### QQ, Quantile, Scatter2D
+- showQuantileRegressionFit
 
-## How to Use This Matrix
+### Sankey, Alluvial
+- sankeyAxes
+- sankeyTextColor
+- sankeyTextFontStyle
+- sankeyTextScaleFontFactor
+- sankeyTextShow
+- sankeyTitleColor
+- sankeyTitleFontStyle
+- sankeyTitleScaleFontFactor
+- sankeyTitleShow
 
-1. Identify the graph type you're working with
-2. Check which parameters are compatible (✓ or ○) with that graph type
-3. Avoid using incompatible parameters (✗) in your configuration
-4. For parameters marked with ○, use with caution and test the result
+### Violin, Boxplot
+- showBoxplotIfViolin
+- showViolinBoxplot
+- showViolinQuantiles
+- violinScale
+- violinTrim
 
-This matrix helps ensure that your CanvasXpress configurations use only compatible parameters for the selected graph type, reducing errors and improving visualization quality.
+## General and Shared Parameters
+This section lists parameters that are compatible with multiple graph types.
+
+### General
+| Parameter Name | Compatible Graph Types |
+|----------------|-------------------------|
+| dataPointSizeScaleFactor | All Graphs |
+| variableSpace | Single-Dimensional Graphs |
+| widthFactor | Single-Dimensional Graphs |
+| colorScheme | All Graphs |
+| background | All Graphs |
+| graphType | All Graphs |
+| theme | All Graphs |
+| graphOrientation | One-dimensional graphs |
+| view | All Graphs |
+| binned | Dotplot, DotLine, Boxplot, Violin |
+| jitter | Dotplot, DotLine, Boxplot, Violin |
+| objectBorderColor | One-dimensional graphs |
+
+### Metadata
+| Parameter Name | Compatible Graph Types |
+|----------------|-------------------------|
+| showConfidenceIntervals | Regression, Scatter2D |
+| decorations | All Graphs |
+| showLoessFit | Scatter2D |
+| smpOverlays | Single-Dimensional Graphs |
+| varOverlays | Heatmap |
+| regressionType | Regression, Scatter2D |
+| showRegressionFit | Regression, Scatter2D |
+
+### Data
+| Parameter Name | Compatible Graph Types |
+|----------------|-------------------------|
+| samplesClustered | Single-Dimensional Graphs |
+| samplesKmeaned | Single-Dimensional Graphs |
+| variablesClustered | Heatmap |
+| variablesKmeaned | Heatmap |
+| groupingFactors | Single-Dimensional Graphs|
+| stringSampleFactors | All Graphs |
+| stringVariableFactors | All Graphs |
+| segregateSamplesBy | All Graphs |
+| segregateVariablesBy | All Graphs |
+| splitSamplesBy | All Graphs |
+| splitVariablesBy | All Graphs |
+| filterData | All Graphs |
+| colorBy | All Graphs |
+| pieBy | Pie |
+| pivotBy | Single-Dimensional Graphs|
+| ridgeBy | Ridgeline, Scatter2D |
+| shapeBy | All Graphs |
+| sizeBy | All Graphs |
+| selectedDataPoints | All Graphs |
+| sortData | Single-Dimensional Graphs|
+| transformData | All Graphs |
+| hierarchy | Trees, Bubble |
+
+### Legend, Titles, Samples & Variables
+| Parameter Name | Compatible Graph Types |
+|----------------|-------------------------|
+| legendColumns | All Graphs |
+| legendInside | All Graphs |
+| legendPosition | All Graphs |
+| showLegend | All Graphs |
+| subtitle | All Graphs |
+| subtitleColor | All Graphs |
+| subtitleFontStyle | All Graphs |
+| subtitleScaleFontFactor | All Graphs |
+| title | All Graphs |
+| titleColor | All Graphs |
+| titleFontStyle | All Graphs |
+| titleScaleFontFactor | All Graphs |
+| citation | All Graphs |
+| citationColor | All Graphs |
+| citationFontStyle | All Graphs |
+| citationScaleFontFactor | All Graphs |
+| highlightSmp | Single-Dimensional Graphs |
+| showSampleNames | Single-Dimensional Graphs |
+| smpTextColor | Single-Dimensional Graphs |
+| smpTextFontStyle | Single-Dimensional Graphs |
+| smpTextRotate | Single-Dimensional Graphs |
+| smpTextScaleFontFactor | Single-Dimensional Graphs |
+| smpTitle | Single-Dimensional Graphs |
+| smpTitleColor | Single-Dimensional Graphs |
+| smpTitleFontStyle | Single-Dimensional Graphs |
+| smpTitleRotate | Single-Dimensional Graphs |
+| smpTitleScaleFontFactor | Single-Dimensional Graphs |
+| highlightVar | Heatmap |
+| showVariableNames | Heatmap |
+| varTextColor | Heatmap |
+| varTextFontStyle | Heatmap |
+| varTextRotate | Heatmap |
+| varTextScaleFontFactor | Heatmap |
+| varTitle | Heatmap |
+| varTitleColor | Heatmap |
+| varTitleFontStyle | Heatmap |
+| varTitleScaleFontFactor | Heatmap |
+
+### Axes
+| Parameter Name | Compatible Graph Types |
+|----------------|-------------------------|
+| setMaxX | All Graphs |
+| setMinX | All Graphs |
+| xAxis | All Graphs |
+| xAxis2 | Combined Graphs |
+| xAxis2Show | Combined Graphs |
+| xAxis2Title | Combined Graphs |
+| xAxisShow | All Graphs |
+| xAxisTextColor | All Graphs |
+| xAxisTextScaleFontFactor | All Graphs |
+| xAxisTitle | All Graphs |
+| xAxisTitleColor | All Graphs |
+| xAxisTitleFontStyle | All Graphs |
+| xAxisTitleScaleFontFactor | All Graphs |
+| xAxisTransform | All Graphs |
+| setMaxY | Multi-Dimensional Graphs |
+| setMinY | Multi-Dimensional Graphs |
+| yAxis | Multi-Dimensional Graphs |
+| yAxisShow | Multi-Dimensional Graphs |
+| yAxisTextColor | Multi-Dimensional Graphs |
+| yAxisTextFontStyle | Multi-Dimensional Graphs |
+| yAxisTextScaleFontFactor | Multi-Dimensional Graphs |
+| yAxisTitle | Multi-Dimensional Graphs |
+| yAxisTitleColor | Multi-Dimensional Graphs |
+| yAxisTitleFontStyle | Multi-Dimensional Graphs |
+| yAxisTitleScaleFontFactor | Multi-Dimensional Graphs |
+| yAxisTransform | Multi-Dimensional Graphs |
+| setMaxZ | Three-Dimensional Graphs |
+| setMinZ | Three-Dimensional Graphs |
+| zAxis | Three-Dimensional Graphs |
+| zAxisShow | Three-Dimensional Graphs |
+| zAxisTextColor | Three-Dimensional Graphs |
+| zAxisTextFontStyle | Three-Dimensional Graphs |
+| zAxisTextScaleFontFactor | Three-Dimensional Graphs |
+| zAxisTitle | Three-Dimensional Graphs |
+| zAxisTitleColor | Three-Dimensional Graphs |
+| zAxisTitleFontStyle | Three-Dimensional Graphs |
+| zAxisTitleScaleFontFactor | Three-Dimensional Graphs |
+| zAxisTransform | Three-Dimensional Graphs |
+

@@ -1,7 +1,7 @@
 # CanvasXpress Configuration Rules and Guidelines
 
 ## Overview
-CanvasXpress ([https://canvasxpress.org](https://canvasxpress.org)) is a JavaScript library for data analytics and visualization. It generates visualizations such as bar graphs, box plots, pie charts and other graph types by creating JSON data structures specifying the configuration and data for the visualizations. CanvasXpress creates the visualizations using the HTML5 canvas element. Furthermore, CanvasXpress provides various parameters for data wrangling and line fitting. For data wrangling, use groupingFactors to combine data, segregateSamplesBy or segregateVariablesBy for faceting into subplots, transformData for mathematical transformations, transposeData to swap rows and columns, pivotBy with a column name to reshape data, samplesClustered or variablesClustered for clustering with dendrograms, and showHistogram to generate histograms. For line fitting, use showRegressionFit to display a regression line or showLoessFit for a lowess fit line, both typically on scatter plots. All these parameters should be set based on the English description and relevant column names. To learn more on how to create a CanvasXpress visualization, refer to the [CanvasXpress Overview](OVERVIEW.md) documentation and to see examples of CanvasXpress visualizations, refer to the [visual reference](https://canvasxpress.org/minimalExamples.html) documentation.
+CanvasXpress ([https://canvasxpress.org](https://canvasxpress.org)) is a JavaScript library for data analytics and visualization. It generates visualizations such as bar graphs, box plots, pie charts and other graph types by creating JSON data structures specifying the configuration and data for the visualizations. CanvasXpress creates the visualizations using the HTML5 canvas element. Furthermore, CanvasXpress provides various parameters for data wrangling and line fitting. For data wrangling, use groupingFactors to combine data, segregateSamplesBy or segregateVariablesBy for faceting into subplots, transformData for mathematical transformations, transposeData to swap rows and columns, pivotBy with a column name to reshape data, samplesClustered or variablesClustered for clustering with dendrograms, and showHistogram to generate histograms. For line fitting, use showRegressionFit to display a regression line or showLoessFit for a lowess fit line, both typically on scatter plots. All these parameters should be set based on the English description and relevant column names. To learn more on how to create a CanvasXpress visualization, refer to the [OVERVIEW.md](OVERVIEW.md) file and to see examples of CanvasXpress visualizations, refer to the [visual reference](https://canvasxpress.org/minimalExamples.html) documentation.
 
 ## Core Task
 Your task is to generate a JSON object representing the config parameter for a CanvasXpress visualization. You will receive an English description of the desired visualization along with a list of headers or column names from the data that will be used. It is crucial to note that you will not be provided with the complete dataset, nor should your output include any actual numerical data or the data object itself. Your response must be a valid JSON object that strictly adheres to the rules and guidelines outlined below.
@@ -11,9 +11,9 @@ While the complete data for CanvasXpress visualizations is structured as a two-d
 
 ## CanvasXpress Key Definitions used in this file
 - **Valid graphType**: The following graph types are supported by CanvasXpress: Alluvial, Area, AreaLine, Bar, BarLine, Boxplot, Bin, Binplot, Bubble, Bullet, Bump, CDF, Chord, Circular, Cleveland, Contour, Correlation, Density, Distribution, Donut, DotLine, Dotplot, Dumbbell, Gantt, Heatmap, Hex, Hexplot, Histogram, KaplanMeier, Line, Lollipop, Map, Meter, Network, ParallelCoordinates, Pareto, Pie, QQ, Quantile, Radar, Ribbon, Ridgeline, Sankey, Scatter2D, Scatter3D, ScatterBubble2D, Spaghetti, Stacked, StackedLine, StackedPercent, StackedPercentLine, Streamgraph, Sunburst, TagCloud, TimeSeries, Tornado, Tree, Treemap, Upset, Violin, Volcano, Venn, Waterfall, WordCloud.
-- **One-Dimensional Graph Types**: The followings graph types are considered one-dimensional: Alluvial, Area, Bar, Boxplot, Bin, Binplot, Bubble, Bullet, CDF, Chord, Circular, Cleveland, Correlation, Density, Distribution, Donut, Dotplot, Dumbbell, Gantt, Heatmap, Hex, Hexplot, Histogram, Line, Lollipop, Meter, ParallelCoordinates, Pie, QQ, Quantile, Radar, Ribbon, Ridgeline, Sankey, ScatterBubble2D, Stacked, StackedPercent, TagCloud, Tornado, Tree, Treemap, Violin, Volcano, Venn, Waterfall, WordCloud.
-- **Combined Graph Types**: The following graph types are considered combined: AreaLine, BarLine, DotLine, Pareto, StackedLine, StackedPercentLine.
-- **Multi-Dimensional Graph Types**: The following graph types are considered multi-dimensional: Bump, Contour, Scatter2D, Scatter3D, ScatterBubble2D, Spaghetti, Streamgraph, Volcano.
+- **Single-Dimensional Graph Types**: The followings graph types are considered Single-Dimensional: Alluvial, Area, Bar, Boxplot, Bin, Binplot, Bubble, Bullet, CDF, Chord, Circular, Cleveland, Correlation, Density, Distribution, Donut, Dotplot, Dumbbell, Gantt, Heatmap, Hex, Hexplot, Histogram, Line, Lollipop, Meter, ParallelCoordinates, Pie, QQ, Quantile, Radar, Ribbon, Ridgeline, Sankey, Stacked, StackedPercent, TagCloud, Tornado, Tree, Treemap, Violin, Venn, Waterfall, WordCloud.
+- **Combined Graph Types**: The following graph types are considered Combined: AreaLine, BarLine, DotLine, Pareto, StackedLine, StackedPercentLine.
+- **Multi-Dimensional Graph Types**: The following graph types are considered Multi-Dimensional: Bump, Contour, Scatter2D, Scatter3D, ScatterBubble2D, Spaghetti, Streamgraph, Volcano.
 - **Graph Types With x or y Decoration Parameters**: The following graph types require x or y axes to be defined: Bin, Binplot, CDF, Contour, Density, Hex, Hexplot, Histogram, KaplanMeier, QQ, Quantile, Ridgeline, Scatter2D, ScatterBubble2D, Spaghetti, Streamgraph, Volcano.
 - **Graph Types With Value Decoration Parameters**: The following graph types require value decoration values to be defined: Area, AreaLine, Bar, BarLine, Boxplot, DotLine, Dotplot, Line, Lollipop, Pareto, Stacked, StackedLine, StackedPercent, StackedPercentLine, Violin, Waterfall.
 - **Valid Color Schemes**: The following color schemes are valid for use in CanvasXpress: YlGn, YlGnBu, GnBu, BuGn, PuBuGn, PuBu, BuPu, RdPu, PuRd, OrRd, YlOrRd, YlOrBr, Purples, Blues, Greens, Oranges, Reds, Greys, PuOr, BrBG, PRGn, PiYG, RdBu, RdGy, RdYlBu, Spectral, RdYlGn, Bootstrap, Economist, Excel, GGPlot, Solarized, PaulTol, ColorBlind, Tableau, WallStreetJournal, Stata, BlackAndWhite, CanvasXpress
@@ -22,11 +22,11 @@ While the complete data for CanvasXpress visualizations is structured as a two-d
 ## Steps to Generate CanvasXpress JSON Configuration
 Always follow these steps to create a valid CanvasXpress JSON configuration based on the provided English description and headers/column names:
 1.  **Select the Graph Type**: Based on the visualization requirements, choose an appropriate graph type from the valid options.
-2.  **Configure the Axes**: Specify the `xAxis` and `yAxis` parameters based on the headers or column names provided. If the graph type is **One-dimensional**, only use `xAxis` regardless of orientation. Never include the `yAxis` for **One-Dimensional Graph Types** or **Combined Graph Types** or any other parameters associated with the y-axis.
+2.  **Configure the Axes**: Specify the `xAxis` and `yAxis` parameters based on the headers or column names provided. If the graph type is **Single-Dimensional**, only use `xAxis` regardless of orientation. Never include the `yAxis` for **Single-Dimensional Graph Types** or **Combined Graph Types** or any other parameters associated with the y-axis.
 3.  **Set Decorations**: If decorations are required, configure them according to the rules specified in the "Decorations Rules" section.
 4.  **Filter Data**: If filtering is needed, use the `filterData` parameter to specify the filtering criteria.
 5.  **Sort Data**: If sorting is required, use the `sortData` parameter to define the sorting order based on the headers or column names.
-6.  **Configure Additional Parameters**: Set any additional parameters such as `colorScheme`, `groupingFactors`, etc. For a list of additional parameters refer to the [CanvasXpress Parameters](SCHEMA.md) documentation.
+6.  **Configure Additional Parameters**: Set any additional parameters such as `colorScheme`, `groupingFactors`, etc. For a list of additional parameters refer to the [SCHEMA.md](SCHEMA.md) file.
 7.  **Validate the JSON Structure**: Ensure that the JSON structure adheres to the rules specified in the "CRITICAL RULES" section, including proper formatting and field usage.
 
 ## CRITICAL RULES
@@ -41,7 +41,7 @@ Always follow these steps to create a valid CanvasXpress JSON configuration base
 
 ### Axis Configuration - Second Step
 -   Set the `xAxis` and `yAxis` parameters using column names identified in the English description. You may need to assign multiple column names to a single axis parameter. If no matching column name is found, omit these parameters from the configuration, as CanvasXpress will assign them automatically based on the data. If both `xAxis` and `yAxis` are present, ensure that `xAxis` is always listed before `yAxis`.
--   For **One-Dimensional Graph Types**, only the `xAxis` parameter should be used in the configuration to define the plotted data. Regardless of orientation, the `yAxis` should never be included, as `xAxis` is solely responsible for all data representation. Avoid including any parameters related to the `yAxis` for  **One-Dimensional Graph Types**.
+-   For **Single-Dimensional Graph Types**, only the `xAxis` parameter should be used in the configuration to define the plotted data. Regardless of orientation, the `yAxis` should never be included, as `xAxis` is solely responsible for all data representation. Avoid including any parameters related to the `yAxis` for  **Single-Dimensional Graph Types**.
 -   For **Combined Graph Types**, specify both a primary x-axis (`xAxis`) and a secondary x-axis (`xAxis2`), allowing for greater flexibility and precision in your visualizations. If there is ambiguity in the English description regarding which axis to use, default to using the first column for `xAxis` and the second column for `xAxis2`. Regardless of orientation, the `yAxis` should never be included, as `xAxis` and `xAxis2` are solely responsible for all data representation. Avoid including any parameters related to the `yAxis` for  **Combined Graph Types**.
 -   For **Multi-Dimensional Graph Types**, ensure that both `xAxis` and `yAxis` are defined, with `xAxis` always listed before `yAxis` for consistency.
 
@@ -66,11 +66,23 @@ Always follow these steps to create a valid CanvasXpress JSON configuration base
 ### Colors and Plot Styles - Sixth Step
 -   Colors and plot styles are optional configuration parameters. If included, set the `colorScheme` parameter using a name from the **Valid Color Schemes** list, which are based on ColorBrewer and other R repository palettes. Similarly, if the `theme` parameter is present, select a name from the **Valid Themes** section, reflecting styles found in R's ggplot2 library. Ensure that if either `colorScheme` or `theme` is used, their values strictly adhere to these specified valid lists.
 
-### Ridgeline Graph Specific Rules - Sixth Step
--   When `graphType` is "Ridgeline", **omit** the `groupingFactors` configuration; instead, use `ridgeBy`.
+### Area Graph Specific Rules - Sixth Step
+-   When `graphType` is "Area", the JSON configuration **must** include the `areaType` parameter, which can be set to "stacked", "percent", or "overlapping". If this parameter is not specified, the default value is "overlapping".
 
 ### Contour Chart Specific Rules - Sixth Step
 -   When `graphType` is "Contour", the JSON configuration **must** include both `xAxis` and `yAxis`. Always assign the first column to `xAxis` and the second column to `yAxis`.
+
+### Density Graph Specific Rules - Sixth Step
+-   When `graphType` is "Density", the JSON configuration **must** include the `densityPosition` parameter, which can be set to "normal", "stacked" or "filled". If this parameter is not specified, the default value is "normal" which is an overlapping density plot.
+
+### Dumbbell Graph Specific Rules - Sixth Step
+-   When `graphType` is "Dumbbell", the JSON configuration **must** include the `dumbbellType` parameter, which can be set to "arrow", "bullet", "cleveland", "connected", "line", "lineConnected" or "stacked". If this parameter is not specified, the default value is "stacked".
+
+### Histogram Graph Specific Rules - Sixth Step
+-   When `graphType` is "Histogram", the JSON configuration **must** include the `histogramType` parameter, which can be set to "dodged", "staggered" or "stacked". If this parameter is not specified, the default value is "stacked".
+
+### Ridgeline Graph Specific Rules - Sixth Step
+-   When `graphType` is "Ridgeline", **omit** the `groupingFactors` configuration; instead, use `ridgeBy`.
 
 ### Additional Axis Configuration regarding Min/Max Values - Sixth Step
 -   For `xAxis` and `yAxis` parameters, you can optionally specify minimum and maximum values using `setMinX`, `setMaxX`, `setMinY`, and `setMaxY`.
@@ -78,7 +90,7 @@ Always follow these steps to create a valid CanvasXpress JSON configuration base
 -   If only `xAxis` is present in the configuration, use `setMinX` and `setMaxX` for the x-axis. **Do not include `setMinY` or `setMaxY` in this case, regardless of the graph's orientation.**
 
 ### Additional Parameters - Sixth Step
--   For any other parameters, consult the [CanvasXpress Parameters](SCHEMA.md) documentation. Include them in the JSON configuration as required by the English description and data headers.
+-   For any other parameters, consult the [SCHEMA.md](SCHEMA.md) file. Include them in the JSON configuration as required by the English description and data headers.
 
 ## Best Practices - Seventh Step
 To ensure accurate and high-quality JSON configurations for CanvasXpress visualizations, adhere to the following best practices:
@@ -88,6 +100,7 @@ To ensure accurate and high-quality JSON configurations for CanvasXpress visuali
 * **Prioritize Accuracy:** Ensure the accuracy of your output by filtering out any potentially incorrect responses.
 * **Handle Uncertainty:** If there is any doubt regarding field validity or configuration correctness, return an empty string instead of potentially incorrect JSON.
 * **Validate JSON Structure:** Check that the generated JSON structure contains the minimal parameters required for a valid CanvasXpress configuration. Check the file [MINIMAL-PARAMETERS.md](MINIMAL-PARAMETERS.md) for reference.
+* **Check Parameters Compatibility:** Ensure that all specified parameters are compatible with the chosen `graphType` according to the [PARAMETERS-COMPATIBILITY-MATRIX.md](PARAMETERS-COMPATIBILITY-MATRIX.md) file.
 
 ## Error Handling - Seventh Step
 * **Avoid Incorrect Responses:** Do not provide incorrect CanvasXpress JSON configurations.
@@ -95,9 +108,9 @@ To ensure accurate and high-quality JSON configurations for CanvasXpress visuali
 * **Validate Output:** Perform basic validation on all generated CanvasXpress JSON configurations to identify potential errors. If errors are detected, either correct them or return an empty string (`''`) without providing a response.
 
 ## Ambiguity Handling
-* If the English description is ambiguous or does not provide enough information to determine a specific configuration, follow the decision tree outlined in the [decisionTree.md](DECISION-TREE.md) file.
+* If the English description is ambiguous or does not provide enough information to determine a specific configuration, follow the decision tree outlined in the [DECISION-TREE.md](DECISION-TREE.md) file.
 
 ## Chain of Thought
-* Use the [Chain-of-Thought Process](CHAIN-OF-THOUGHT.md) to guide your reasoning and decision-making when generating the CanvasXpress JSON configuration. This process will help you systematically analyze the requirements, identify the necessary parameters, and ensure that your output is accurate and complete.
+* Use the [CHAIN-OF-THOUGHT.md](CHAIN-OF-THOUGHT.md) file to guide your reasoning and decision-making when generating the CanvasXpress JSON configuration. This process will help you systematically analyze the requirements, identify the necessary parameters, and ensure that your output is accurate and complete.
 
 Adherence to these carefully crafted rules, derived from extensive analysis and testing, is essential for accurate CanvasXpress JSON configuration and proper visualization generation.
