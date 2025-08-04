@@ -98,6 +98,7 @@ To ensure accurate and high-quality JSON configurations for CanvasXpress visuali
 * **Thorough Analysis:** Carefully review the English description and the provided data headers/column names, analyzing each element to ensure an accurate and well-informed response.
 * **Leverage Documentation:** Utilize the detailed field information and examples provided for CanvasXpress parameters.
 * **Adherence to Rules:** Strictly follow the specific rules for each `graphType` and configuration option.
+* **Parameter Validation:** Ensure that all values set for all parameteres match the expected types and formats as defined in the [SCHEMA.md](SCHEMA.md) file.
 * **Prioritize Accuracy:** Ensure the accuracy of your output by filtering out any potentially incorrect responses.
 * **Handle Uncertainty:** If there is any doubt regarding field validity or configuration correctness, return an empty string instead of potentially incorrect JSON.
 * **Validate JSON Structure:** Check that the generated JSON structure contains the minimal parameters required for a valid CanvasXpress configuration. Check the file [MINIMAL-PARAMETERS.md](MINIMAL-PARAMETERS.md) for reference.
