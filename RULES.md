@@ -22,7 +22,7 @@ While the complete data for CanvasXpress visualizations is structured as a two-d
 ## Steps to Generate CanvasXpress JSON Configuration
 Always follow these steps to create a valid CanvasXpress JSON configuration based on the provided English description and headers/column names:
 1.  **Select the Graph Type**: Based on the visualization requirements, choose an appropriate graph type from the valid options.
-2.  **Configure the Axes**: Specify the `xAxis` and `yAxis` parameters based on the headers or column names provided. If the graph type is **Single-Dimensional**, only use `xAxis` regardless of orientation. Never include the `yAxis` for **Single-Dimensional Graph Types** or **Combined Graph Types** or any other parameters associated with the y-axis.
+2.  **Configure the Axes**: Specify the `xAxis` and `yAxis` parameters based on the headers or column names provided. If the graph type is **Single-Dimensional**, only use `xAxis` regardless of orientation. Never include the `yAxis` for **Single-Dimensional Graph Types** or **Combined Graph Types** or any other parameters associated with the y-axis. It is very important to follow the critical rules specified in the "Axis Configuration - Second Step" section.
 3.  **Set Decorations**: If decorations are required, configure them according to the rules specified in the "Decorations Rules" section.
 4.  **Filter Data**: If filtering is needed, use the `filterData` parameter to specify the filtering criteria.
 5.  **Sort Data**: If sorting is required, use the `sortData` parameter to define the sorting order based on the headers or column names.
@@ -41,8 +41,9 @@ Always follow these steps to create a valid CanvasXpress JSON configuration base
 
 ### Axis Configuration - Second Step
 -   Set the `xAxis` and `yAxis` parameters using column names identified in the English description. You may need to assign multiple column names to a single axis parameter. If no matching column name is found, omit these parameters from the configuration, as CanvasXpress will assign them automatically based on the data. If both `xAxis` and `yAxis` are present, ensure that `xAxis` is always listed before `yAxis`.
--   For **Single-Dimensional Graph Types**, only the `xAxis` parameter should be used in the configuration to define the plotted data. Regardless of orientation, the `yAxis` should never be included, as `xAxis` is solely responsible for all data representation. Avoid including any parameters related to the `yAxis` for  **Single-Dimensional Graph Types**.
--   For **Combined Graph Types**, specify both a primary x-axis (`xAxis`) and a secondary x-axis (`xAxis2`), allowing for greater flexibility and precision in your visualizations. If there is ambiguity in the English description regarding which axis to use, default to using the first column for `xAxis` and the second column for `xAxis2`. Regardless of orientation, the `yAxis` should never be included, as `xAxis` and `xAxis2` are solely responsible for all data representation. Avoid including any parameters related to the `yAxis` for  **Combined Graph Types**.
+-   For **Single-Dimensional Graph Types**, only the `xAxis` parameter should be used in the configuration to define the plotted data. Regardless of orientation, the `yAxis` should never be included, as `xAxis` is solely responsible for all data representation.
+-   For **Combined Graph Types**, specify both a primary x-axis (`xAxis`) and a secondary x-axis (`xAxis2`), allowing for greater flexibility and precision in your visualizations. If there is ambiguity in the English description regarding which axis to use, default to using the first column for `xAxis` and the second column for `xAxis2`. Regardless of orientation, the `yAxis` should never be included, as `xAxis` and `xAxis2` are solely responsible for all data representation.
+-   For **Single-Dimensional Graph Types** and **Combined Graph Types**, avoid including any parameters related to the `yAxis` including `yAxisTextColor`, `yAxisTextFontStyle`, `yAxisTextScaleFontFactor`, `yAxisTitle`, `yAxisTitleColor`, `yAxisTitleFontStyle`, and `yAxisTitleScaleFontFactor`. These parameters are not applicable and should not be included in the JSON configuration. Use instead the parameters `smpTextColor`, `smpTextFontStyle`, `smpTextScaleFontFactor`, `smpTitle`, `smpTitleColor`, `smpTitleFontStyle`, and `smpTitleScaleFontFactor` to configure the sample names and titles.
 -   For **Multi-Dimensional Graph Types**, ensure that both `xAxis` and `yAxis` are defined, with `xAxis` always listed before `yAxis` for consistency.
 
 ### Setting Decorations - Third Step
@@ -87,7 +88,7 @@ Always follow these steps to create a valid CanvasXpress JSON configuration base
 ### Additional Axis Configuration regarding Min/Max Values - Sixth Step
 -   For `xAxis` and `yAxis` parameters, you can optionally specify minimum and maximum values using `setMinX`, `setMaxX`, `setMinY`, and `setMaxY`.
 -   If both `xAxis` and `yAxis` are present in the JSON configuration, use `setMinX` and `setMaxX` for the x-axis, and `setMinY` and `setMaxY` for the y-axis.
--   If only `xAxis` is present in the configuration, use `setMinX` and `setMaxX` for the x-axis. **Do not include `setMinY` or `setMaxY` in this case, regardless of the graph's orientation.**
+-   If only `xAxis` is present in the configuration, use `setMinX` and `setMaxX` for the x-axis. **Do not include `setMinY` or `setMaxY` in this case, regardless of the graph orientation.
 
 ### Additional Parameters - Sixth Step
 -   For any other parameters, consult the [SCHEMA.md](SCHEMA.md) file. Include them in the JSON configuration as required by the English description and data headers.
