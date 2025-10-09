@@ -76,8 +76,21 @@ In CanvasXpress, the most straightforward data format for plotting is a datafram
 ]
 ```
 
-To enhance performance and organization, the data can be structured into three distinct dataframes. The first, named "y", contains numerical data formatted as a two-dimensional array, accompanied by two vectors that define the row and column names. The second dataframe, "x", stores column or sample metadata. This metadata is arranged as key-value pairs, where each key represents a metadata field, and the corresponding value is a vector containing the related data. The third dataframe, "z", functions similarly but holds metadata for rows or variables instead. This streamlined approach improves efficiency, clarity, and overall data management.
-Here is an example: of such data:
+CanvasXpress is flexible with how you format your data, but understanding two main shapes—"wide" and "long"—is key. The best format depends on the type of chart you want to create.
+
+As a general rule, use a "short and wide" format for plots that compare numerical data across categories, like in a Bar or Boxplot. This format looks like a typical spreadsheet where each row is a unique item. For plotting the relationship between two numerical columns, like in a Scatter plot, you'll need a "long and skinny" format, where every row represents a single data point with both its X and Y values.
+
+For more advanced visualizations and better organization, CanvasXpress uses a powerful structure with three main components: y, x, and z.
+
+The y component is your main numerical data, organized like a table with data (the numbers), vars (the row names), and smps (the column names).
+
+The x component holds extra information, or metadata, about your columns (samples). For example, it can specify which group each sample belongs to.
+
+Similarly, the z component holds metadata for your rows (variables), such as which pathway a gene is part of.
+
+This y, x, z structure separates your core numbers from their descriptions, making your data handling cleaner, more efficient, and easier to manage, especially for complex scientific plots.
+
+Here is an example of this data structure:
 
 ```javascript
 {
