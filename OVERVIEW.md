@@ -336,120 +336,120 @@ This is a dataset with 34 nodes and 78 edges. This dataset will be refrered with
 ```javascript
 {
   "edges": [
-    { "id1": "n2", "id2": "n1" },
-    { "id1": "n3", "id2": "n1" },
-    { "id1": "n3", "id2": "n2" },
-    { "id1": "n4", "id2": "n1" },
-    { "id1": "n4", "id2": "n2" },
-    { "id1": "n4", "id2": "n3" },
-    { "id1": "n5", "id2": "n1" },
-    { "id1": "n6", "id2": "n1" },
-    { "id1": "n7", "id2": "n1" },
-    { "id1": "n7", "id2": "n5" },
-    { "id1": "n7", "id2": "n6" },
-    { "id1": "n8", "id2": "n1" },
-    { "id1": "n8", "id2": "n2" },
-    { "id1": "n8", "id2": "n3" },
-    { "id1": "n8", "id2": "n4" },
-    { "id1": "n9", "id2": "n1" },
-    { "id1": "n9", "id2": "n3" },
-    { "id1": "n10", "id2": "n3" },
-    { "id1": "n11", "id2": "n1" },
-    { "id1": "n11", "id2": "n5" },
-    { "id1": "n11", "id2": "n6" },
-    { "id1": "n12", "id2": "n1" },
-    { "id1": "n13", "id2": "n1" },
-    { "id1": "n13", "id2": "n4" },
-    { "id1": "n14", "id2": "n1" },
-    { "id1": "n14", "id2": "n2" },
-    { "id1": "n14", "id2": "n3" },
-    { "id1": "n14", "id2": "n4" },
-    { "id1": "n17", "id2": "n6" },
-    { "id1": "n17", "id2": "n7" },
-    { "id1": "n18", "id2": "n1" },
-    { "id1": "n18", "id2": "n2" },
-    { "id1": "n20", "id2": "n1" },
-    { "id1": "n20", "id2": "n2" },
-    { "id1": "n22", "id2": "n1" },
-    { "id1": "n22", "id2": "n2" },
-    { "id1": "n26", "id2": "n24" },
-    { "id1": "n26", "id2": "n25" },
-    { "id1": "n28", "id2": "n3" },
-    { "id1": "n28", "id2": "n24" },
-    { "id1": "n28", "id2": "n25" },
-    { "id1": "n29", "id2": "n3" },
-    { "id1": "n30", "id2": "n24" },
-    { "id1": "n30", "id2": "n27" },
-    { "id1": "n31", "id2": "n2" },
-    { "id1": "n31", "id2": "n9" },
-    { "id1": "n32", "id2": "n1" },
-    { "id1": "n32", "id2": "n25" },
-    { "id1": "n32", "id2": "n26" },
-    { "id1": "n32", "id2": "n29" },
-    { "id1": "n33", "id2": "n3" },
-    { "id1": "n33", "id2": "n9" },
-    { "id1": "n33", "id2": "n15" },
-    { "id1": "n33", "id2": "n16" },
-    { "id1": "n33", "id2": "n19" },
-    { "id1": "n33", "id2": "n21" },
-    { "id1": "n33", "id2": "n23" },
-    { "id1": "n33", "id2": "n24" },
-    { "id1": "n33", "id2": "n30" },
-    { "id1": "n33", "id2": "n31" },
-    { "id1": "n33", "id2": "n32" },
-    { "id1": "n34", "id2": "n9" },
-    { "id1": "n34", "id2": "n10" },
-    { "id1": "n34", "id2": "n14" },
-    { "id1": "n34", "id2": "n15" },
-    { "id1": "n34", "id2": "n16" },
-    { "id1": "n34", "id2": "n19" },
-    { "id1": "n34", "id2": "n20" },
-    { "id1": "n34", "id2": "n21" },
-    { "id1": "n34", "id2": "n23" },
-    { "id1": "n34", "id2": "n24" },
-    { "id1": "n34", "id2": "n27" },
-    { "id1": "n34", "id2": "n28" },
-    { "id1": "n34", "id2": "n29" },
-    { "id1": "n34", "id2": "n30" },
-    { "id1": "n34", "id2": "n31" },
-    { "id1": "n34", "id2": "n32" },
-    { "id1": "n34", "id2": "n33" }
+    { "id1": "n2", "id2": "n1", "Cat": "A", "Str": 2, "color": "#4E79A7" },
+    { "id1": "n3", "id2": "n1", "Cat": "B", "Str": 9, "color": "#F28E2B" },
+    { "id1": "n3", "id2": "n2", "Cat": "C", "Str": 5, "color": "#E15759" },
+    { "id1": "n4", "id2": "n1", "Cat": "A", "Str": 1, "color": "#76B7B2" },
+    { "id1": "n4", "id2": "n2", "Cat": "B", "Str": 8, "color": "#4E79A7" },
+    { "id1": "n4", "id2": "n3", "Cat": "C", "Str": 3, "color": "#F28E2B" },
+    { "id1": "n5", "id2": "n1", "Cat": "A", "Str": 10, "color": "#E15759" },
+    { "id1": "n6", "id2": "n1", "Cat": "B", "Str": 4, "color": "#76B7B2" },
+    { "id1": "n7", "id2": "n1", "Cat": "C", "Str": 7, "color": "#4E79A7" },
+    { "id1": "n7", "id2": "n5", "Cat": "A", "Str": 6, "color": "#F28E2B" },
+    { "id1": "n7", "id2": "n6", "Cat": "B", "Str": 2, "color": "#E15759" },
+    { "id1": "n8", "id2": "n1", "Cat": "C", "Str": 9, "color": "#76B7B2" },
+    { "id1": "n8", "id2": "n2", "Cat": "A", "Str": 5, "color": "#4E79A7" },
+    { "id1": "n8", "id2": "n3", "Cat": "B", "Str": 1, "color": "#F28E2B" },
+    { "id1": "n8", "id2": "n4", "Cat": "C", "Str": 8, "color": "#E15759" },
+    { "id1": "n9", "id2": "n1", "Cat": "A", "Str": 3, "color": "#76B7B2" },
+    { "id1": "n9", "id2": "n3", "Cat": "B", "Str": 10, "color": "#4E79A7" },
+    { "id1": "n10", "id2": "n3", "Cat": "C", "Str": 4, "color": "#F28E2B" },
+    { "id1": "n11", "id2": "n1", "Cat": "A", "Str": 7, "color": "#E15759" },
+    { "id1": "n11", "id2": "n5", "Cat": "B", "Str": 6, "color": "#76B7B2" },
+    { "id1": "n11", "id2": "n6", "Cat": "C", "Str": 2, "color": "#4E79A7" },
+    { "id1": "n12", "id2": "n1", "Cat": "A", "Str": 9, "color": "#F28E2B" },
+    { "id1": "n13", "id2": "n1", "Cat": "B", "Str": 5, "color": "#E15759" },
+    { "id1": "n13", "id2": "n4", "Cat": "C", "Str": 1, "color": "#76B7B2" },
+    { "id1": "n14", "id2": "n1", "Cat": "A", "Str": 8, "color": "#4E79A7" },
+    { "id1": "n14", "id2": "n2", "Cat": "B", "Str": 3, "color": "#F28E2B" },
+    { "id1": "n14", "id2": "n3", "Cat": "C", "Str": 10, "color": "#E15759" },
+    { "id1": "n14", "id2": "n4", "Cat": "A", "Str": 4, "color": "#76B7B2" },
+    { "id1": "n17", "id2": "n6", "Cat": "B", "Str": 7, "color": "#4E79A7" },
+    { "id1": "n17", "id2": "n7", "Cat": "C", "Str": 6, "color": "#F28E2B" },
+    { "id1": "n18", "id2": "n1", "Cat": "A", "Str": 2, "color": "#E15759" },
+    { "id1": "n18", "id2": "n2", "Cat": "B", "Str": 9, "color": "#76B7B2" },
+    { "id1": "n20", "id2": "n1", "Cat": "C", "Str": 5, "color": "#4E79A7" },
+    { "id1": "n20", "id2": "n2", "Cat": "A", "Str": 1, "color": "#F28E2B" },
+    { "id1": "n22", "id2": "n1", "Cat": "B", "Str": 8, "color": "#E15759" },
+    { "id1": "n22", "id2": "n2", "Cat": "C", "Str": 4, "color": "#76B7B2" },
+    { "id1": "n26", "id2": "n24", "Cat": "A", "Str": 7, "color": "#4E79A7" },
+    { "id1": "n26", "id2": "n25", "Cat": "B", "Str": 3, "color": "#F28E2B" },
+    { "id1": "n28", "id2": "n3", "Cat": "C", "Str": 10, "color": "#E15759" },
+    { "id1": "n28", "id2": "n24", "Cat": "A", "Str": 5, "color": "#76B7B2" },
+    { "id1": "n28", "id2": "n25", "Cat": "B", "Str": 1, "color": "#4E79A7" },
+    { "id1": "n29", "id2": "n3", "Cat": "C", "Str": 9, "color": "#F28E2B" },
+    { "id1": "n30", "id2": "n24", "Cat": "A", "Str": 6, "color": "#E15759" },
+    { "id1": "n30", "id2": "n27", "Cat": "B", "Str": 2, "color": "#76B7B2" },
+    { "id1": "n31", "id2": "n2", "Cat": "C", "Str": 8, "color": "#4E79A7" },
+    { "id1": "n31", "id2": "n9", "Cat": "A", "Str": 4, "color": "#F28E2B" },
+    { "id1": "n32", "id2": "n1", "Cat": "B", "Str": 7, "color": "#E15759" },
+    { "id1": "n32", "id2": "n25", "Cat": "C", "Str": 3, "color": "#76B7B2" },
+    { "id1": "n32", "id2": "n26", "Cat": "A", "Str": 10, "color": "#4E79A7" },
+    { "id1": "n32", "id2": "n29", "Cat": "B", "Str": 5, "color": "#F28E2B" },
+    { "id1": "n33", "id2": "n3", "Cat": "C", "Str": 1, "color": "#E15759" },
+    { "id1": "n33", "id2": "n9", "Cat": "A", "Str": 9, "color": "#76B7B2" },
+    { "id1": "n33", "id2": "n15", "Cat": "B", "Str": 2, "color": "#4E79A7" },
+    { "id1": "n33", "id2": "n16", "Cat": "C", "Str": 8, "color": "#F28E2B" },
+    { "id1": "n33", "id2": "n19", "Cat": "A", "Str": 4, "color": "#E15759" },
+    { "id1": "n33", "id2": "n21", "Cat": "B", "Str": 7, "color": "#76B7B2" },
+    { "id1": "n33", "id2": "n23", "Cat": "C", "Str": 6, "color": "#4E79A7" },
+    { "id1": "n33", "id2": "n24", "Cat": "A", "Str": 3, "color": "#F28E2B" },
+    { "id1": "n33", "id2": "n30", "Cat": "B", "Str": 10, "color": "#E15759" },
+    { "id1": "n33", "id2": "n31", "Cat": "C", "Str": 5, "color": "#76B7B2" },
+    { "id1": "n33", "id2": "n32", "Cat": "A", "Str": 1, "color": "#4E79A7" },
+    { "id1": "n34", "id2": "n9", "Cat": "B", "Str": 8, "color": "#F28E2B" },
+    { "id1": "n34", "id2": "n10", "Cat": "C", "Str": 4, "color": "#E15759" },
+    { "id1": "n34", "id2": "n14", "Cat": "A", "Str": 9, "color": "#76B7B2" },
+    { "id1": "n34", "id2": "n15", "Cat": "B", "Str": 2, "color": "#4E79A7" },
+    { "id1": "n34", "id2": "n16", "Cat": "C", "Str": 7, "color": "#F28E2B" },
+    { "id1": "n34", "id2": "n19", "Cat": "A", "Str": 10, "color": "#E15759" },
+    { "id1": "n34", "id2": "n20", "Cat": "B", "Str": 3, "color": "#76B7B2" },
+    { "id1": "n34", "id2": "n21", "Cat": "C", "Str": 6, "color": "#4E79A7" },
+    { "id1": "n34", "id2": "n23", "Cat": "A", "Str": 1, "color": "#F28E2B" },
+    { "id1": "n34", "id2": "n24", "Cat": "B", "Str": 5, "color": "#E15759" },
+    { "id1": "n34", "id2": "n27", "Cat": "C", "Str": 9, "color": "#76B7B2" },
+    { "id1": "n34", "id2": "n28", "Cat": "A", "Str": 4, "color": "#4E79A7" },
+    { "id1": "n34", "id2": "n29", "Cat": "B", "Str": 8, "color": "#F28E2B" },
+    { "id1": "n34", "id2": "n30", "Cat": "C", "Str": 2, "color": "#E15759" },
+    { "id1": "n34", "id2": "n31", "Cat": "A", "Str": 7, "color": "#76B7B2" },
+    { "id1": "n34", "id2": "n32", "Cat": "B", "Str": 10, "color": "#4E79A7" },
+    { "id1": "n34", "id2": "n33", "Cat": "C", "Str": 3, "color": "#F28E2B" }
   ],
   "nodes": [
-    { "color": "#0ab0db", "id": "n1" },
-    { "color": "#0ab0db", "id": "n2" },
-    { "color": "#0ab0db", "id": "n3" },
-    { "color": "#0ab0db", "id": "n4" },
-    { "color": "#0ab0db", "id": "n5" },
-    { "color": "#0ab0db", "id": "n6" },
-    { "color": "#0ab0db", "id": "n7" },
-    { "color": "#0ab0db", "id": "n8" },
-    { "color": "#0ab0db", "id": "n9" },
-    { "color": "#0ab0db", "id": "n10" },
-    { "color": "#0ab0db", "id": "n11" },
-    { "color": "#0ab0db", "id": "n12" },
-    { "color": "#0ab0db", "id": "n13" },
-    { "color": "#0ab0db", "id": "n14" },
-    { "color": "#0ab0db", "id": "n15" },
-    { "color": "#0ab0db", "id": "n16" },
-    { "color": "#0ab0db", "id": "n17" },
-    { "color": "#0ab0db", "id": "n18" },
-    { "color": "#0ab0db", "id": "n19" },
-    { "color": "#0ab0db", "id": "n20" },
-    { "color": "#0ab0db", "id": "n21" },
-    { "color": "#0ab0db", "id": "n22" },
-    { "color": "#0ab0db", "id": "n23" },
-    { "color": "#0ab0db", "id": "n24" },
-    { "color": "#0ab0db", "id": "n25" },
-    { "color": "#0ab0db", "id": "n26" },
-    { "color": "#0ab0db", "id": "n27" },
-    { "color": "#0ab0db", "id": "n28" },
-    { "color": "#0ab0db", "id": "n29" },
-    { "color": "#0ab0db", "id": "n30" },
-    { "color": "#0ab0db", "id": "n31" },
-    { "color": "#0ab0db", "id": "n32" },
-    { "color": "#0ab0db", "id": "n33" },
-    { "color": "#0ab0db", "id": "n34" }
+    { "color": "#0ab0db", "id": "n1", "Group": "A", "Num": 4 },
+    { "color": "#0ab0db", "id": "n2", "Group": "B", "Num": 7 },
+    { "color": "#0ab0db", "id": "n3", "Group": "C", "Num": 1 },
+    { "color": "#0ab0db", "id": "n4", "Group": "A", "Num": 10 },
+    { "color": "#0ab0db", "id": "n5", "Group": "B", "Num": 2 },
+    { "color": "#0ab0db", "id": "n6", "Group": "C", "Num": 5 },
+    { "color": "#0ab0db", "id": "n7", "Group": "A", "Num": 8 },
+    { "color": "#0ab0db", "id": "n8", "Group": "B", "Num": 3 },
+    { "color": "#0ab0db", "id": "n9", "Group": "C", "Num": 9 },
+    { "color": "#0ab0db", "id": "n10", "Group": "A", "Num": 6 },
+    { "color": "#fe6969", "id": "n11", "Group": "B", "Num": 1 },
+    { "color": "#fe6969", "id": "n12", "Group": "C", "Num": 4 },
+    { "color": "#fe6969", "id": "n13", "Group": "A", "Num": 7 },
+    { "color": "#fe6969", "id": "n14", "Group": "B", "Num": 10 },
+    { "color": "#fe6969", "id": "n15", "Group": "C", "Num": 2 },
+    { "color": "#fe6969", "id": "n16", "Group": "A", "Num": 5 },
+    { "color": "#fe6969", "id": "n17", "Group": "B", "Num": 9 },
+    { "color": "#fe6969", "id": "n18", "Group": "C", "Num": 3 },
+    { "color": "#fe6969", "id": "n19", "Group": "A", "Num": 8 },
+    { "color": "#fe6969", "id": "n20", "Group": "B", "Num": 6 },
+    { "color": "#fe6969", "id": "n21", "Group": "C", "Num": 1 },
+    { "color": "#fed385", "id": "n22", "Group": "A", "Num": 4 },
+    { "color": "#fed385", "id": "n23", "Group": "B", "Num": 7 },
+    { "color": "#fed385", "id": "n24", "Group": "C", "Num": 9 },
+    { "color": "#fed385", "id": "n25", "Group": "A", "Num": 2 },
+    { "color": "#fed385", "id": "n26", "Group": "B", "Num": 5 },
+    { "color": "#fed385", "id": "n27", "Group": "C", "Num": 10 },
+    { "color": "#fed385", "id": "n28", "Group": "A", "Num": 3 },
+    { "color": "#fed385", "id": "n29", "Group": "B", "Num": 6 },
+    { "color": "#fed385", "id": "n30", "Group": "C", "Num": 8 },
+    { "color": "#fed385", "id": "n31", "Group": "A", "Num": 1 },
+    { "color": "#fed385", "id": "n32", "Group": "B", "Num": 4 },
+    { "color": "#fed385", "id": "n33", "Group": "C", "Num": 7 },
+    { "color": "#fed385", "id": "n34", "Group": "A", "Num": 5 }
   ]
 }
 ```
@@ -542,6 +542,7 @@ new CanvasXpress("Boxplot", data, {
 new CanvasXpress("Bin", data, {
   "graphType": "Bin",
   "xAxis": ["Col3"],
+  "yAxis": ["Col2"]
 });
 ```
 
@@ -551,6 +552,7 @@ new CanvasXpress("Bin", data, {
 new CanvasXpress("Binplot", data, {
   "graphType": "Bin",
   "xAxis": ["Col3"],
+  "yAxis": ["Col1"],
 });
 ```
 
@@ -619,7 +621,7 @@ new CanvasXpress("Circular", data, {
 new CanvasXpress("Circular2D", data, {
   "graphType": "Circular",
   "rAxis" : "SeqD",
-  "ringTracks": ["", "A", "B", "B"],
+  "circularTrackName": ["", "A", "B", "B"],
   "xAxis": ["SeqD", "Col1", "Col2", "Col3"]
 });
 ```
@@ -740,7 +742,8 @@ new CanvasXpress("Heatmap", data, {
 ```javascript
 new CanvasXpress("Hex", data, {
   "graphType": "Hex",
-  "xAxis": ["Col1"]
+  "xAxis": ["Col1"],
+  "yAxis": ["Col2"]
 });
 ```
 
@@ -749,7 +752,8 @@ new CanvasXpress("Hex", data, {
 ```javascript
 new CanvasXpress("Hexplot", data, {
   "graphType": "Hexplot",
-  "xAxis": ["Col1"]
+  "xAxis": ["Col1"],
+  "yAxis": ["Col3"]
 });
 ```
 
@@ -786,7 +790,8 @@ new CanvasXpress("Line", data, {
 ```javascript
 new CanvasXpress("Lollipop", data, {
   "graphType": "Lollipop",
-  "xAxis": ["Col1"]
+  "xAxis": ["Col1"],
+  "dataPointSizeScaleFactor": 4
 });
 ```
 
@@ -1054,15 +1059,11 @@ new CanvasXpress("Tree", data, {
 
 ```javascript
 new CanvasXpress("TreeBracket", data, {
-  "graphType": "Tree",
+  "graphType": "TreeBracket",
   "xAxis": ["Col1"],
-  "hierarchy": ["Final", "Semifinal", "4th", "8th"],
-  "treeType": "bracket",
-  "treeNodeSizeScaleFactor": 2,
-  "treeInverted": true
+  "hierarchy": ["Final", "Semifinal", "4th", "8th"]
 });
 ```
-
 
 # TreeMap
 
