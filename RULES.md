@@ -85,8 +85,8 @@ Always follow these steps to create a valid CanvasXpress JSON configuration base
 ### Ridgeline Graph Specific Rules - Sixth Step
 -   When `graphType` is "Ridgeline", **omit** the `groupingFactors` configuration; instead, use `ridgeBy`.
 
-### Labeling Data Points in Scatter2D Plots
--   When `graphType` is "Scatter2D" and the user requests to label data points, use both the `labelBy` parameter (which should be either "variable" or a column name) and the `labelSelect` parameter to specify the selection rules. Both parameters are optional. The `labelSelect` parameter must be an array of arrays, where each inner array contains exactly three elements:
+### Labeling Data Points in Scatter2D and Volcano Plots
+-   When `graphType` is "Scatter2D" or "Volcano" and the user requests to label data points, use both the `labelBy` parameter (which should be either "variable" or a column name) and the `labelSelect` parameter to specify the selection rules. Both parameters are optional, but if one is specified, the other needs to be included. The `labelSelect` parameter must be an array of arrays, where each inner array contains exactly three elements:
     1. The name of a column (from the xAxis, yAxis, or any other column),
     2. The operator ("like", "greater-than", "less-than", "equal", or "between"),
     3. The value to filter by.
