@@ -12,6 +12,7 @@ This file contains the schema of the most common CanvasXpress configuration fiel
 ## Graph Types Section
 
 ### Area Graphs
+-  **areaStyle**: Description: "Style for area graphs. The options include solid which is the default, translucent, and outlined" Type: "string" Options: ["solid", "translucent", "outlined"] Default: "solid"
 -  **areaType**: Description: "Types of area graphs when displaying multiple series. The options include overlapping which is the default, stacked, and percent area graphs" Type: "string" Options: ["overlapping", "stacked", "percent"] Default: "overlapping"
 
 ### Bar Graphs
@@ -23,29 +24,52 @@ This file contains the schema of the most common CanvasXpress configuration fiel
 -  **binplotShape**: Description: "Type for the shape to use in binplots" Type: "string" Options: ["rectangle", "hexagon", "oval"] Default: "hexagon"
 
 ### Boxplot Graphs
+-  **boxplotOutliersColor**: Description: "Color for outlier data points in boxplots" Type: "color" Default: false
+-  **boxplotOutliersRatio**: Description: "Ratio for the size of the outliers with respect to boxplot" Type: "integer" Default: 10
+-  **boxplotOutliersShape**: Description: "Shape for the outlier data points" Type: "string" Options: ["circle", "square", "triangle", "diamond", "plus", "minus", "star", "circleOpen", "squareOpen", "triangleOpen", "diamondOpen"] Default: "circle"
 -  **boxplotConnect**: Description: "Flag to show data in boxplots connected" Type: "boolean" Default: false
+-  **boxplotMean**: Description: "Flag to show mean of data in boxplots" Type: "boolean" Default: false
+-  **boxplotMeanColor**: Description: "Color for data mean in boxplots" Type: "color" Default: "#fed385"
+-  **boxplotMedianColor**: Description: "Color for line of the median of data in boxplots" Type: "color" Default: false
+-  **boxplotMedianWidth**: Description: "Width for the line of the median of data in boxplots" Type: "integer" Default: 2
 -  **boxplotNotched**: Description: "Flag to notch boxplots" Type: "boolean" Default: false
 -  **boxplotType**: Description: "Boxplot type" Type: "string" Options: ["boxWhiskers", "range"] Default: "boxWhiskers"
 -  **boxplotWhiskersType**: Description: "Boxplot whiskers type" Type: "string" Options: ["single", "double", "none"] Default: "double"
 -  **showBoxplotOriginalData**: Description: "Flag to show/hide the observed data point in boxplots. (Should be called showBoxplotDataPoints)" Type: "boolean" Default: false
 
 ### Bullet Graphs
+-  **bulletStyle**: Description: "Style for the bullet" Type: "string" Options: ["square", "round", "squareGradient", "roundGradient"] Default: "square"
 -  **bulletTargetVarName**: Description: "Variable name to use to identify target in bullet graphs" Type: "string" Options: [false] Default: false
 
+### Chord Graphs
+-  **chordThickness**: Description: "Relative length in pixels of the chord thickness in the circular graphs. Only applicable to the chord subtype" Type: "integer" Default: 28
+
 ### Circular Graphs
+-  **circularRotate**: Description: "Number of degrees to rotate the circular graph to adjust the starting point" Type: "integer" Default: 0
 -  **circularType**: Description: "Property to set the subtype of circular graph. If set to sunburst or bubble then smpOverlays can be used to build a hierarchy for the graph" Type: "string" Options: ["normal", "radar", "sunburst", "chord", "bubble"] Default: "normal"
 
 ### Contours
 -  **contourFilled**: Description: "Flag to color the contour plot" Type: "boolean" Default: false
+-  **contourStat**: Description: "Contour density type" Type: "string" Options: ["density", "ndensity", "count"] Default: "density"
+-  **showContourBands**: Description: "Flag to show/hide contour bands" Type: "boolean" Default: true
 -  **showContourDataPoints**: Description: "Flag to show/hide the data points in contours" Type: "boolean" Default: false
 
 ### Density Plots
+-  **densityKernel**: Description: "Histogram density kernels" Type: "string" Options: ["gaussian", "rectangular", "triangular", "epanechnikov", "quartic", "biweight", "cosine", "optcosine"] Default: "gaussian"
 -  **densityPosition**: Description: "Histogram density position" Type: "string" Options: ["normal", "stacked", "filled"] Default: "normal"
 
 ### Dumbbell Graphs
 -  **dumbbellType**: Description: "Style for the dumbbell plot" Type: "string" Options: ["arrow", "bullet", "cleveland", "connected", "line", "lineConnected", "stacked"] Default: "stacked"
 
+### Heatmap Graphs
+-  **heatmapIndicatorHeight**: Description: "Length in pixels for the heatmap indicator" Type: "integer" Default: 40
+-  **heatmapIndicatorHistogram**: Description: "Flag to show histogram in the heatmap indicator" Type: "boolean" Default: false
+-  **heatmapIndicatorHistogramColor**: Description: "Color for the heatmap indicator histogram" Type: "color" Default: "#0ab0db"
+-  **heatmapIndicatorPosition**: Description: "Position for the heatmap indicator" Type: "string" Options: ["topLeft", "top", "topRight", "right"] Default: "right"
+-  **heatmapIndicatorWidth**: Description: "Length in pixels for the heatmap indicator line width used for increase the size of the indicator" Type: "integer" Default: 200
+
 ### Histograms
+-  **histogramStat**: Description: "Histogram density type" Type: "string" Options: ["density", "count"] Default: "count"
 -  **histogramType**: Description: "Type of histogram when multiple series are present" Type: "string" Options: ["dodged", "staggered", "stacked"] Default: "dodged"
 -  **showFilledHistogramDensity**: Description: "Flag to show/hide the filled histogram density" Type: "boolean" Default: false
 -  **showHistogram**: Description: "Flag or sample annotation to create histogram. If true is specified then the histogram will be done with all data" Type: "string" Default: ""
@@ -54,6 +78,12 @@ This file contains the schema of the most common CanvasXpress configuration fiel
 -  **showHistogramMedian**: Description: "Flag to show/hide the histogram median" Type: "boolean" Default: false
 -  **showHistogramQuantiles**: Description: "Flag to show/hide the quantile 0.25 and 0.75 in density plots" Type: "boolean" Default: false
 
+### Kaplan Meier Plots
+-  **kmPvalue**: Description: "Flag to show the p-value in Kaplan-Meier plots" Type: "boolean" Default: false
+-  **kmRiskTable**: Description: "Data to show the number of subjects at risk in Kaplan-Meier plots. It will be aligned to the major ticks in the x Axis" Type: "string" Default: false
+-  **showKMConfidenceIntervals**: Description: "Flag to show/hide confidence intervals in Kaplan-Meier plots" Type: "boolean" Default: true
+-  **showKMMedianSurvivalTime**: Description: "Flag to show/hide median survival time in Kaplan-Meier plots" Type: "boolean" Default: false
+
 ### Line Graphs
 -  **lineErrorType**: Description: "Line error type in the line graphs. The line type must be spline for the area error type. " Type: "string" Options: ["bar", "area"] Default: "bar"
 -  **lineType**: Description: "Type of line used to join the points in line graphs" Type: "string" Options: ["rect", "solid", "spline", "dotted", "dashed", "dotdash", "longdash", "twodash"] Default: "rect"
@@ -61,7 +91,9 @@ This file contains the schema of the most common CanvasXpress configuration fiel
 ### Maps
 -  **mapColor**: Description: "Color for the maps" Type: "color" Default: "#0ab0db"
 -  **mapConfig**: Description: "Map config" Type: "object" Default: {}
+-  **mapGraticuleShow**: Description: "Flag to show Map Graticule" Type: "boolean" Default: false
 -  **mapId**: Description: "Map Id for the map div in the DOM" Type: "string" Default: ""
+-  **mapProjection**: Description: "Map projection" Type: "string" Options: ["mercator", "albers", "orthographic"] Default: "mercator"
 -  **topoJSON**: Description: "TopoJSON map string" Type: "string" Default: ""
 -  **useLeaflet**: Description: "Flag to use leaflet" Type: "boolean" Default: false
 
@@ -78,6 +110,12 @@ This file contains the schema of the most common CanvasXpress configuration fiel
 -  **sankeyTitleFontStyle**: Description: "Font style for the sankey diagram titles" Type: "string" Options: ["", "bold", "italic", "bold italic"] Default: false
 -  **sankeyTitleScaleFontFactor**: Description: "Scaling factor used to increase or decrease the sankey diagram titles font size in the canvas" Type: "float" Default: 1
 -  **sankeyTitleShow**: Description: "Flag to show/hide the titles in the Sankey diagrams" Type: "boolean" Default: true
+
+### Stream Plots
+-  **scatterStreamType**: Description: "Type of stream scatter plot" Type: "string" Options: ["mirror", "ridge", "proportional"] Default: "mirror"
+
+### Tag Cloud
+-  **tagCloudShape**: Description: "Shape for the tag cloud" Type: "string" Options: [false, "circle", "cardioid", "diamond", "square", "triangle", "triangle2", "pentagon", "star"] Default: false
 
 ### Violin Plots
 -  **showBoxplotIfViolin**: Description: "Flag to show/hide the boxplots when violin plot are show. It does not affect anything unless violins are shown" Type: "boolean" Default: false
@@ -118,7 +156,7 @@ This file contains the schema of the most common CanvasXpress configuration fiel
 -  **decorations**: Description: "Enables visual annotations on your graph, with its structure depending on the graphType. For network graphs, it is an array of node property names; for one-dimensional graphs, it is an object with primary keys like line, range, point, text, marker, or error; and for scatter plots, it is an object with primary keys such as linear, exponential, logarithmic, power, polynomial, nonlinearfit, regression, normal, line, text, label, point, range, image, or polygon. In the latter two cases, the value for each primary key is an array of objects, where each object specifies the properties of a decoration, for example, for a one-dimensional line: {line: [{value: 5, color: "#ff0000", width: 2, label: "Threshold", align: "right"}]}, or for a scatter plot linear fit: {linear: [{x: 1, y: 2, x2: 3, y2: 4, color: "#ff0000", width: 2, label: "Threshold", align: "right"}]}" Type: "object or array" Default: false
 
 ### Loess
--  **showLoessFit**: Description: "Flag to show/hide the Flag to show the loess fit in Scatter plots" Type: "boolean" Default: false
+-  **showLoessFit**: Description: "Name of a variable annotation, or set to true, to display a loess smoothing curve in Scatter plots" Type: "string" Options: [false] Default: false
 
 ### Overlays
 -  **smpOverlays**: Description: "Sample metadata to overlay in one dimensional plots" Type: "array" Default: []
@@ -126,7 +164,8 @@ This file contains the schema of the most common CanvasXpress configuration fiel
 
 ### Regression
 -  **regressionType**: Description: "Type of linear least-squares fitting methods for simple data analysis" Type: "string" Options: ["linear", "exponential", "logarithmic", "power", "polynomial"] Default: "linear"
--  **showRegressionFit**: Description: "Flag to show/hide the Flag to show the regression fit" Type: "boolean" Default: false
+-  **showRegressionFit**: Description: "Name of a variable annotation, or set to true, to display a regression fit in Scatter plots" Type: "string" Options: [false] Default: false
+-  **showRegressionFullRange**: Description: "Flag to show/hide the full range in regression plots" Type: "boolean" Default: false
 
 ## Data Section
 
@@ -174,9 +213,15 @@ This file contains the schema of the most common CanvasXpress configuration fiel
 -  **hierarchy**: Description: "Hierarchy for trees and bubble graphs made up of sample annotations present the data x object" Type: "array" Default: []
 
 ### Plot Area
+-  **binAlignment**: Description: "Alignment for the data points when binned" Type: "string" Options: ["left", "center", "right"] Default: "center"
 -  **binned**: Description: "Flag to bin the data points in dotplots and boxplots" Type: "boolean" Default: false
+-  **guidesColor**: Description: "Color for the variables and / or samples in one dimensional graphs and multidimensional heatmaps just for aesthetics" Type: "color" Default: "rgb(204,204,204)"
+-  **guidesLineType**: Description: "Line type for the guides in one dimensional graphs and multidimensional heatmaps" Type: "string" Options: ["solid", "dotted", "dashed", "dotdash", "longdash", "twodash"] Default: "solid"
+-  **guidesWidth**: Description: "Width for the guides in one dimensional graphs and multidimensional heatmaps" Type: "integer" Default: 1
+-  **guidesShow**: Description: "Flag to show/hide the guides in one dimensional graphs and multidimensional heatmaps" Type: "boolean" Default: false
 -  **jitter**: Description: "Flag to jitter the data points in dotplots, boxplots and scatter2D plots" Type: "boolean" Default: false
 -  **objectBorderColor**: Description: "Color for the border of all objects in one dimensional graphs. It turns into the non-transparent fill color if set to false" Type: "color" Default: "rgba(0,0,0,0)"
+-  **sina**: Description: "Flag to jitter the data points in dotplots, boxplots and scatter2D plots with sina style" Type: "boolean" Default: false
 
 ## Legend Section
 
