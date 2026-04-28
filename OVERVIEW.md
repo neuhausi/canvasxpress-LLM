@@ -1123,3 +1123,4 @@ new CanvasXpress("WordCloud", data, {
   "colorBy": ["Type"]
 });
 ```
+
