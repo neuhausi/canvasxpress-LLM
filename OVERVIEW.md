@@ -63,6 +63,85 @@ is a JSON object that allows you to customize the graph with a wide range of pro
 - *events*:
 is an optional JSON object that allows users to define custom mouse event behaviors, enabling enhanced interactivity. However, this topic will not be discussed further here.
 
+## Detecting Render Failures
+
+CanvasXpress does not provide a built-in API for detecting whether a render succeeded or failed. There is no `rendered` flag, no failure event, and no callback that signals an error. The `callback` parameter (7th constructor argument) fires after rendering regardless of outcome and receives only the data object — not a status.
+
+Render failures must be detected externally using three complementary techniques:
+
+**1. Wrap the constructor in a try/catch**
+
+Catches hard crashes: null references, bad data structures, or any synchronous exception thrown during initialisation.
+
+```javascript
+var renderError = null;
+try {
+  var cX = new CanvasXpress(target, data, config, {}, null, null, null, null, true);
+} catch (e) {
+  renderError = 'Exception: ' + e.message;
+}
+```
+
+**2. Intercept `console.error` and `console.warn`**
+
+CX logs internal errors and soft failures via the console rather than throwing. Intercept both before constructing and restore them afterwards.
+
+```javascript
+var errors = [], warnings = [];
+var origError = console.error, origWarn = console.warn;
+console.error = function() { errors.push([].join.call(arguments, ' ')); origError.apply(console, arguments); };
+console.warn  = function() { warnings.push([].join.call(arguments, ' ')); origWarn.apply(console, arguments); };
+
+try {
+  var cX = new CanvasXpress(target, data, config, {}, null, null, null, null, true);
+} catch (e) {
+  errors.push('Exception: ' + e.message);
+} finally {
+  console.error = origError;
+  console.warn  = origWarn;
+}
+```
+
+**3. Blank-canvas check (same-origin only)**
+
+After a clean render with no errors, verify that at least one pixel was actually drawn by sampling ~100 evenly-spaced alpha values from the canvas pixel buffer. `getImageData` throws a `SecurityError` when the canvas has been tainted by cross-origin content; catch only that exception and skip the check silently in that case.
+
+```javascript
+function isBlankCanvas(canvas) {
+  try {
+    var px          = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data;
+    var totalPixels = canvas.width * canvas.height;
+    var step        = Math.max(1, Math.floor(totalPixels / 100));
+    for (var i = 0; i < totalPixels; i += step) {
+      if (px[i * 4 + 3] > 0) return false;   // alpha channel > 0 → pixel drawn
+    }
+    return true;  // all sampled pixels are transparent
+  } catch (e) {
+    if (e.name === 'SecurityError') return false; // cross-origin canvas — skip check
+    throw e;
+  }
+}
+```
+
+Call this after the constructor returns and only when no other errors were detected:
+
+```javascript
+if (errors.length === 0 && isBlankCanvas(document.getElementById(target))) {
+  errors.push('Blank canvas — chart may not have rendered');
+}
+```
+
+**Summary**
+
+| Technique | What it catches | Cost |
+|---|---|---|
+| try/catch | Hard exceptions during init | Negligible |
+| console.error intercept | Internal CX errors logged but not thrown | Negligible |
+| console.warn intercept | Soft failures (invalid colorBy, bad property) | Negligible |
+| Blank canvas check | Silent render producing no pixels | One GPU→CPU transfer (~1–5 ms) |
+
+The blank canvas check is skipped automatically when the canvas contains cross-origin content (e.g. remote map tiles), so it never produces false positives from security restrictions.
+
 ## Data Format:
 
 In CanvasXpress, the most straightforward data format for plotting is a dataframe, organized by columns. This structure arranges cases (rows or variables), each containing a series of observations or measurements (columns or samples). In plain JavaScript, this format is represented as a two-dimensional array and serves as the preferred method for passing data to CanvasXpress. The data should be structured as follows:
