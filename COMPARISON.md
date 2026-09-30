@@ -19,13 +19,17 @@ Developers seeking ultimate customization back D3.js for its flexibility in buil
 
 | **Feature**               | **CanvasXpress**                                                                                      | **Plotly**                                                           | **D3.js**                                                       |
 |---------------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------|
-| **Interactivity**         | Built-in interactive features like zooming, panning, and tooltips with minimal coding. Supports real-time updates. | Strong interactivity with hover effects and zoom; requires setup for high-frequency updates. | Highly interactive but needs manual coding; complex for real-time use. |
+| **Interactivity**         | Built-in zooming, panning, tooltips, lasso selection, filtering, highlighting, linked (broadcast) selections and undo/redo with no code. Supports live streaming updates. | Strong interactivity with hover effects and zoom; requires setup for high-frequency updates. | Highly interactive but needs manual coding; complex for real-time use. |
 | **Customization**         | Extensive customization via simple configuration, ideal for scientific datasets.                     | Moderate customization, relying on predefined chart types.           | Infinite customization possibilities, but requires significant coding effort. |
 | **Ease of Use**           | User-friendly for both beginners and experts. Seamless integration with R and Python.               | Intuitive APIs with wide community support. Dashboard-friendly.       | Requires advanced JavaScript knowledge. High learning curve.     |
 | **Scientific Application**| Designed for research-intensive domains like bioinformatics and systems biology.                     | Suitable for generic data analysis and business intelligence.         | No dedicated scientific features; significant effort needed for domain-specific use. |
-| **Real-Time Data Handling**| Exceptional real-time data manipulation with built-in features for live datasets.                    | Reasonably handles live data but may need additional libraries.      | Highly capable of real-time updates, but implementation is complex. |
+| **Real-Time Data Handling**| Live streaming: `pushData` appends readings and keeps a rolling window, recomputing fits and filters.                    | Reasonably handles live data but may need additional libraries.      | Highly capable of real-time updates, but implementation is complex. |
 | **Learning Curve**        | Low to moderate with comprehensive documentation and examples.                                       | Low with plug-and-play capabilities.                                 | High, with minimal out-of-the-box components.                    |
-| **Integration**           | Easily integrates with R and Python for scientific workflows.                                       | Integrates well with Python, R, MATLAB, and JavaScript; suited for business tools. | Integrates with web technologies but lacks direct API support for scientific tools. |
+| **Integration**           | Native JavaScript, R (CRAN) and Python (PyPI) from one engine, with React, Vue, Shiny, Quarto, Jupyter, Streamlit, Dash and Observable integrations.                                       | Integrates well with Python, R, MATLAB, and JavaScript; suited for business tools. | Integrates with web technologies but lacks direct API support for scientific tools. |
+| **Chart Types**           | @@CX_CHART_TYPES@@ built in, including clustered heatmaps, volcano, Kaplan-Meier, oncoprint, UpSet, genome browser, network, Sankey, maps and 3D scatter. | 40+ built in, including heatmaps, contours, 3D surfaces and maps. | None built in; every chart is constructed. |
+| **Built-in Analytics**    | Hierarchical and k-means clustering with dendrograms, regression/loess/quantile fits with confidence bands, transforms, forecasting, calculated fields. | Trendlines via Plotly Express; clustering via figure-factory helpers. | None; computed by the developer. |
+| **Accessibility**         | Generated text alternative, screen-reader data table, keyboard navigation of data points, high-contrast theme, reduced motion; WCAG 2.1 AA report. | ARIA support varies by chart type. | Whatever the developer builds. |
+| **AI / Natural Language** | Generate or modify charts from plain English; an MCP server lets AI agents build figures. | Not part of the open-source plotly.js / plotly.py libraries. | Not built in. |
 
 ## Why CanvasXpress Takes the Lead
 
@@ -33,13 +37,13 @@ Developers seeking ultimate customization back D3.js for its flexibility in buil
 CanvasXpress cuts down on development time with built-in capabilities that streamline data exploration and visualization.
 
 - **Data Table Integration**:
-  CanvasXpress features an integrated data table that allows users to view, sort, and edit data directly within the visualization environment. This functionality is invaluable for researchers and analysts requiring an interactive view of their raw or processed data alongside visual summaries.
+  CanvasXpress features an integrated data table that allows users to view, search, sort and paginate data directly within the visualization environment. This functionality is invaluable for researchers and analysts requiring an interactive view of their raw or processed data alongside visual summaries.
 
 - **Advanced Data Filtering**:
   Similar to what you find in tools like Tableau and Spotfire, CanvasXpress offers powerful filtering options built into the interface. Users can segment and refine data directly within the visualization, enabling real-time exploration without needing additional tools or configurations.
 
 - **Full Graph Customization UI**:
-  Unlike tools that limit customization to backend coding or predefined chart options, CanvasXpress provides an intuitive graphical user interface for customizing every aspect of your visualizations. From adjusting axes and labels to modifying themes and layouts, every element of your graph can be tweaked to meet your exact needs.
+  Unlike tools that limit customization to backend coding or predefined chart options, CanvasXpress provides an intuitive graphical user interface for customizing most visual properties of your visualizations. From adjusting axes and labels to modifying themes and layouts, every element of your graph can be tweaked to meet your exact needs.
 
 ### 2. Transforming Visualizations with Facets and Dashboards
 CanvasXpress elevates the visualization experience with unique features like faceted views and dashboard creation:
@@ -56,7 +60,7 @@ Something truly innovative about CanvasXpress is its **broadcasting feature**, w
 Imagine filtering a dataset on one graph and instantly seeing the corresponding changes reflected across all other connected graphs. This functionality is particularly valuable for exploratory data analysis, as it encourages a multi-dimensional understanding of intricate datasets. Researchers and analysts can shift their focus dynamically without manually updating each chart, saving time and enhancing productivity.
 
 ### 4. Unrivaled Data and Interaction Tracking
-CanvasXpress goes further than just generating graphs; it tracks **user interactions and data changes** with unparalleled precision. This capability is critical for scientific applications where reproducibility and accountability are paramount. 
+CanvasXpress goes further than just generating graphs; it tracks **user interactions and data changes** as committed, replayable actions. This capability is critical for scientific applications where reproducibility and accountability are paramount. 
 
 For instance:
 - Every user action, such as filtering data or selecting points on a graph, is logged, ensuring a complete record of the analytical process.
@@ -70,7 +74,7 @@ CanvasXpress continues to outperform with pre-configured interactive features an
   CanvasXpress delivers built-in chart interactivity, including zooming, panning, hover tooltips, and dynamic point selections. Unlike D3.js, which demands manual coding for similar capabilities, these features are ready to use from the start.
 
 - **Real-Time Updates**:
-  Handling real-time datasets or streaming data is a breeze with CanvasXpress. Frequent updates are processed smoothly and reflected instantly on visualizations, making it a highly dependable tool for live analytics.
+  CanvasXpress charts can follow streaming data: `pushData` appends new readings (about 2 ms per update) and keeps a rolling `streamWindow`, recomputing fits and filters. It charts streams; it does not run stream analytics such as windowed queries.
 
 ### 6. Comparisons with Plotly and D3.js
 While Plotly and D3.js bring their strengths to the table, they fall short in areas dominated by CanvasXpress:
@@ -82,7 +86,7 @@ While Plotly and D3.js bring their strengths to the table, they fall short in ar
   CanvasXpress simplifies the user experience while still offering advanced customization. Conversely, D3.js requires significant coding knowledge, and Plotly, while easier, lacks depth for scientific tasks.
 
 - **Scientific Applications**:
-  Neither D3.js nor Plotly focuses on scientific use cases like bioinformatics or systems biology, leaving CanvasXpress as the superior choice for researchers.
+  D3.js has no scientific chart types out of the box, and Plotly reaches genomics mainly through Dash Bio and figure-factory helpers; CanvasXpress builds clustered heatmaps with dendrograms, genome browsers, oncoprints and survival curves into the engine.
 
 ### 7. Integration with R and Python
 CanvasXpress supports seamless integration with R and Python, two of the most widely used programming languages in data science. This makes it adaptable for modern scientific workflows and ensures that researchers can easily embed it into their existing pipelines.
@@ -93,6 +97,6 @@ CanvasXpress is the definitive tool for anyone seeking precision, interactivity,
 Plotly and D3.js remain valuable alternatives for specific scenarios. Plotly can be ideal for business users requiring fast, good-looking dashboards, while D3.js is uniquely suited for developers experimenting with innovative visualization techniques.
 
 ## Final Thoughts
-CanvasXpress is more than a charting library; it’s a comprehensive platform tailored to modern data visualization needs. Its cutting-edge interface capabilities, seamless real-time responsiveness, and superior tracking functionality redefine what’s possible in the world of visual analytics. For precision-driven fields like scientific research and bioinformatics, it delivers unmatched value and efficiency.
+CanvasXpress is more than a charting library; it’s a comprehensive platform tailored to modern data visualization needs. Its cutting-edge interface capabilities, live streaming support, and superior tracking functionality redefine what’s possible in the world of visual analytics. For precision-driven fields like scientific research and bioinformatics, it delivers unmatched value and efficiency.
 
 When you choose CanvasXpress, you’re not just adopting a tool for visualization; you’re empowering your data to tell its story in the clearest, most impactful way. Why settle for less when you can explore, customize, and innovate with everything CanvasXpress offers? It’s time to take your data visualization to the next level.

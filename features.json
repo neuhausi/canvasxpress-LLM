@@ -1,0 +1,6200 @@
+{
+  "engineVersion": "70.7",
+  "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
+  "counts": {
+    "parameters": 1702,
+    "categories": 139,
+    "graphTypes": 70,
+    "distinctGraphTypes": 65,
+    "curatedFeatures": 16
+  },
+  "families": [
+    {
+      "id": "charts-everyday",
+      "name": "Everyday charts",
+      "summary": "Business and general-purpose chart types.",
+      "features": [
+        {
+          "kind": "category",
+          "name": "Area Graphs",
+          "summary": "General parameters in area graphs",
+          "params": [
+            "areaType",
+            "areaStyle"
+          ],
+          "graphTypes": [
+            "Area",
+            "AreaLine"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Bar Graphs",
+          "summary": "General parameters in bar graphs",
+          "params": [
+            "barType",
+            "barZero"
+          ],
+          "graphTypes": [
+            "Bar",
+            "BarLine",
+            "Bullet",
+            "Lollipop",
+            "Pareto",
+            "Waterfall"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Dotplot Graphs",
+          "summary": "General parameters in dotplot graphs",
+          "params": [
+            "dotplotType"
+          ],
+          "graphTypes": [
+            "Boxplot",
+            "Cleveland",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Violin"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Dumbbell Graphs",
+          "summary": "General parameters in dumbbell graphs",
+          "params": [
+            "dumbbellType"
+          ],
+          "graphTypes": [
+            "Boxplot",
+            "Cleveland",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Violin"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Gantt Charts",
+          "summary": "General parameters in gantt charts",
+          "params": [
+            "ganttStart",
+            "ganttEnd",
+            "ganttCompletion",
+            "ganttDependency",
+            "ganttDependencyEnd",
+            "ganttDependencyColor",
+            "ganttDependencyThickness",
+            "ganttCompletionTransparency"
+          ],
+          "graphTypes": [
+            "Gantt"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Line Graphs",
+          "summary": "General parameters in line graphs",
+          "params": [
+            "lineDecoration",
+            "lineErrorType",
+            "coordinateLineColor",
+            "lineType",
+            "tension",
+            "tensionSegments"
+          ],
+          "graphTypes": [
+            "Area",
+            "AreaLine",
+            "BarLine",
+            "DotLine",
+            "Line",
+            "ParallelCoordinates",
+            "Pareto",
+            "StackedLine",
+            "StackedPercentLine"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Lollipop Graphs",
+          "summary": "General parameters in lollipop graphs",
+          "params": [
+            "barLollipopOpen"
+          ],
+          "graphTypes": [
+            "Bar"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Pie Charts",
+          "summary": "General parameters in pie charts",
+          "params": [
+            "pieType",
+            "pieSegmentPrecision",
+            "pieSegmentSeparation",
+            "pieSegmentLabels",
+            "pieLabelType",
+            "maxPieSectors",
+            "showPieValues",
+            "showPieSampleLabel",
+            "startPieSectors",
+            "pieInnerRadius",
+            "pieColors"
+          ],
+          "graphTypes": [
+            "Pie"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Scatter Plots",
+          "summary": "General parameters in scatter plots",
+          "params": [
+            "dataLabelBackgroundBorderColor",
+            "dataLabelBackgroundBorderLineType",
+            "dataLabelBackgroundBorderSize",
+            "dataLabelBackgroundColor",
+            "functionColor",
+            "groupingFactorWindow",
+            "isBumpPlot",
+            "isDataLabels",
+            "isDataLabelsBackgroundColor",
+            "scatterDataPointsColor",
+            "scatterLineAlpha",
+            "scatterPointAlpha",
+            "scatterType",
+            "showDataLabels",
+            "showScatterLineOriginalData",
+            "scatterAxesEqual",
+            "scatterOutlineThreshold"
+          ],
+          "graphTypes": [
+            "Bin",
+            "Binplot",
+            "Bump",
+            "CDF",
+            "Contour",
+            "Density",
+            "Distribution",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "QQ",
+            "Quantile",
+            "Ridgeline",
+            "Scatter2D",
+            "ScatterBubble2D",
+            "Scatter3D",
+            "Spaghetti",
+            "SPLOM",
+            "Streamgraph",
+            "TimeSeries",
+            "Volcano"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Stream Plots",
+          "summary": "General parameters in scatter plots",
+          "params": [
+            "scatterStreamType",
+            "scatterStreamBandwidth",
+            "scatterStreamNumber",
+            "scatterStreamExtraSpan",
+            "scatterStreamTrueRange",
+            "scatterStreamWiggles"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Tag Cloud",
+          "summary": "General parameters used in tag clouds",
+          "params": [
+            "tagCloudTextWeightFactor",
+            "tagCloudTextGridSize",
+            "tagCloudTextEllipticity",
+            "tagCloudTextRotateRatio",
+            "tagCloudShape"
+          ],
+          "graphTypes": [
+            "TagCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Waterfall Graphs",
+          "summary": "General parameters in waterfall graphs",
+          "params": [
+            "waterfallNetColor",
+            "waterfallIncreaseColor",
+            "waterfallDecreaseColor"
+          ],
+          "graphTypes": [
+            "Bar"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        }
+      ],
+      "graphTypes": [
+        {
+          "name": "Area",
+          "summary": "Area chart, stacked or overlapping.",
+          "aliases": [
+            "area chart",
+            "stacked area"
+          ],
+          "aliasOf": null,
+          "exampleCount": 16,
+          "examples": [
+            "https://www.canvasxpress.org/examples/area-1.html",
+            "https://www.canvasxpress.org/examples/area-2.html",
+            "https://www.canvasxpress.org/examples/area-3.html"
+          ]
+        },
+        {
+          "name": "AreaLine",
+          "summary": "Area chart combined with lines on a second axis.",
+          "aliases": [
+            "area and line"
+          ],
+          "aliasOf": null,
+          "exampleCount": 4,
+          "examples": [
+            "https://www.canvasxpress.org/examples/arealine-1.html",
+            "https://www.canvasxpress.org/examples/arealine-2.html",
+            "https://www.canvasxpress.org/examples/arealine-3.html"
+          ]
+        },
+        {
+          "name": "Bar",
+          "summary": "Bar and column chart (grouped; lollipop, arrow, bullet and swimmer variants via barType).",
+          "aliases": [
+            "bar chart",
+            "column chart",
+            "grouped bar",
+            "arrow bars"
+          ],
+          "aliasOf": null,
+          "exampleCount": 33,
+          "examples": [
+            "https://www.canvasxpress.org/examples/bar-1.html",
+            "https://www.canvasxpress.org/examples/bar-2.html",
+            "https://www.canvasxpress.org/examples/bar-3.html"
+          ]
+        },
+        {
+          "name": "BarLine",
+          "summary": "Bars combined with lines on a second axis.",
+          "aliases": [
+            "combo chart",
+            "bar and line",
+            "dual axis chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 3,
+          "examples": [
+            "https://www.canvasxpress.org/examples/barline-1.html",
+            "https://www.canvasxpress.org/examples/barline-2.html",
+            "https://www.canvasxpress.org/examples/barline-3.html"
+          ]
+        },
+        {
+          "name": "Bump",
+          "summary": "Bump chart of rank changes over time.",
+          "aliases": [
+            "bump chart",
+            "rank chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 1,
+          "examples": [
+            "https://www.canvasxpress.org/examples/scatter2d-18.html"
+          ]
+        },
+        {
+          "name": "Cleveland",
+          "summary": "Cleveland dot plot.",
+          "aliases": [
+            "cleveland dot plot",
+            "dot chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Donut",
+          "summary": "Donut chart.",
+          "aliases": [
+            "donut chart",
+            "doughnut",
+            "ring chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "DotLine",
+          "summary": "Dot plot combined with lines on a second axis.",
+          "aliases": [
+            "dot and line"
+          ],
+          "aliasOf": null,
+          "exampleCount": 3,
+          "examples": [
+            "https://www.canvasxpress.org/examples/dotline-1.html",
+            "https://www.canvasxpress.org/examples/dotline-2.html",
+            "https://www.canvasxpress.org/examples/dotline-3.html"
+          ]
+        },
+        {
+          "name": "Dotplot",
+          "summary": "Dot plot of values per category.",
+          "aliases": [
+            "dot plot",
+            "strip plot",
+            "jitter plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 18,
+          "examples": [
+            "https://www.canvasxpress.org/examples/dotplot-1.html",
+            "https://www.canvasxpress.org/examples/dotplot-2.html",
+            "https://www.canvasxpress.org/examples/dotplot-3.html"
+          ]
+        },
+        {
+          "name": "Dumbbell",
+          "summary": "Dumbbell chart comparing two values per category.",
+          "aliases": [
+            "dumbbell chart",
+            "connected dot plot",
+            "barbell chart",
+            "range plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 8,
+          "examples": [
+            "https://www.canvasxpress.org/examples/dumbbell-1.html",
+            "https://www.canvasxpress.org/examples/dumbbell-2.html",
+            "https://www.canvasxpress.org/examples/dumbbell-3.html"
+          ]
+        },
+        {
+          "name": "Gantt",
+          "summary": "Gantt chart of tasks over time.",
+          "aliases": [
+            "gantt chart",
+            "timeline",
+            "project schedule"
+          ],
+          "aliasOf": null,
+          "exampleCount": 6,
+          "examples": [
+            "https://www.canvasxpress.org/examples/gantt-1.html",
+            "https://www.canvasxpress.org/examples/gantt-2.html",
+            "https://www.canvasxpress.org/examples/gantt-3.html"
+          ]
+        },
+        {
+          "name": "Line",
+          "summary": "Line chart.",
+          "aliases": [
+            "line chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 3,
+          "examples": [
+            "https://www.canvasxpress.org/examples/line-1.html",
+            "https://www.canvasxpress.org/examples/line-3.html",
+            "https://www.canvasxpress.org/examples/line-4.html"
+          ]
+        },
+        {
+          "name": "Lollipop",
+          "summary": "Lollipop chart.",
+          "aliases": [
+            "lollipop chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Pareto",
+          "summary": "Pareto chart (sorted bars plus cumulative line).",
+          "aliases": [
+            "pareto chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Pie",
+          "summary": "Pie chart.",
+          "aliases": [
+            "pie chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 3,
+          "examples": [
+            "https://www.canvasxpress.org/examples/pie-1.html",
+            "https://www.canvasxpress.org/examples/pie-2.html",
+            "https://www.canvasxpress.org/examples/pie-3.html"
+          ]
+        },
+        {
+          "name": "Radar",
+          "summary": "Radar chart.",
+          "aliases": [
+            "radar chart",
+            "spider chart",
+            "web chart",
+            "star plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Scatter2D",
+          "summary": "2D scatter plot, the base for fits, densities, histograms, KM curves and more.",
+          "aliases": [
+            "scatter plot",
+            "scatter chart",
+            "xy plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 118,
+          "examples": [
+            "https://www.canvasxpress.org/examples/scatter2d-1.html",
+            "https://www.canvasxpress.org/examples/scatter2d-2.html",
+            "https://www.canvasxpress.org/examples/scatter2d-3.html"
+          ]
+        },
+        {
+          "name": "ScatterBubble2D",
+          "summary": "2D scatter with sized bubbles.",
+          "aliases": [
+            "bubble chart",
+            "bubble plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 5,
+          "examples": [
+            "https://www.canvasxpress.org/examples/scatterbubble2d-1.html",
+            "https://www.canvasxpress.org/examples/scatterbubble2d-2.html",
+            "https://www.canvasxpress.org/examples/scatterbubble2d-3.html"
+          ]
+        },
+        {
+          "name": "Spaghetti",
+          "summary": "Spaghetti plot of many individual trajectories.",
+          "aliases": [
+            "spaghetti plot",
+            "trajectories"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Stacked",
+          "summary": "Stacked bar chart.",
+          "aliases": [
+            "stacked bar",
+            "stacked column"
+          ],
+          "aliasOf": null,
+          "exampleCount": 7,
+          "examples": [
+            "https://www.canvasxpress.org/examples/stacked-1.html",
+            "https://www.canvasxpress.org/examples/stacked-2.html",
+            "https://www.canvasxpress.org/examples/stacked-3.html"
+          ]
+        },
+        {
+          "name": "StackedLine",
+          "summary": "Stacked bars combined with lines on a second axis.",
+          "aliases": [
+            "stacked bar and line"
+          ],
+          "aliasOf": null,
+          "exampleCount": 2,
+          "examples": [
+            "https://www.canvasxpress.org/examples/stackedline-1.html",
+            "https://www.canvasxpress.org/examples/stackedline-2.html"
+          ]
+        },
+        {
+          "name": "StackedPercent",
+          "summary": "100% stacked bar chart.",
+          "aliases": [
+            "100% stacked",
+            "percent stacked",
+            "proportional bar"
+          ],
+          "aliasOf": null,
+          "exampleCount": 5,
+          "examples": [
+            "https://www.canvasxpress.org/examples/stackedpercent-1.html",
+            "https://www.canvasxpress.org/examples/stackedpercent-2.html",
+            "https://www.canvasxpress.org/examples/stackedpercent-3.html"
+          ]
+        },
+        {
+          "name": "StackedPercentLine",
+          "summary": "100% stacked bars combined with lines.",
+          "aliases": [
+            "percent stacked and line"
+          ],
+          "aliasOf": null,
+          "exampleCount": 2,
+          "examples": [
+            "https://www.canvasxpress.org/examples/stackedpercentline-1.html",
+            "https://www.canvasxpress.org/examples/stackedpercentline-2.html"
+          ]
+        },
+        {
+          "name": "Streamgraph",
+          "summary": "Streamgraph (centred stacked areas).",
+          "aliases": [
+            "streamgraph",
+            "stream graph",
+            "themeriver"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "TagCloud",
+          "summary": "Tag / word cloud.",
+          "aliases": [
+            "tag cloud"
+          ],
+          "aliasOf": null,
+          "exampleCount": 1,
+          "examples": [
+            "https://www.canvasxpress.org/examples/tagcloud-1.html"
+          ]
+        },
+        {
+          "name": "TimeSeries",
+          "summary": "Time-series chart on a date axis.",
+          "aliases": [
+            "time series chart",
+            "timeline chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Tornado",
+          "summary": "Tornado chart (back-to-back horizontal bars).",
+          "aliases": [
+            "tornado chart",
+            "butterfly chart",
+            "population pyramid"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Waterfall",
+          "summary": "Waterfall chart of cumulative changes.",
+          "aliases": [
+            "waterfall chart",
+            "bridge chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 2,
+          "examples": [
+            "https://www.canvasxpress.org/examples/waterfall-4.html",
+            "https://www.canvasxpress.org/examples/waterfall-5.html"
+          ]
+        },
+        {
+          "name": "WordCloud",
+          "summary": "Word cloud.",
+          "aliases": [
+            "word cloud",
+            "wordcloud"
+          ],
+          "aliasOf": "TagCloud",
+          "exampleCount": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "id": "charts-distribution",
+      "name": "Distributions and multivariate charts",
+      "summary": "Charts that show the shape of data and relationships between many variables.",
+      "features": [
+        {
+          "kind": "category",
+          "name": "Bin Plots",
+          "summary": "Parameters used to create bin plots in 2d scatter plots",
+          "params": [
+            "binplotBins",
+            "binplotBinWidth",
+            "binplotShape",
+            "binplotColorScheme"
+          ],
+          "graphTypes": [
+            "Bin",
+            "Binplot",
+            "Hex",
+            "Hexplot",
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "2d binning"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Boxplot Graphs",
+          "summary": "General parameters in Boxplot Graphs",
+          "params": [
+            "boxplotOutliersRatio",
+            "boxplotOutliersColor",
+            "boxplotOutliersBorderColor",
+            "boxplotOutliersShape",
+            "boxplotWhiskersType",
+            "boxplotType",
+            "boxplotNotched",
+            "boxplotTransparency",
+            "boxplotColor",
+            "boxplotVarWidth",
+            "boxplotCoef",
+            "boxplotHingeFunction",
+            "showBoxplotOriginalData",
+            "boxplotOriginalDataColor",
+            "boxplotDataPointTransparency",
+            "boxplotBorderColor",
+            "boxplotMedianColor",
+            "boxplotMedianWidth",
+            "boxplotMean",
+            "boxplotMeanColor",
+            "boxplotMeanBorderColor",
+            "boxplotConnect",
+            "boxplotConnectWidth"
+          ],
+          "graphTypes": [
+            "Boxplot"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Contours",
+          "summary": "Parameters used to create contours in one and two dimensional plots",
+          "params": [
+            "isContour",
+            "contourFilled",
+            "contourFilledTransparency",
+            "showContourBands",
+            "contourBandsColor",
+            "contourLevelWidth",
+            "contourLevelNumber",
+            "contourStat",
+            "contourType",
+            "contourLevels",
+            "showContourLevel",
+            "showContourDataPoints",
+            "contourDataPointsColor",
+            "contourColorScheme"
+          ],
+          "graphTypes": [
+            "Pareto",
+            "Heatmap",
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "contour plot",
+            "2d density contour"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Correlation Graphs",
+          "summary": "General parameters for correlation",
+          "params": [
+            "correlationAxis",
+            "correlationAnchorLegend",
+            "correlationAnchorLegendAlignWidth",
+            "correlationLabelInterval",
+            "correlationType"
+          ],
+          "graphTypes": [
+            "Correlation"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "correlation matrix",
+            "correlogram",
+            "corrplot"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Density Plots",
+          "summary": "Parameters used to create density plots in 1d and 2d scatter plots",
+          "params": [
+            "showScatterDensity",
+            "densityKernel",
+            "densityPosition",
+            "bandwidthRule",
+            "bandwidthCut",
+            "bandwidthAdjust"
+          ],
+          "graphTypes": [
+            "Density",
+            "Distribution",
+            "Histogram",
+            "Ridgeline",
+            "Violin"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "kde",
+            "kernel density"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "General One Dimensional Graphs",
+          "summary": "General properties used in one dimensional visualizations",
+          "params": [
+            "graphOrientation",
+            "invertGraph"
+          ],
+          "graphTypes": [
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bullet",
+            "Cleveland",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Gantt",
+            "Heatmap",
+            "Line",
+            "Lollipop",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "TagCloud",
+            "Tornado",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Histograms",
+          "summary": "Parameters used to create histograms in 2d scatter plots",
+          "params": [
+            "histogramAsDotplot",
+            "histogramBinWidth",
+            "histogramBins",
+            "histogramBreaks",
+            "histogramDensityFillTransparency",
+            "histogramDotplotBorderColor",
+            "histogramDotplotBorderLineType",
+            "histogramDotplotBorderSize",
+            "histogramDotplotColor",
+            "histogramLowest",
+            "histogramMedianLineType",
+            "histogramPathColor",
+            "histogramPathFillTransparency",
+            "histogramPathWidth",
+            "histogramRight",
+            "histogramSizeEstimator",
+            "histogramStat",
+            "histogramType",
+            "showFilledHistogramDensity",
+            "showFilledHistogramPath",
+            "showHistogram",
+            "showHistogramBars",
+            "showHistogramDataPoints",
+            "showHistogramDensity",
+            "showHistogramMedian",
+            "showHistogramPath",
+            "showHistogramQuantiles",
+            "histogramStackRatio",
+            "histogramStackDir"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Parallel Coordinates Graphs",
+          "summary": "General parameters in Parallel Coordinates Graphs",
+          "params": [],
+          "graphTypes": [
+            "ParallelCoordinates"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Ridgeline Plots",
+          "summary": "Parameters used to create ridgeline plots in 1d and 2d scatter plots",
+          "params": [
+            "ridgelineScale",
+            "ridgelineViolin"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Scatter Plot Matrix",
+          "summary": "Parameters used to create a matrix of 2d scatter plots",
+          "params": [
+            "scatterPlotMatrix",
+            "scatterPlotMatrixType",
+            "showScatterPlotMatrixLabels"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Violin Plots",
+          "summary": "General parameters in Boxplot Graphs",
+          "params": [
+            "showViolinBoxplot",
+            "violinTrim",
+            "violinScale",
+            "showBoxplotIfViolin",
+            "boxplotWidthRatioIfViolin",
+            "violinTransparency",
+            "violinColor",
+            "violinBorderColor",
+            "showViolinQuantiles",
+            "violinSide",
+            "violinPointsSide",
+            "violinPartitionOrder"
+          ],
+          "graphTypes": [
+            "Boxplot"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        }
+      ],
+      "graphTypes": [
+        {
+          "name": "Boxplot",
+          "summary": "Box-and-whisker plot with outliers, notches and overlaid points.",
+          "aliases": [
+            "box plot",
+            "box and whisker"
+          ],
+          "aliasOf": null,
+          "exampleCount": 59,
+          "examples": [
+            "https://www.canvasxpress.org/examples/boxplot-1.html",
+            "https://www.canvasxpress.org/examples/boxplot-2.html",
+            "https://www.canvasxpress.org/examples/boxplot-3.html"
+          ]
+        },
+        {
+          "name": "Bin",
+          "summary": "2D binned scatter (rectangular bins).",
+          "aliases": [
+            "2d histogram",
+            "bin2d"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Binplot",
+          "summary": "2D binned plot (rectangular bins).",
+          "aliases": [
+            "binplot"
+          ],
+          "aliasOf": "Bin",
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "CDF",
+          "summary": "Empirical cumulative distribution function.",
+          "aliases": [
+            "ecdf",
+            "cumulative distribution"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Contour",
+          "summary": "Contour plot of a 2D density or surface.",
+          "aliases": [
+            "contour"
+          ],
+          "aliasOf": null,
+          "exampleCount": 1,
+          "examples": [
+            "https://www.canvasxpress.org/examples/contour-6.html"
+          ]
+        },
+        {
+          "name": "Correlation",
+          "summary": "Correlation matrix plot.",
+          "aliases": [
+            "correlation heatmap",
+            "correlogram"
+          ],
+          "aliasOf": null,
+          "exampleCount": 3,
+          "examples": [
+            "https://www.canvasxpress.org/examples/correlation-1.html",
+            "https://www.canvasxpress.org/examples/correlation-2.html",
+            "https://www.canvasxpress.org/examples/correlation-3.html"
+          ]
+        },
+        {
+          "name": "Density",
+          "summary": "Kernel density plot.",
+          "aliases": [
+            "density plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Distribution",
+          "summary": "Distribution plot (same renderer as Histogram).",
+          "aliases": [
+            "distribution chart"
+          ],
+          "aliasOf": "Histogram",
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Hex",
+          "summary": "Hexagonal-bin scatter.",
+          "aliases": [
+            "hexbin",
+            "hexagonal binning"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Hexplot",
+          "summary": "Hexagonal-bin plot.",
+          "aliases": [
+            "hexplot"
+          ],
+          "aliasOf": "Hex",
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Histogram",
+          "summary": "Histogram with configurable bins.",
+          "aliases": [
+            "histogram"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "ParallelCoordinates",
+          "summary": "Parallel coordinates plot.",
+          "aliases": [
+            "parallel coordinates",
+            "parallel axes"
+          ],
+          "aliasOf": null,
+          "exampleCount": 2,
+          "examples": [
+            "https://www.canvasxpress.org/examples/parallelcoordinates-1.html",
+            "https://www.canvasxpress.org/examples/parallelcoordinates-2.html"
+          ]
+        },
+        {
+          "name": "QQ",
+          "summary": "Quantile-quantile plot.",
+          "aliases": [
+            "qq plot",
+            "q-q plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Quantile",
+          "summary": "Quantile-quantile plot (same renderer as QQ).",
+          "aliases": [
+            "quantile-quantile"
+          ],
+          "aliasOf": "QQ",
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Ridgeline",
+          "summary": "Ridgeline plot of stacked densities.",
+          "aliases": [
+            "ridgeline",
+            "joy plot",
+            "ggridges"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Scatter3D",
+          "summary": "3D scatter plot with rotation.",
+          "aliases": [
+            "3d scatter",
+            "3d plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 11,
+          "examples": [
+            "https://www.canvasxpress.org/examples/scatter3d-1.html",
+            "https://www.canvasxpress.org/examples/scatter3d-2.html",
+            "https://www.canvasxpress.org/examples/scatter3d-3.html"
+          ]
+        },
+        {
+          "name": "SPLOM",
+          "summary": "Scatter-plot matrix.",
+          "aliases": [
+            "scatterplot matrix",
+            "pairs plot",
+            "ggpairs"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Violin",
+          "summary": "Violin plot.",
+          "aliases": [
+            "violin plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        }
+      ]
+    },
+    {
+      "id": "charts-scientific",
+      "name": "Scientific and omics charts",
+      "summary": "Chart types for genomics, clinical and life-science data.",
+      "features": [
+        {
+          "kind": "category",
+          "name": "Circular Graph Arc Sectors",
+          "summary": "General parameters for arc sectors in circular graphs",
+          "params": [
+            "circularArcSectorSeparation",
+            "circularArcSectorRadius"
+          ],
+          "graphTypes": [
+            "Circular"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Circular Graph Connections",
+          "summary": "General parameters for connections in circular graphs",
+          "params": [
+            "showCircularConnections",
+            "circularConnections",
+            "circularConnectionsTransparency"
+          ],
+          "graphTypes": [
+            "Circular"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Circular Graph Tracks",
+          "summary": "General parameters for tracks in circular graphs",
+          "params": [
+            "circularTrackSeparation",
+            "circularTrackName",
+            "circularTrackGraphType",
+            "circularTrackGraphWeight",
+            "circularTrackOrder"
+          ],
+          "graphTypes": [
+            "Circular"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Circular Graphs",
+          "summary": "General parameters in circular graphs",
+          "params": [
+            "circularType",
+            "circularCenterProportion",
+            "circularRotate",
+            "circularArc",
+            "circularLetterSeparationFactor",
+            "circularOverlayLevelOrientation",
+            "circularSampleLabelOrientation",
+            "circularLabelsAlign",
+            "circularScalesAlign",
+            "circularAnchorsAlign",
+            "circularAnchors2Align",
+            "circularDataPosition",
+            "circularAnchorLength",
+            "circularOverlayThickness",
+            "circularAnchorColor"
+          ],
+          "graphTypes": [
+            "Circular"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "circos"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Fish Graphs",
+          "summary": "General parameters in fish graphs",
+          "params": [
+            "fishParents",
+            "fishTimepoints",
+            "fishSeparateIndependentClones",
+            "fishShape",
+            "fishAxis",
+            "fishAxisLabels",
+            "fishCloneLabels"
+          ],
+          "graphTypes": [
+            "Fish"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Genome Browser",
+          "summary": "General parameters used in genome browser",
+          "params": [
+            "genomeTicks",
+            "wireColor",
+            "genomeResolution"
+          ],
+          "graphTypes": [
+            "Genome"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Genome Browser Features",
+          "summary": "General parameters used in genome browser features",
+          "params": [
+            "featureNameAlign",
+            "featureNameBaseline",
+            "featureNameColor",
+            "featureNameFontSize",
+            "featureNameFontStyle",
+            "featureNameMargin",
+            "featureNameRotate",
+            "featureNameScaleFontFactor",
+            "showFeatureNameThereshold",
+            "featureFillColor",
+            "featureDirColor",
+            "maxFeatureStringLen",
+            "featureWidthDefault",
+            "featureHeightDefault",
+            "featureSpliceStyle",
+            "featureTraceHeight",
+            "featureTraceTrim",
+            "featureTracesShow",
+            "featureQualityHeight",
+            "featureQualityValues",
+            "featureQualityShow",
+            "featureSignalToNoiseHeight",
+            "featureSignalToNoiseValues",
+            "featureSignalToNoiseShow",
+            "featureCoordinateHeight",
+            "featureCoordinateShow",
+            "featureTranslateHeight",
+            "featureTranslateShow",
+            "featureTypeDefault",
+            "featureStaggered"
+          ],
+          "graphTypes": [
+            "Genome"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Genome Browser Sequences",
+          "summary": "General parameters used in genome browser sequeces",
+          "params": [
+            "sequenceAlign",
+            "sequenceBaseline",
+            "sequenceColor",
+            "sequenceFontSize",
+            "sequenceFontStyle",
+            "sequenceMargin",
+            "sequenceRotate",
+            "sequenceScaleFontFactor",
+            "sequenceFillColor",
+            "sequenceGAPColor",
+            "sequenceAColor",
+            "sequenceBColor",
+            "sequenceCColor",
+            "sequenceDColor",
+            "sequenceEColor",
+            "sequenceFColor",
+            "sequenceGColor",
+            "sequenceHColor",
+            "sequenceIColor",
+            "sequenceKColor",
+            "sequenceLColor",
+            "sequenceMColor",
+            "sequenceNColor",
+            "sequencePColor",
+            "sequenceQColor",
+            "sequenceRColor",
+            "sequenceSColor",
+            "sequenceTColor",
+            "sequenceUColor",
+            "sequenceVColor",
+            "sequenceWColor",
+            "sequenceXColor",
+            "sequenceYColor",
+            "sequenceZColor",
+            "sequenceStartColor",
+            "sequenceEndColor"
+          ],
+          "graphTypes": [
+            "Genome"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Genome Browser Tracks",
+          "summary": "General parameters used in genome browser tracks",
+          "params": [
+            "trackNameAlign",
+            "trackNameBaseline",
+            "trackNameColor",
+            "trackNameFontSize",
+            "trackNameFontStyle",
+            "trackNameMargin",
+            "trackNameRotate",
+            "trackNameScaleFontFactor",
+            "trackFillColor",
+            "trackDirColor",
+            "subtracksMaxDefault"
+          ],
+          "graphTypes": [
+            "Genome"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Heatmap Color Indicators",
+          "summary": "General parameters for heatmap color indicators",
+          "params": [
+            "showHeatmapIndicator",
+            "heatmapIndicatorHeight",
+            "heatmapIndicatorWidth",
+            "adjustAspectRatioHeatmapIndicator",
+            "heatmapIndicatorPosition",
+            "heatmapIndicatorBeforeOverlays",
+            "heatmapIndicatorHistogram",
+            "heatmapIndicatorHistogramColor"
+          ],
+          "graphTypes": [
+            "Heatmap"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "annotation bars",
+            "color bars"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Heatmap Graphs",
+          "summary": "General parameters for heatmaps",
+          "params": [
+            "heatmapAutoAdjust",
+            "heatmapCellBox",
+            "heatmapCellBoxColor",
+            "heatmapCellBoxWidth",
+            "heatmapCellBoxColorHighlight",
+            "heatmapCellBoxHighlightWidth",
+            "heatmapHighlightByRowCol",
+            "heatmapHighlightByRowColIntersectionColor",
+            "heatmapHighlightByRowColIntersectionWidth",
+            "heatmapCellMarkers",
+            "heatmapCellMarkerShape",
+            "heatmapCellMarkerColorColor",
+            "heatmapCellMarkerSize",
+            "heatmapCellMarkerWidth",
+            "varTitleLabelPosition",
+            "smpTitleLabelPosition",
+            "heatmapType",
+            "heatmapCollapse"
+          ],
+          "graphTypes": [
+            "Heatmap"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Ideograms",
+          "summary": "General parameters for Ideograms",
+          "params": [
+            "ideogram",
+            "ideogramChromosomeNumber",
+            "ideogramSegmentAlign",
+            "ideogramSegmentBaseline",
+            "ideogramSegmentColor",
+            "ideogramSegmentFontSize",
+            "ideogramSegmentFontStyle",
+            "ideogramSegmentMargin",
+            "ideogramSegmentRotate",
+            "ideogramSegmentScaleFontFactor",
+            "ideogramShowFullChromosome",
+            "showIdeogram",
+            "ideogramHeight",
+            "ideogramChromosome",
+            "ideogramChromosomePosition"
+          ],
+          "graphTypes": [
+            "Circular",
+            "Genome"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "chromosome ideogram",
+            "karyotype"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Kaplan Meier Plots",
+          "summary": "Parameters used to create kaplan meier curves in 2d scatter plots",
+          "params": [
+            "showKMConfidenceIntervals",
+            "showKMMedianSurvivalTime",
+            "kmConfidenceLevel",
+            "kmConfidenceIntervalType",
+            "kmInvertCensored",
+            "kmCensoredRug",
+            "kmRiskTable",
+            "kmPvalue",
+            "kmTime",
+            "kmCxplot",
+            "kmColors"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Manhattan Plots",
+          "summary": "General parameters in scatter plots",
+          "params": [
+            "chromosomeLengths",
+            "armLengths",
+            "manhattanMarkerChromosomeNumber",
+            "manhattanMarkerPosition",
+            "manhattanMarkerLogPValue",
+            "manhattanCNV",
+            "manhattanRangeStart",
+            "manhattanRangeEnd",
+            "showmanhattanRangeMiddle",
+            "manhattanRangeLineWidth",
+            "manhattanColors",
+            "manhattanContrastColor"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Oncoprint Graphs",
+          "summary": "General parameters for oncoprints",
+          "params": [
+            "oncoprintCNA",
+            "oncoprintMUT",
+            "oncoprintEXP",
+            "oncoprintNoAlterations",
+            "oncoprintColSummary",
+            "oncoprintRowSummary",
+            "oncoprintAlteredText",
+            "oncoprintPresorted",
+            "showHeatmapOncoprint",
+            "oncoprintHeatmapPosition"
+          ],
+          "graphTypes": [
+            "Heatmap"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "R-Axis",
+          "summary": "R axis parameters",
+          "params": [
+            "rAxis",
+            "rAxisCeilValue",
+            "rAxisExact",
+            "rAxisFactorValue",
+            "rAxisFloorValue",
+            "rAxisGridMajorColor",
+            "rAxisGridMajorLineType",
+            "rAxisGridMajorShow",
+            "rAxisGridMajorTransparency",
+            "rAxisGridMajorWidth",
+            "rAxisGridMinorColor",
+            "rAxisGridMinorLineType",
+            "rAxisGridMinorShow",
+            "rAxisGridMinorTransparency",
+            "rAxisGridMinorWidth",
+            "rAxisLabelOrientation",
+            "rAxisLogTicksColor",
+            "rAxisLogTicksLength",
+            "rAxisLogTicksLineType",
+            "rAxisLogTicksShow",
+            "rAxisLogTicksTransparency",
+            "rAxisLogTicksWidth",
+            "rAxisPercentShow",
+            "rAxisSetLabels",
+            "rAxisSetMinorValues",
+            "rAxisSetValues",
+            "rAxisShow",
+            "rAxisTextAlign",
+            "rAxisTextBaseline",
+            "rAxisTextColor",
+            "rAxisTextFontSize",
+            "rAxisTextFontStyle",
+            "rAxisTextMargin",
+            "rAxisTextRotate",
+            "rAxisTextScaleFontFactor",
+            "rAxisTickFormat",
+            "rAxisTicks",
+            "rAxisTicksColor",
+            "rAxisTicksLength",
+            "rAxisTicksLineType",
+            "rAxisTicksShow",
+            "rAxisTicksTransparency",
+            "rAxisTicksWidth",
+            "rAxisTime",
+            "rAxisTitle",
+            "rAxisTitleAlign",
+            "rAxisTitleBaseline",
+            "rAxisTitleColor",
+            "rAxisTitleDynamic",
+            "rAxisTitleFontSize",
+            "rAxisTitleFontStyle",
+            "rAxisTitleMargin",
+            "rAxisTitleRotate",
+            "rAxisTitleScaleFontFactor",
+            "rAxisTransform",
+            "rAxisTransformLinearTicks",
+            "rAxisTransformTicks",
+            "setMaxR",
+            "setMinR"
+          ],
+          "graphTypes": [
+            "Circular"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Swimmer Graphs",
+          "summary": "General parameters in swimmer graphs",
+          "params": [
+            "swimHigh",
+            "swimStart",
+            "swimEnd",
+            "swimStatus",
+            "swimHighCap"
+          ],
+          "graphTypes": [
+            "Bar"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "swimmer plot",
+            "swimmer lane"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "UpSet Plots",
+          "summary": "General parameters for upset",
+          "params": [
+            "nUpSets",
+            "upSetSets",
+            "upsetShadeColor",
+            "upsetShadeAlpha",
+            "upsetMatrixDotAlpha",
+            "upsetMatrixColor",
+            "upsetMainBarColor",
+            "upsetSetsBarColor",
+            "upsetPointSizeFactor",
+            "upsetLineSizeFactor",
+            "upsetMatrixPlotBarRatio"
+          ],
+          "graphTypes": [
+            "Heatmap"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Venn Diagrams",
+          "summary": "General parameters in Venn diagrams",
+          "params": [
+            "vennLegendColors",
+            "vennGroups",
+            "vennColors"
+          ],
+          "graphTypes": [
+            "Venn"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Visium Plots",
+          "summary": "General parameters in scatter plots",
+          "params": [
+            "visiumFlip",
+            "visiumPanning",
+            "visiumFixedAspectRatio"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        }
+      ],
+      "graphTypes": [
+        {
+          "name": "Circular",
+          "summary": "Circos-style circular plot with tracks, arcs, connections and ideograms.",
+          "aliases": [
+            "circos",
+            "circular genome plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 31,
+          "examples": [
+            "https://www.canvasxpress.org/examples/circular-1.html",
+            "https://www.canvasxpress.org/examples/circular-2.html",
+            "https://www.canvasxpress.org/examples/circular-3.html"
+          ]
+        },
+        {
+          "name": "Fish",
+          "summary": "Fish plot of clonal evolution over time.",
+          "aliases": [
+            "fish plot",
+            "clonal evolution",
+            "muller plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 5,
+          "examples": [
+            "https://www.canvasxpress.org/examples/fish-1.html",
+            "https://www.canvasxpress.org/examples/fish-2.html",
+            "https://www.canvasxpress.org/examples/fish-3.html"
+          ]
+        },
+        {
+          "name": "Genome",
+          "summary": "Genome browser with feature, sequence and signal tracks.",
+          "aliases": [
+            "genome browser",
+            "igv-like tracks",
+            "genomic tracks"
+          ],
+          "aliasOf": null,
+          "exampleCount": 4,
+          "examples": [
+            "https://www.canvasxpress.org/examples/genome-1.html",
+            "https://www.canvasxpress.org/examples/genome-2.html",
+            "https://www.canvasxpress.org/examples/genome-3.html"
+          ]
+        },
+        {
+          "name": "Heatmap",
+          "summary": "Heatmap with clustering dendrograms, annotation colour bars and overlays.",
+          "aliases": [
+            "heat map",
+            "clustered heatmap",
+            "complexheatmap",
+            "pheatmap"
+          ],
+          "aliasOf": null,
+          "exampleCount": 36,
+          "examples": [
+            "https://www.canvasxpress.org/examples/heatmap-1.html",
+            "https://www.canvasxpress.org/examples/heatmap-2.html",
+            "https://www.canvasxpress.org/examples/heatmap-3.html"
+          ]
+        },
+        {
+          "name": "KaplanMeier",
+          "summary": "Kaplan-Meier survival curves.",
+          "aliases": [
+            "survival curve",
+            "kaplan-meier",
+            "survival analysis"
+          ],
+          "aliasOf": null,
+          "exampleCount": 1,
+          "examples": [
+            "https://www.canvasxpress.org/examples/kaplan-meier-9.html"
+          ]
+        },
+        {
+          "name": "Oncoprint",
+          "summary": "Oncoprint of genomic alterations per sample.",
+          "aliases": [
+            "oncoprint",
+            "mutation matrix",
+            "waterfall mutation plot"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Upset",
+          "summary": "UpSet plot of set intersections.",
+          "aliases": [
+            "upset plot",
+            "set intersections"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Volcano",
+          "summary": "Volcano plot (fold change vs significance).",
+          "aliases": [
+            "volcano plot",
+            "enhancedvolcano"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Venn",
+          "summary": "Venn diagram.",
+          "aliases": [
+            "venn diagram",
+            "euler diagram"
+          ],
+          "aliasOf": null,
+          "exampleCount": 3,
+          "examples": [
+            "https://www.canvasxpress.org/examples/venn-1.html",
+            "https://www.canvasxpress.org/examples/venn-2.html",
+            "https://www.canvasxpress.org/examples/venn-3.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charts-flow",
+      "name": "Networks, flows and hierarchies",
+      "summary": "Graphs of connections, flows between stages and nested structures.",
+      "features": [
+        {
+          "kind": "category",
+          "name": "Bubble Graphs",
+          "summary": "General parameters in circular bubble graphs",
+          "params": [
+            "bubbleColor",
+            "bubbleOutlineColor",
+            "bubbleLabel",
+            "bubbleLabelPosition",
+            "bubbleLabelLineType"
+          ],
+          "graphTypes": [
+            "Bubble"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Chord Graphs",
+          "summary": "General parameters in circular chord graphs",
+          "params": [
+            "chordThickness",
+            "chordColor",
+            "chordScaleShow"
+          ],
+          "graphTypes": [
+            "Chord"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Hierarchy",
+          "summary": "General parameters to build hierarchy for circular (sunburst) trees and bubbles graphs",
+          "params": [
+            "hierarchy"
+          ],
+          "graphTypes": [
+            "Bubble",
+            "Circular",
+            "Sunburst",
+            "Tree",
+            "TreeBracket",
+            "TreeBracket"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Network Algorithm Parameters",
+          "summary": "General parameters used in the layout algorithms for networks",
+          "params": [
+            "networkConvergenceThreshold",
+            "attractiveForceFunction",
+            "repulsiveForceFunction",
+            "useBarnesHutSimulation",
+            "networkDisjoint",
+            "networkSpeed",
+            "networkGravity",
+            "networkSpringLength",
+            "networkSpringCoeff",
+            "networkRepulsion",
+            "networkTheta",
+            "networkDragCoeff",
+            "networkTimeStep"
+          ],
+          "graphTypes": [
+            "Network"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "force-directed layout"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Network Cola Algorithm Parameters",
+          "summary": "General parameters used in the cola layout algorithm for networks",
+          "params": [
+            "networkColaLinkDistance",
+            "networkColaAvoidOverlaps",
+            "networkColaHandleDisconnected",
+            "networkColaConvergenceThreshold",
+            "networkColaGroupCompactness",
+            "networkColaSymmetricDiffLinkLengths",
+            "networkColaJaccardLinkLength",
+            "networkColaJaccardLinkLengthDefault",
+            "networkColaFlowLayoutAxis",
+            "networkColaFlowLayoutSeparation",
+            "networkColaStartUnconstrainedIterations",
+            "networkColaUserConstraintIterations",
+            "networkColaAllConstraintsIterations",
+            "networkColaGridSnapIterations",
+            "networkColaKeepRunning",
+            "networkColaCenterGraph"
+          ],
+          "graphTypes": [
+            "Network"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "cola layout",
+            "constraint layout"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Network Communities",
+          "summary": "General parameters used in network communities",
+          "params": [
+            "showNetworkCommunities",
+            "calculateNetworkCommunities",
+            "coordinateNetworkConvexHullCommunityColor",
+            "hullScale"
+          ],
+          "graphTypes": [
+            "Network"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "community detection",
+            "louvain",
+            "modularity"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Network Graphs",
+          "summary": "General parameters used in networks",
+          "params": [
+            "calculateLayout",
+            "edgeColor",
+            "edgeSeparationFactor",
+            "highlightNode",
+            "ignoreEventlessOrder",
+            "is3DNetwork",
+            "isNetworkMetrics",
+            "labelNodePosition",
+            "moveParentsWithChildren",
+            "networkFreeze",
+            "networkFreezeOnLoad",
+            "networkLayoutType",
+            "networkMaxIterations",
+            "networkNodesOnTop",
+            "networkRoot",
+            "nodeAlign",
+            "nodeBaseline",
+            "nodeColor",
+            "nodeFontSize",
+            "nodeFontStyle",
+            "nodeHighlightColor",
+            "nodeMargin",
+            "nodeRotate",
+            "nodeScaleFontFactor",
+            "nodeSizeScaleFactor",
+            "preScaleNetwork",
+            "showNetworkRadialLayout",
+            "showNodeNameSizeThreshold",
+            "showNodeNameThreshold",
+            "showNodeResizeHandles",
+            "networkVendor",
+            "networkProgressBarPosition"
+          ],
+          "graphTypes": [
+            "Network"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Network Node and Edge Attributes",
+          "summary": "General parameters used for nodes and edges in networks",
+          "params": [
+            "colorNodeBy",
+            "shapeNodeBy",
+            "sizeNodeBy",
+            "patternNodeBy",
+            "colorEdgeBy",
+            "sizeEdgeBy",
+            "lineEdgeBy",
+            "minEdgeSize",
+            "maxEdgeSize"
+          ],
+          "graphTypes": [
+            "Network"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Sankey Diagrams",
+          "summary": "General parameters in sankey diagrams",
+          "params": [
+            "sankeyAxes",
+            "sankeyAxesOrder",
+            "sankeyLinkLineWidth",
+            "sankeyLinkOrder",
+            "sankeyLinksColor",
+            "sankeyLinksOpacity",
+            "sankeyLodeGuidance",
+            "sankeyNodePadding",
+            "sankeyNodeSort",
+            "sankeyNodeWidth",
+            "sankeyNodesColor",
+            "sankeyOutlineColor",
+            "sankeySource",
+            "sankeyTarget",
+            "sankeyTextAlign",
+            "sankeyTextBaseline",
+            "sankeyTextColor",
+            "sankeyTextFontSize",
+            "sankeyTextFontStyle",
+            "sankeyTextMargin",
+            "sankeyTextRotate",
+            "sankeyTextScaleFontFactor",
+            "sankeyTextShow",
+            "sankeyTitleAlign",
+            "sankeyTitleBaseline",
+            "sankeyTitleColor",
+            "sankeyTitleFontSize",
+            "sankeyTitleFontStyle",
+            "sankeyTitleMargin",
+            "sankeyTitleRotate",
+            "sankeyTitleScaleFontFactor",
+            "sankeyType",
+            "sankeyTitleShow",
+            "sankeyTitlePosition",
+            "sankeyTextAuto",
+            "sankeyTextInside",
+            "sankeyColorNodesByValue",
+            "sankeyNodeColorMap",
+            "sankeyNodeLegendTitle"
+          ],
+          "graphTypes": [
+            "Sankey"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Tree Bracket",
+          "summary": "General parameters in tree brackets",
+          "params": [
+            "treeBracketFactor",
+            "treeBracketLengthFactor"
+          ],
+          "graphTypes": [
+            "Tree"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Treemap Graphs",
+          "summary": "General parameters for treemaps",
+          "params": [
+            "treemapBorderWidth",
+            "treemapBorderColor"
+          ],
+          "graphTypes": [
+            "Treemap"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Trees",
+          "summary": "General parameters in trees",
+          "params": [
+            "treeNodeSizeScaleFactor",
+            "treeLabelAlign",
+            "treeLinkColor",
+            "treeNodeOutlineColor",
+            "treeLinkWidth",
+            "treeInverted",
+            "treeType",
+            "treeClickDisable"
+          ],
+          "graphTypes": [
+            "Tree"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Workflow Charts",
+          "summary": "General parameters in workflow charts",
+          "params": [
+            "workflowCurrentAlign",
+            "workflowCurrentBaseline",
+            "workflowCurrentColor",
+            "workflowCurrentFontSize",
+            "workflowCurrentFontStyle",
+            "workflowCurrentMargin",
+            "workflowCurrentRotate",
+            "workflowCurrentScaleFontFactor",
+            "workflowFrameDuration",
+            "workflowLoop",
+            "workflowWidth",
+            "workflowBackgroundColor",
+            "workflowBorderColor",
+            "workflowTextColor",
+            "workflowHoverColor",
+            "workflowActiveColor",
+            "workflowSliderTrackColor",
+            "workflowSliderFillColor",
+            "workflowSliderThumbColor",
+            "workflowSliderThumbBorderColor",
+            "workflowListLabelFontSize",
+            "workflowListTickFontSize",
+            "workflowListTextColor",
+            "workflowListTickColor",
+            "workflowButtonBackgroundColor",
+            "workflowButtonBorderColor",
+            "workflowTimelineBorderColor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "workflow",
+            "flowchart",
+            "pipeline diagram"
+          ]
+        }
+      ],
+      "graphTypes": [
+        {
+          "name": "Alluvial",
+          "summary": "Alluvial diagram of flows between categorical stages.",
+          "aliases": [
+            "alluvial",
+            "ggalluvial"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Bubble",
+          "summary": "Circle-packing bubble chart of a hierarchy.",
+          "aliases": [
+            "circle packing",
+            "packed bubbles"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Chord",
+          "summary": "Chord diagram of flows between groups on a circle.",
+          "aliases": [
+            "chord diagram"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Network",
+          "summary": "Network graph with force-directed, circular, radial and cola layouts and community detection.",
+          "aliases": [
+            "network graph",
+            "node-link diagram",
+            "graph visualization",
+            "force graph"
+          ],
+          "aliasOf": null,
+          "exampleCount": 36,
+          "examples": [
+            "https://www.canvasxpress.org/examples/network-1.html",
+            "https://www.canvasxpress.org/examples/network-2.html",
+            "https://www.canvasxpress.org/examples/network-3.html"
+          ]
+        },
+        {
+          "name": "Ribbon",
+          "summary": "Ribbon diagram: a Sankey-style flow of records across categorical axes (sankeyAxes).",
+          "aliases": [
+            "ribbon chart",
+            "ribbon diagram",
+            "parallel sets"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Sankey",
+          "summary": "Sankey diagram of flows between nodes.",
+          "aliases": [
+            "sankey diagram",
+            "flow diagram"
+          ],
+          "aliasOf": null,
+          "exampleCount": 19,
+          "examples": [
+            "https://www.canvasxpress.org/examples/sankey-1.html",
+            "https://www.canvasxpress.org/examples/sankey-2.html",
+            "https://www.canvasxpress.org/examples/sankey-3.html"
+          ]
+        },
+        {
+          "name": "Sunburst",
+          "summary": "Sunburst chart of a hierarchy.",
+          "aliases": [
+            "sunburst",
+            "radial treemap",
+            "multi-level pie"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Tree",
+          "summary": "Tree diagram / dendrogram layout.",
+          "aliases": [
+            "tree diagram",
+            "hierarchy tree"
+          ],
+          "aliasOf": null,
+          "exampleCount": 6,
+          "examples": [
+            "https://www.canvasxpress.org/examples/tree-1.html",
+            "https://www.canvasxpress.org/examples/tree-2.html",
+            "https://www.canvasxpress.org/examples/tree-3.html"
+          ]
+        },
+        {
+          "name": "TreeBracket",
+          "summary": "Tournament-style bracket drawn from a hierarchy (Final, Semifinal, ...).",
+          "aliases": [
+            "bracket",
+            "tournament bracket"
+          ],
+          "aliasOf": null,
+          "exampleCount": 0,
+          "examples": []
+        },
+        {
+          "name": "Treemap",
+          "summary": "Treemap of a hierarchy.",
+          "aliases": [
+            "treemap",
+            "tree map"
+          ],
+          "aliasOf": null,
+          "exampleCount": 2,
+          "examples": [
+            "https://www.canvasxpress.org/examples/treemap-1.html",
+            "https://www.canvasxpress.org/examples/treemap-2.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maps",
+      "name": "Maps",
+      "summary": "Geographic maps: choropleth, symbol and connection maps.",
+      "features": [
+        {
+          "kind": "category",
+          "name": "Maps",
+          "summary": "Geographic maps from TopoJSON/GeoJSON with built-in basemaps (continents, countries, US states, US zip codes), markers, connections and pie charts on regions.",
+          "params": [
+            "topoJSON",
+            "mapId",
+            "mapZipCodeIds",
+            "mapProjection",
+            "mapConfig",
+            "mapConfigFeatures",
+            "mapSmps",
+            "hiddenMapFeatures",
+            "visibleMapFeatures",
+            "mapColor",
+            "mapOutlineColor",
+            "mapMarkerShape",
+            "mapMarkerShapeScaleFactor"
+          ],
+          "graphTypes": [
+            "Map"
+          ],
+          "docs": [],
+          "examples": [
+            "https://www.canvasxpress.org/examples/map-1.html"
+          ],
+          "aliases": [
+            "map",
+            "maps",
+            "choropleth",
+            "geographic",
+            "geo",
+            "geojson",
+            "topojson",
+            "symbol map",
+            "bubble map",
+            "world map",
+            "us map",
+            "zip code map"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Maps Albers",
+          "summary": "Map albers properties used in map visualizations",
+          "params": [
+            "mapLatitudeOrigin",
+            "mapCentralMeridian",
+            "mapStandardParallel1",
+            "mapStandardParallel2"
+          ],
+          "graphTypes": [
+            "Map"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "albers projection"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Maps Leaflet",
+          "summary": "Map leaflet properties used in map visualizations",
+          "params": [
+            "useLeaflet",
+            "leafletAlpha",
+            "leafletZoomAlphaColor",
+            "leafletTileType"
+          ],
+          "graphTypes": [
+            "Map"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "leaflet",
+            "tile map",
+            "slippy map",
+            "basemap tiles"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Maps Orthographic",
+          "summary": "Map orthographic properties used in map visualizations",
+          "params": [
+            "mapGraticuleShow",
+            "mapGraticuleType"
+          ],
+          "graphTypes": [
+            "Map"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "globe",
+            "orthographic projection"
+          ]
+        }
+      ],
+      "graphTypes": [
+        {
+          "name": "Map",
+          "summary": "Geographic map (choropleth, markers, connections, region pies).",
+          "aliases": [
+            "choropleth map",
+            "geo chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 18,
+          "examples": [
+            "https://www.canvasxpress.org/examples/map-1.html",
+            "https://www.canvasxpress.org/examples/map-2.html",
+            "https://www.canvasxpress.org/examples/map-3.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kpi-finance",
+      "name": "KPI and finance",
+      "summary": "Indicator gauges, bullet graphs and financial composites.",
+      "features": [
+        {
+          "kind": "category",
+          "name": "Bullet Graphs",
+          "summary": "General parameters in bullet graphs",
+          "params": [
+            "bulletWidthRatio",
+            "bulletStyle",
+            "progressWidthRatio",
+            "progressTrackColor",
+            "bulletTargetVarName",
+            "bulletTargetWidthRatio",
+            "bulletTargetVarColor",
+            "bulletTargetType",
+            "bulletTargetLineWidth"
+          ],
+          "graphTypes": [
+            "Bullet"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Meter Graphs",
+          "summary": "General parameters in meter graphs",
+          "params": [
+            "meterType",
+            "meterAlign",
+            "meterCard",
+            "meterTopology",
+            "meterNeedleColor",
+            "meterBackgroundColor",
+            "meterCardBackgroundColor",
+            "meterCardBorderColor",
+            "meterThickness",
+            "meterTitleAlign",
+            "meterRingTitlePosition",
+            "meterProgress",
+            "meterRingValueDigits",
+            "meterMargin"
+          ],
+          "graphTypes": [
+            "Meter"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "OptionsWall Charts",
+          "summary": "Composite price + options-chain wall (candlestick center, put/call flanks, shared strike axis, spot ruler)",
+          "params": [
+            "optionsWallChain",
+            "optionsWallSpot",
+            "optionsWallExpiry",
+            "optionsWallCadence",
+            "optionsWallFlankMetric",
+            "optionsWallPutsSide",
+            "optionsWallPanelRatio",
+            "optionsWallMoneynessShading",
+            "optionsWallCenterSpot",
+            "optionsWallPutMin",
+            "optionsWallPutMax",
+            "optionsWallCallMin",
+            "optionsWallCallMax"
+          ],
+          "graphTypes": [
+            "OptionsWall"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Ranges",
+          "summary": "General parameters use in graphs that utilize ranges",
+          "params": [
+            "rangeColors",
+            "rangeColorTransparency",
+            "rangeStackShow",
+            "rangeStack",
+            "rangeSegments"
+          ],
+          "graphTypes": [
+            "Bar",
+            "Bullet",
+            "Meter"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "qualitative ranges",
+            "performance bands"
+          ]
+        }
+      ],
+      "graphTypes": [
+        {
+          "name": "Bullet",
+          "summary": "Bullet graph: a measure against a target over qualitative ranges.",
+          "aliases": [
+            "bullet chart",
+            "bullet graph",
+            "kpi"
+          ],
+          "aliasOf": null,
+          "exampleCount": 6,
+          "examples": [
+            "https://www.canvasxpress.org/examples/bullet-1.html",
+            "https://www.canvasxpress.org/examples/bullet-2.html",
+            "https://www.canvasxpress.org/examples/bullet-3.html"
+          ]
+        },
+        {
+          "name": "Meter",
+          "summary": "Meter / gauge / ring indicator sharing the range and target model with bullets.",
+          "aliases": [
+            "gauge",
+            "speedometer",
+            "dial",
+            "ring meter"
+          ],
+          "aliasOf": null,
+          "exampleCount": 24,
+          "examples": [
+            "https://www.canvasxpress.org/examples/meter-1.html",
+            "https://www.canvasxpress.org/examples/meter-2.html",
+            "https://www.canvasxpress.org/examples/meter-3.html"
+          ]
+        },
+        {
+          "name": "OptionsWall",
+          "summary": "Candlesticks plus an options chain (implied volatility / premium flanks) on a shared price axis.",
+          "aliases": [
+            "candlestick",
+            "ohlc",
+            "options chain",
+            "stock chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 2,
+          "examples": [
+            "https://www.canvasxpress.org/examples/optionswall-1.html",
+            "https://www.canvasxpress.org/examples/optionswall-2.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics built into the chart",
+      "summary": "Clustering, statistics, fits and forecasts computed inside the chart.",
+      "features": [
+        {
+          "kind": "feature",
+          "name": "Forecasting",
+          "summary": "showForecast projects a regularly spaced series forward with a prediction interval (SES, Holt, Holt-Winters; matches R stats::HoltWinters), per group or on date axes.",
+          "params": [
+            "showForecast"
+          ],
+          "docs": [
+            "https://www.canvasxpress.org/forecasting.html"
+          ],
+          "aliases": [
+            "time series forecast",
+            "predictive analytics"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Clustering",
+          "summary": "Hierarchical clustering (euclidean / manhattan / max distance; single / complete / average linkage) and k-means, on samples or variables, with mean/median imputation.",
+          "params": [
+            "clusteringDistance",
+            "linkage",
+            "clusterAxis",
+            "kmeansVarClusters",
+            "kmeansSmpClusters",
+            "maxIterations",
+            "imputeMethod",
+            "samplesClustered",
+            "variablesClustered",
+            "samplesKmeaned",
+            "variablesKmeaned"
+          ],
+          "graphTypes": [
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Circular",
+            "Cleveland",
+            "Correlation",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Heatmap",
+            "Line",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Tornado",
+            "Tree",
+            "TreeBracket",
+            "Treemap"
+          ],
+          "docs": [],
+          "examples": [
+            "https://www.canvasxpress.org/examples/heatmap-1.html"
+          ],
+          "aliases": [
+            "clustering",
+            "hierarchical clustering",
+            "hclust",
+            "k-means",
+            "kmeans",
+            "cluster analysis"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Confidence Intervals",
+          "summary": "Parameters used to create regression, loess and quantiles confidence intervals in 2d scatter plots",
+          "params": [
+            "confidenceIntervalColor",
+            "showConfidenceIntervals",
+            "confidenceIntervalsMax",
+            "confidenceLevel",
+            "confidenceIntervalColorCoordinate"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "confidence interval",
+            "confidence band"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data Transformation",
+          "summary": "log2/log10, exponential, square root, percentile, z-score and ratio transforms, plus a declarative dplyr/tidyr-style data pipeline.",
+          "params": [
+            "transformData",
+            "transformAxis",
+            "dataPipeline"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "transform",
+            "log scale data",
+            "z-score",
+            "normalize",
+            "dplyr",
+            "tidyr",
+            "data pipeline",
+            "wrangling"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Dendrograms",
+          "summary": "General parameters in dendrograms",
+          "params": [
+            "colorSmpDendrogramBy",
+            "colorVarDendrogramBy",
+            "showSmpDendrogram",
+            "showVarDendrogram",
+            "smpDendrogramHang",
+            "smpDendrogramNewick",
+            "smpDendrogramPosition",
+            "smpDendrogramUseHeight",
+            "varDendrogramHang",
+            "varDendrogramNewick",
+            "varDendrogramPosition",
+            "varDendrogramUseHeight",
+            "dendrogramHeight",
+            "dendrogramColor"
+          ],
+          "graphTypes": [
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Circular",
+            "Cleveland",
+            "Correlation",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Heatmap",
+            "Line",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Tornado",
+            "Tree",
+            "TreeBracket",
+            "Treemap"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "dendrogram",
+            "cluster tree"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Error Bars",
+          "summary": "Error bar and confidence intervals related parameters",
+          "params": [
+            "showErrorBars",
+            "errorBarsType",
+            "errorBarsColor",
+            "errorBarsThickness",
+            "errorBarsWidth",
+            "standardDeviationType"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "error bars",
+            "standard error",
+            "standard deviation"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Fit Lines",
+          "summary": "Parameters used to create regression, loess and quantiles lines in 2d scatter plots",
+          "params": [
+            "fitLineColor",
+            "fitLineTransparency",
+            "fitLineType",
+            "fitLineWidth"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [
+            "https://www.canvasxpress.org/examples/linear-fit-1.html",
+            "https://www.canvasxpress.org/examples/nonlinear-fit-1.html"
+          ],
+          "aliases": [
+            "trend line",
+            "trendline",
+            "fit line"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Forecast",
+          "summary": "Parameters used to project an ordered, regularly spaced series forward (exponential smoothing, as R stats::HoltWinters) in 2d scatter plots",
+          "params": [
+            "showForecast",
+            "forecastMethod",
+            "forecastHorizon",
+            "forecastSeasonLength",
+            "showForecastInterval",
+            "forecastLevel",
+            "forecastLineType"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [
+            "https://www.canvasxpress.org/forecasting.html"
+          ],
+          "examples": [],
+          "aliases": [
+            "forecast",
+            "forecasting",
+            "prediction interval",
+            "holt-winters",
+            "exponential smoothing"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Loess",
+          "summary": "Parameters used to create smooth lines in 2d scatter plots",
+          "params": [
+            "showLoessFit",
+            "loessDegree",
+            "loessSteps",
+            "loessBandwidth",
+            "loessCell",
+            "loessSpan",
+            "loessNormalize",
+            "loessFamily",
+            "loessSurface",
+            "loessStatistics"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "loess",
+            "lowess",
+            "smoothing",
+            "geom_smooth"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Quantile Regression Plots",
+          "summary": "Parameters used to create Quantile Regression plots in 2d scatter plots",
+          "params": [
+            "quantiles",
+            "showQuantileRegressionFit"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "quantile regression",
+            "quantreg"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Regression",
+          "summary": "Parameters used to create regression lines in 2d scatter plots",
+          "params": [
+            "showRegressionFit",
+            "showRegressionFitEquation",
+            "regressionFitEquationPosition",
+            "showRegressionFullRange",
+            "regressionType",
+            "regressionOrder"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "regression",
+            "linear regression",
+            "polynomial fit",
+            "curve fitting"
+          ]
+        }
+      ],
+      "graphTypes": []
+    },
+    {
+      "id": "data",
+      "name": "Data handling and wrangling",
+      "summary": "Input formats, filtering, sorting, selection, transforms and reshaping.",
+      "features": [
+        {
+          "kind": "feature",
+          "name": "Live streaming data",
+          "summary": "pushData appends new samples to a rendered chart and keeps a rolling window (streamWindow), recomputing fits and filters; dashboards subscribe panels to Server-Sent-Events streams without code.",
+          "params": [
+            "streamWindow"
+          ],
+          "docs": [
+            "https://www.canvasxpress.org/streaming.html"
+          ],
+          "aliases": [
+            "streaming",
+            "real-time",
+            "realtime",
+            "live data",
+            "live chart",
+            "sse",
+            "server-sent events"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "File formats and data loading",
+          "summary": "Load JSON, XML, CSV/TSV and other delimited text, Apache Parquet, GML/GPML network files (including WikiPathways) and archives, by drag-and-drop or URL.",
+          "params": [],
+          "docs": [
+            "https://www.canvasxpress.org/files.html"
+          ],
+          "aliases": [
+            "csv",
+            "tsv",
+            "parquet",
+            "json",
+            "xml",
+            "gpml",
+            "gml",
+            "file import",
+            "drag and drop",
+            "upload data",
+            "wikipathways"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Data wrangling",
+          "summary": "A declarative dplyr/tidyr-style pipeline (dataPipeline), flexible group-by aggregation (aggregations) and formula-based calculated fields (calculatedFields, a safe evaluator, no eval).",
+          "params": [
+            "dataPipeline",
+            "aggregations",
+            "calculatedFields"
+          ],
+          "docs": [
+            "https://www.canvasxpress.org/wrangling.html"
+          ],
+          "aliases": [
+            "pivot",
+            "reshape",
+            "mutate",
+            "summarise",
+            "binning",
+            "derived column"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "DOE",
+          "summary": "Parameters for building graphs from metadata (design of experiments).",
+          "params": [
+            "maxDOENumber",
+            "includeDOE",
+            "extendedDOE",
+            "asDOE"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Data",
+          "summary": "Data related parameters",
+          "params": [
+            "appendNetworkData",
+            "dataTextAlign",
+            "dataTextBaseline",
+            "dataTextColor",
+            "dataTextFontSize",
+            "dataTextFontStyle",
+            "dataTextMargin",
+            "dataTextRotate",
+            "dataTextScaleFontFactor",
+            "groupingFactorLevelsOrder",
+            "groupingFactors",
+            "groupingFactorsLabelsHide",
+            "summaryType",
+            "transposeData",
+            "weightBy"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Data Context",
+          "summary": "Data context related parameters",
+          "params": [
+            "asSampleFactors",
+            "asVariableFactors",
+            "stringSampleFactors",
+            "stringVariableFactors",
+            "stringNodeAttributes",
+            "stringEdgeAttributes"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Data Filters",
+          "summary": "Filter by sample, variable, network node/edge or genome feature annotations (and/or), plus calculated fields, flexible aggregation and saved authoring states.",
+          "params": [
+            "dataFilterWidth",
+            "dataFilterMaxItems",
+            "calculatedFields",
+            "shelfStates",
+            "aggregations",
+            "filterType",
+            "filterMode",
+            "filterSkipNullKeys",
+            "filterSkipNullValues",
+            "filterVarBy",
+            "filterSmpBy",
+            "filterNodeBy",
+            "filterEdgeBy",
+            "filterFeatureBy",
+            "filterDataBy",
+            "filterData",
+            "dataSelection",
+            "toggleSwitchBackgroundColor",
+            "dataFilterBackgroundColor",
+            "dataFilterBorderColor",
+            "dataFilterToolbarBackgroundColor",
+            "dataFilterTextColor",
+            "dataFilterFontSize",
+            "dataFilterHoverColor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "filter",
+            "filters",
+            "filtering",
+            "slicer",
+            "calculated field",
+            "calculated fields",
+            "aggregation",
+            "group by"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data Ratio Reference",
+          "summary": "Data ratio related parameters",
+          "params": [
+            "ratioReference",
+            "ratioSampleReference",
+            "ratioGroupReference",
+            "ratioLevelReference"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Data Selection",
+          "summary": "Parameters used to select data in all visualizations",
+          "params": [
+            "selectionMode",
+            "selectionColor",
+            "selectionMetadata",
+            "selectedDataPoints"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "selection",
+            "select data",
+            "lasso"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data Sorting",
+          "summary": "Data sorting related parameters",
+          "params": [
+            "sortDir",
+            "sortCaseSensitive",
+            "sortData",
+            "sortOnGrouping",
+            "sortIncludeEmpty",
+            "numericGroupSort"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "sort",
+            "sorting",
+            "reorder"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data Time Series",
+          "summary": "Time series related parameters",
+          "params": [
+            "timeFormat",
+            "isGraphTime"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "time series",
+            "dates",
+            "date axis"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Graph Metadata",
+          "summary": "General graph metadata properties used in all graphs",
+          "params": [
+            "tags",
+            "metaData",
+            "password"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Missing Data",
+          "summary": "Missing data related parameters",
+          "params": [
+            "missingDataColor",
+            "missingDataValue",
+            "nanOmit"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "missing values",
+            "na",
+            "nan"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Plot Data Type",
+          "summary": "Type of plot",
+          "params": [
+            "isR",
+            "isChat",
+            "isCxplot",
+            "isGGMatrix",
+            "ggMatrixRole",
+            "isDataFrame"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Random",
+          "summary": "Properties used to generate random data sets",
+          "params": [
+            "randomSeed",
+            "pseudoRandom",
+            "randomMethod"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Samples",
+          "summary": "Properties associated with samples",
+          "params": [
+            "highlightSmp",
+            "maxSmpStringLen",
+            "showSampleNames",
+            "smpHighlightColor",
+            "smpLabelAutoAlignPosition",
+            "smpLabelImage",
+            "smpLabelImageRound",
+            "smpLabelInterval",
+            "smpTextAlign",
+            "smpTextBaseline",
+            "smpTextColor",
+            "smpTextFontSize",
+            "smpTextFontStyle",
+            "smpTextMargin",
+            "smpTextRotate",
+            "smpTextScaleFontFactor",
+            "smpTitle",
+            "smpTitleAlign",
+            "smpTitleBaseline",
+            "smpTitleColor",
+            "smpTitleFontSize",
+            "smpTitleFontStyle",
+            "smpTitleMargin",
+            "smpTitleRotate",
+            "smpTitleScaleFontFactor"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Variables",
+          "summary": "Properties associated with variables",
+          "params": [
+            "highlightVar",
+            "maxVarStringLen",
+            "showVariableNames",
+            "varHighlightColor",
+            "varLabelInterval",
+            "varTextAlign",
+            "varTextBaseline",
+            "varTextColor",
+            "varTextFontSize",
+            "varTextFontStyle",
+            "varTextMargin",
+            "varTextRotate",
+            "varTextScaleFontFactor",
+            "varTitle",
+            "varTitleAlign",
+            "varTitleBaseline",
+            "varTitleColor",
+            "varTitleFontSize",
+            "varTitleFontStyle",
+            "varTitleMargin",
+            "varTitleRotate",
+            "varTitleScaleFontFactor"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        }
+      ],
+      "graphTypes": []
+    },
+    {
+      "id": "layout",
+      "name": "Layout, faceting and axes",
+      "summary": "Panels, small multiples, axes, margins and plot areas.",
+      "features": [
+        {
+          "kind": "category",
+          "name": "3D Attributes",
+          "summary": "General parameters in 3d scatter plots and networks",
+          "params": [
+            "xRotate",
+            "yRotate",
+            "zRotate",
+            "x3DRatio",
+            "y3DRatio",
+            "z3DRatio",
+            "show3DGrid",
+            "rotationSensitivity",
+            "perspectiveFactor",
+            "outline3DColor"
+          ],
+          "graphTypes": [
+            "Bar",
+            "Network",
+            "Scatter3D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "3d rotation",
+            "3d chart"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Aspect Ratio, Space and Width",
+          "summary": "Properties used to adjust the aspect ratio, space and width in most visualizations",
+          "params": [
+            "percentAspectRatioPlotArea",
+            "fixedAspectRatio",
+            "variableSpace",
+            "widthFactor",
+            "dataPointSize",
+            "dataPointSizeScaleFactor",
+            "setPlotX",
+            "setPlotY",
+            "setPlotLeft",
+            "setPlotTop"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "aspect ratio",
+            "bar width",
+            "spacing"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Axis",
+          "summary": "General axis parameters",
+          "params": [
+            "axisExtension",
+            "axisAlgorithm",
+            "axisWilkinsonLoose",
+            "axisCoordinate"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "axes"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Combination Plot Strips",
+          "summary": "Parameters used in strips complex plots",
+          "params": [
+            "stripBackgroundBorderColor",
+            "stripBackgroundBorderLineType",
+            "stripBackgroundBorderSize",
+            "stripBackgroundColor",
+            "stripTextAlign",
+            "stripTextBaseline",
+            "stripTextColor",
+            "stripTextFontSize",
+            "stripTextFontStyle",
+            "stripTextMargin",
+            "stripTextRotate",
+            "stripTextScaleFontFactor",
+            "stripShow",
+            "stripThickness",
+            "stripTextLines",
+            "stripTextMaxLength"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "facet strips",
+            "strip labels"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Combination Plots",
+          "summary": "Parameters used in complex plots",
+          "params": [
+            "layoutTopology",
+            "layoutAdjust",
+            "layoutGlobalGroups",
+            "layoutCollapse",
+            "layoutSpacing",
+            "layoutType",
+            "layoutRemoveEmpty",
+            "layoutCanvasCompartments",
+            "layoutConfig"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "combination chart",
+            "composite plot",
+            "multi-panel figure"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data Faceting",
+          "summary": "Split a chart into panels by one or two factors (wrap, rows or columns).",
+          "params": [
+            "segregateSamplesBy",
+            "segregateVariablesBy",
+            "splitSamplesBy",
+            "splitVariablesBy",
+            "splitSeparation"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [
+            "https://www.canvasxpress.org/examples/facet-1.html",
+            "https://www.canvasxpress.org/examples/layout-1.html"
+          ],
+          "aliases": [
+            "faceting",
+            "facet",
+            "facet_wrap",
+            "facet_grid",
+            "small multiples",
+            "trellis",
+            "panels"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Marginal Text",
+          "summary": "Properties associated with marginal text",
+          "params": [
+            "bottomMarginalText",
+            "bottomMarginalTextAlign",
+            "bottomMarginalTextBaseline",
+            "bottomMarginalTextColor",
+            "bottomMarginalTextFontSize",
+            "bottomMarginalTextFontStyle",
+            "bottomMarginalTextMargin",
+            "bottomMarginalTextRotate",
+            "bottomMarginalTextScaleFontFactor",
+            "leftMarginalText",
+            "leftMarginalTextAlign",
+            "leftMarginalTextBaseline",
+            "leftMarginalTextColor",
+            "leftMarginalTextFontSize",
+            "leftMarginalTextFontStyle",
+            "leftMarginalTextMargin",
+            "leftMarginalTextRotate",
+            "leftMarginalTextScaleFontFactor",
+            "rightMarginalText",
+            "rightMarginalTextAlign",
+            "rightMarginalTextBaseline",
+            "rightMarginalTextColor",
+            "rightMarginalTextFontSize",
+            "rightMarginalTextFontStyle",
+            "rightMarginalTextMargin",
+            "rightMarginalTextRotate",
+            "rightMarginalTextScaleFontFactor",
+            "topMarginalText",
+            "topMarginalTextAlign",
+            "topMarginalTextBaseline",
+            "topMarginalTextColor",
+            "topMarginalTextFontSize",
+            "topMarginalTextFontStyle",
+            "topMarginalTextMargin",
+            "topMarginalTextRotate",
+            "topMarginalTextScaleFontFactor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Margins",
+          "summary": "Margin properties used in most visualizations",
+          "params": [
+            "margin",
+            "marginLeft",
+            "marginTop",
+            "marginBottom",
+            "marginRight"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Plot Area",
+          "summary": "General parameters for the plotting area in one dimensional plots",
+          "params": [
+            "guidesColor",
+            "guidesLength",
+            "guidesLineType",
+            "guidesShow",
+            "guidesTransparency",
+            "guidesWidth",
+            "guideStyle",
+            "blockContrast",
+            "plotByVariable",
+            "is3DPlot",
+            "showDataValues",
+            "dataValuesFrequency",
+            "dataValuesPosition",
+            "binned",
+            "binAlignment",
+            "jitter",
+            "jitterFactor",
+            "sina",
+            "objectBorderColor",
+            "objectColorTransparency",
+            "dotplotOutlineThreshold",
+            "linesOnGroups"
+          ],
+          "graphTypes": [
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bullet",
+            "Cleveland",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Gantt",
+            "Heatmap",
+            "Line",
+            "Lollipop",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "TagCloud",
+            "Tornado",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Plot Mode",
+          "summary": "Properties to customize the plot",
+          "params": [
+            "isEditable",
+            "isReproducibleResearch",
+            "reproduceTime",
+            "reproduceVideoMode"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Plot View",
+          "summary": "General view properties",
+          "params": [
+            "view"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Plot and Panel Areas",
+          "summary": "General plot and panel properties used in all graphs",
+          "params": [
+            "panelBackgroundBorderColor",
+            "panelBackgroundBorderLineType",
+            "panelBackgroundBorderSize",
+            "panelBackgroundColor",
+            "plotBackgroundBorderColor",
+            "plotBackgroundBorderLineType",
+            "plotBackgroundBorderSize",
+            "plotBackgroundColor",
+            "backgroundType",
+            "backgroundImage",
+            "backgroundImageSrc"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Scrollbar",
+          "summary": "Parameters associated with custom scrollbar styling",
+          "params": [
+            "scrollbarBackgroundColor",
+            "scrollbarAltBackgroundColor",
+            "scrollbarThumbColor",
+            "scrollbarThumbHoverColor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Text Placement",
+          "summary": "Properties associated with text placements attributes",
+          "params": [
+            "optimizeTextPosition",
+            "optimizeTextPositionStrategy",
+            "optimizeTextPositionEnforceBounds",
+            "optimizeTextPositionTemperature",
+            "optimizeTextPositionCooling"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "label placement",
+            "labels"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "X-Axis",
+          "summary": "X axis parameters",
+          "params": [
+            "setMaxX",
+            "setMaxX2",
+            "setMinX",
+            "setMinX2",
+            "setPanningMaxX",
+            "setPanningMinX",
+            "xAxis",
+            "xAxis2",
+            "xAxis2Rotate",
+            "xAxis2Show",
+            "xAxis2TickFormat",
+            "xAxis2Ticks",
+            "xAxis2Title",
+            "xAxisCeilValue",
+            "xAxisCurrent",
+            "xAxisExact",
+            "xAxisFactorValue",
+            "xAxisFloorValue",
+            "xAxisGridMajorColor",
+            "xAxisGridMajorLineType",
+            "xAxisGridMajorShow",
+            "xAxisGridMajorTransparency",
+            "xAxisGridMajorWidth",
+            "xAxisGridMinorColor",
+            "xAxisGridMinorLineType",
+            "xAxisGridMinorShow",
+            "xAxisGridMinorTransparency",
+            "xAxisGridMinorWidth",
+            "xAxisHistogramHeight",
+            "xAxisHistogramShow",
+            "xAxisLineBottomColor",
+            "xAxisLineBottomLineType",
+            "xAxisLineBottomShow",
+            "xAxisLineBottomTransparency",
+            "xAxisLineBottomWidth",
+            "xAxisLineTopColor",
+            "xAxisLineTopLineType",
+            "xAxisLineTopShow",
+            "xAxisLineTopTransparency",
+            "xAxisLineTopWidth",
+            "xAxisLogTicksColor",
+            "xAxisLogTicksLength",
+            "xAxisLogTicksLineType",
+            "xAxisLogTicksShow",
+            "xAxisLogTicksTransparency",
+            "xAxisLogTicksWidth",
+            "xAxisMinorTicks",
+            "xAxisRugHeight",
+            "xAxisRugPosition",
+            "xAxisRugShow",
+            "xAxisSetLabels",
+            "xAxisSetMinorValues",
+            "xAxisSetValues",
+            "xAxisShow",
+            "xAxisTextAlign",
+            "xAxisTextBaseline",
+            "xAxisTextColor",
+            "xAxisTextFontSize",
+            "xAxisTextFontStyle",
+            "xAxisTextMargin",
+            "xAxisTextRotate",
+            "xAxisTextScaleFontFactor",
+            "xAxisTickFormat",
+            "xAxisTicks",
+            "xAxisTicksColor",
+            "xAxisTicksLength",
+            "xAxisTicksLineType",
+            "xAxisTicksShow",
+            "xAxisTicksTransparency",
+            "xAxisTicksWidth",
+            "xAxisTime",
+            "xAxisTitle",
+            "xAxisTitleAlign",
+            "xAxisTitleBaseline",
+            "xAxisTitleColor",
+            "xAxisTitleDynamic",
+            "xAxisTitleFontSize",
+            "xAxisTitleFontStyle",
+            "xAxisTitleMargin",
+            "xAxisTitleRotate",
+            "xAxisTitleScaleFontFactor",
+            "xAxisTransform",
+            "xAxisTransformLinearTicks",
+            "xAxisTransformTicks"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "x axis"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Y-Axis",
+          "summary": "Y axes parameters",
+          "params": [
+            "setMaxY",
+            "setMinY",
+            "setPanningMaxY",
+            "setPanningMinY",
+            "yAxis",
+            "yAxis2Rotate",
+            "yAxis2Show",
+            "yAxis2Title",
+            "yAxisCeilValue",
+            "yAxisCurrent",
+            "yAxisExact",
+            "yAxisFactorValue",
+            "yAxisFloorValue",
+            "yAxisGridMajorColor",
+            "yAxisGridMajorLineType",
+            "yAxisGridMajorShow",
+            "yAxisGridMajorTransparency",
+            "yAxisGridMajorWidth",
+            "yAxisGridMinorColor",
+            "yAxisGridMinorLineType",
+            "yAxisGridMinorShow",
+            "yAxisGridMinorTransparency",
+            "yAxisGridMinorWidth",
+            "yAxisHistogramHeight",
+            "yAxisHistogramShow",
+            "yAxisLineLeftColor",
+            "yAxisLineLeftLineType",
+            "yAxisLineLeftShow",
+            "yAxisLineLeftTransparency",
+            "yAxisLineLeftWidth",
+            "yAxisLineRightColor",
+            "yAxisLineRightLineType",
+            "yAxisLineRightShow",
+            "yAxisLineRightTransparency",
+            "yAxisLineRightWidth",
+            "yAxisLogTicksColor",
+            "yAxisLogTicksLength",
+            "yAxisLogTicksLineType",
+            "yAxisLogTicksShow",
+            "yAxisLogTicksTransparency",
+            "yAxisLogTicksWidth",
+            "yAxisMinorTicks",
+            "yAxisRugHeight",
+            "yAxisRugPosition",
+            "yAxisRugShow",
+            "yAxisSetLabels",
+            "yAxisSetMinorValues",
+            "yAxisSetValues",
+            "yAxisShow",
+            "yAxisTextAlign",
+            "yAxisTextBaseline",
+            "yAxisTextColor",
+            "yAxisTextFontSize",
+            "yAxisTextFontStyle",
+            "yAxisTextMargin",
+            "yAxisTextRotate",
+            "yAxisTextScaleFontFactor",
+            "yAxisTickFormat",
+            "yAxisTicks",
+            "yAxisTicksColor",
+            "yAxisTicksLength",
+            "yAxisTicksLineType",
+            "yAxisTicksShow",
+            "yAxisTicksTransparency",
+            "yAxisTicksWidth",
+            "yAxisTime",
+            "yAxisTitle",
+            "yAxisTitleAlign",
+            "yAxisTitleBaseline",
+            "yAxisTitleColor",
+            "yAxisTitleDynamic",
+            "yAxisTitleFontSize",
+            "yAxisTitleFontStyle",
+            "yAxisTitleMargin",
+            "yAxisTitleRotate",
+            "yAxisTitleScaleFontFactor",
+            "yAxisTransform",
+            "yAxisTransformLinearTicks",
+            "yAxisTransformTicks"
+          ],
+          "graphTypes": [
+            "Bin",
+            "Binplot",
+            "CDF",
+            "Contour",
+            "Density",
+            "Distribution",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "QQ",
+            "Quantile",
+            "Ridgeline",
+            "Scatter2D",
+            "ScatterBubble2D",
+            "Scatter3D",
+            "Spaghetti",
+            "SPLOM",
+            "Streamgraph",
+            "TimeSeries",
+            "Volcano"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "y axis",
+            "log scale",
+            "secondary axis",
+            "dual axis"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Z-Axis",
+          "summary": "Z axes parameters",
+          "params": [
+            "setMaxZ",
+            "setMinZ",
+            "zAxis",
+            "zAxis2Title",
+            "zAxisCeilValue",
+            "zAxisCurrent",
+            "zAxisExact",
+            "zAxisFactorValue",
+            "zAxisFloorValue",
+            "zAxisGridMajorColor",
+            "zAxisGridMajorLineType",
+            "zAxisGridMajorShow",
+            "zAxisGridMajorTransparency",
+            "zAxisGridMajorWidth",
+            "zAxisGridMinorColor",
+            "zAxisGridMinorLineType",
+            "zAxisGridMinorShow",
+            "zAxisGridMinorTransparency",
+            "zAxisGridMinorWidth",
+            "zAxisLogTicksColor",
+            "zAxisLogTicksLength",
+            "zAxisLogTicksLineType",
+            "zAxisLogTicksShow",
+            "zAxisLogTicksTransparency",
+            "zAxisLogTicksWidth",
+            "zAxisSetLabels",
+            "zAxisSetMinorValues",
+            "zAxisSetValues",
+            "zAxisShow",
+            "zAxisTextAlign",
+            "zAxisTextBaseline",
+            "zAxisTextColor",
+            "zAxisTextFontSize",
+            "zAxisTextFontStyle",
+            "zAxisTextMargin",
+            "zAxisTextRotate",
+            "zAxisTextScaleFontFactor",
+            "zAxisTickFormat",
+            "zAxisTicks",
+            "zAxisTicksColor",
+            "zAxisTicksLength",
+            "zAxisTicksLineType",
+            "zAxisTicksShow",
+            "zAxisTicksTransparency",
+            "zAxisTicksWidth",
+            "zAxisTime",
+            "zAxisTitle",
+            "zAxisTitleAlign",
+            "zAxisTitleBaseline",
+            "zAxisTitleColor",
+            "zAxisTitleDynamic",
+            "zAxisTitleFontSize",
+            "zAxisTitleFontStyle",
+            "zAxisTitleMargin",
+            "zAxisTitleRotate",
+            "zAxisTitleScaleFontFactor",
+            "zAxisTransform",
+            "zAxisTransformLinearTicks",
+            "zAxisTransformTicks"
+          ],
+          "graphTypes": [
+            "ScatterBubble2D",
+            "Scatter3D"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "z axis"
+          ]
+        }
+      ],
+      "graphTypes": []
+    },
+    {
+      "id": "styling",
+      "name": "Styling, themes and annotation",
+      "summary": "Colours, themes, titles, legends, annotations and animation.",
+      "features": [
+        {
+          "kind": "feature",
+          "name": "Themes",
+          "summary": "20+ built-in themes that control all non-data elements, including ggplot, bw, minimal, classic, Economist, Wall Street Journal, Tableau, Excel, Stata, solarized, dark and high-contrast.",
+          "params": [
+            "theme"
+          ],
+          "docs": [],
+          "aliases": [
+            "theme",
+            "themes",
+            "chart theme",
+            "ggplot theme",
+            "economist theme",
+            "wsj theme",
+            "dark mode",
+            "high contrast",
+            "style preset",
+            "branding"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "UI theming (widget styles, dark mode, design tokens)",
+          "summary": "The widgets around a chart (toolbar, menus, Customizer, data table, filters, dialogs) share one set of design tokens: dataUIStyle presets (all WCAG AA), light/dark/auto widgets that follow the chart theme, widgetsTheme or a page container's data-cx-ui-theme, and --cx-ui-* CSS variables to override any colour per page or per chart. In dark each preset keeps its own accent colour, lightened to stay readable (getDarkAccent; --cx-ui-dark-accent* to set it yourself), and colorful's per-item colours follow. Per-chart, so charts on one page can differ.",
+          "params": [
+            "dataUIStyle",
+            "widgetsTheme"
+          ],
+          "docs": [],
+          "aliases": [
+            "ui theme",
+            "widget theme",
+            "dark widgets",
+            "dark ui",
+            "theming",
+            "design tokens",
+            "css variables",
+            "css custom properties",
+            "ui style",
+            "widget style",
+            "data-cx-ui-theme",
+            "dark accent",
+            "dark mode accent",
+            "per-style dark mode",
+            "accent color",
+            "getDarkAccent"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Animations and Visualization Transitions",
+          "summary": "Animation and visualization transition parameters",
+          "params": [
+            "showAnimation",
+            "showTransition",
+            "transitionStep",
+            "transitionStaggering",
+            "transitionType",
+            "transitionFunction",
+            "transitionSpeed"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "animation",
+            "transitions",
+            "animated charts"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Citations or References",
+          "summary": "A citation or reference line on the chart (bottom right), with its own font, colour and alignment.",
+          "params": [
+            "citation",
+            "citationAlign",
+            "citationBaseline",
+            "citationColor",
+            "citationFontSize",
+            "citationFontStyle",
+            "citationMargin",
+            "citationRotate",
+            "citationScaleFontFactor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "caption",
+            "source line",
+            "credit"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Colors",
+          "summary": "Properties to adjust Colors",
+          "params": [
+            "colorScheme",
+            "colors",
+            "colorSpectrum",
+            "colorSpectrumBinned",
+            "colorSpectrumBreaks",
+            "colorSpectrumZeroValue",
+            "oddColor",
+            "evenColor",
+            "blindnessType",
+            "colorSpectrumByFactor",
+            "colorSpectrumByObject"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "color palette",
+            "colour palette",
+            "colour scheme",
+            "color scheme",
+            "palette"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data Point Attributes",
+          "summary": "General attributes for data points in scatter and one dimensional plots",
+          "params": [
+            "colorBy",
+            "colorKey",
+            "colorByData",
+            "colorLegendTitle",
+            "shapeBy",
+            "shapeByContinuous",
+            "shapeKey",
+            "shapeByData",
+            "shapeByShape",
+            "shapeLegendTitle",
+            "sizeBy",
+            "sizeByContinuous",
+            "sizeKey",
+            "sizeByData",
+            "sizeLegendTitle",
+            "outlineBy",
+            "outlineByData",
+            "patternBy",
+            "patternKey",
+            "lineKey",
+            "patternByData",
+            "connectBy",
+            "connectByNoColor",
+            "connectByPointColor",
+            "connectByColor",
+            "connectByWidth",
+            "connectKey",
+            "treemapBy",
+            "stackBy",
+            "dodgeBy",
+            "lineBy",
+            "ribbonBy",
+            "ribbonByType",
+            "workflowBy",
+            "markerBy",
+            "ellipseBy",
+            "confidenceBy",
+            "ridgeBy",
+            "pieBy",
+            "pivotBy",
+            "labelBy",
+            "colorLabelBy",
+            "sizeLabelBy",
+            "labelSelect"
+          ],
+          "graphTypes": [
+            "Alluvial",
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bubble",
+            "Bullet",
+            "CDF",
+            "Chord",
+            "Circular",
+            "Cleveland",
+            "Contour",
+            "Correlation",
+            "Density",
+            "Distribution",
+            "Donut",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Fish",
+            "Gantt",
+            "Heatmap",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Map",
+            "Meter",
+            "ParallelCoordinates",
+            "OptionsWall",
+            "Pareto",
+            "Pie",
+            "QQ",
+            "Quantile",
+            "Radar",
+            "Ribbon",
+            "Ridgeline",
+            "Sankey",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Streamgraph",
+            "Sunburst",
+            "TagCloud",
+            "Tornado",
+            "TimeSeries",
+            "Tree",
+            "TreeBracket",
+            "Treemap",
+            "Upset",
+            "Violin",
+            "Volcano",
+            "Waterfall",
+            "WordCloud"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "marker style",
+            "point style"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Decorations",
+          "summary": "Annotations drawn in data coordinates: reference lines, shaded ranges, text, points and markers.",
+          "params": [
+            "decorations",
+            "decorationsBackgroundBorderColor",
+            "decorationsBackgroundBorderLineType",
+            "decorationsBackgroundBorderSize",
+            "decorationsBackgroundColor",
+            "decorationsClipped",
+            "decorationsColors",
+            "decorationsHeight",
+            "decorationsPosition",
+            "decorationsProperties",
+            "decorationsTextAlign",
+            "decorationsTextBaseline",
+            "decorationsTextColor",
+            "decorationsTextFontSize",
+            "decorationsTextFontStyle",
+            "decorationsTextMargin",
+            "decorationsTextRotate",
+            "decorationsTextScaleFontFactor",
+            "decorationsTransparency",
+            "decorationsType",
+            "decorationsWidth",
+            "showDecorations",
+            "showDecorationsBorder",
+            "showDecorationsLegend",
+            "decorationsOnTop",
+            "decorationsTransform"
+          ],
+          "graphTypes": [
+            "Area",
+            "AreaLine",
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bin",
+            "Binplot",
+            "Bullet",
+            "CDF",
+            "Cleveland",
+            "Contour",
+            "Density",
+            "Distribution",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Hex",
+            "Hexplot",
+            "Histogram",
+            "KaplanMeier",
+            "Line",
+            "Lollipop",
+            "Network",
+            "Pareto",
+            "QQ",
+            "Quantile",
+            "Ridgeline",
+            "Scatter2D",
+            "Scatter3D",
+            "ScatterBubble2D",
+            "Spaghetti",
+            "SPLOM",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "TimeSeries",
+            "Tornado",
+            "Violin",
+            "Volcano",
+            "Waterfall"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "annotation",
+            "annotations",
+            "callout",
+            "reference line",
+            "threshold line",
+            "range highlight",
+            "shaded band",
+            "highlight band",
+            "text annotation",
+            "markers"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Foreground and Background",
+          "summary": "Foreground and Background properties used in all visualizations",
+          "params": [
+            "foreground",
+            "background"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "background color",
+            "background image"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "General Attributes",
+          "summary": "Properties related to Shapes, Images and Patterns",
+          "params": [
+            "shapes",
+            "images",
+            "patterns",
+            "linePatterns",
+            "patternStrokeColor",
+            "patternFillColor",
+            "patternStrokeWidth"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "patterns",
+            "hatching"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Gradients",
+          "summary": "Properties used to adjust color gradients in all visualizations",
+          "params": [
+            "gradient",
+            "gradientType",
+            "gradientOrientation"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "gradient",
+            "color ramp",
+            "continuous color scale"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Grey Out",
+          "summary": "Emphasise chosen data and grey out, ghost or focus the rest, declaratively (highlightBy) or by selection.",
+          "params": [
+            "highlightGreyOut",
+            "highlightColor",
+            "highlightMode",
+            "highlightBy"
+          ],
+          "graphTypes": "all",
+          "docs": [
+            "https://www.canvasxpress.org/highlighting.html"
+          ],
+          "examples": [],
+          "aliases": [
+            "gghighlight",
+            "highlight",
+            "focus",
+            "ghost",
+            "emphasis",
+            "grey out"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Images",
+          "summary": "General parameters with images",
+          "params": [
+            "imageTimeOut",
+            "imageMaxTries"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "logo",
+            "images"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Legends",
+          "summary": "Legends for variables and samples",
+          "params": [
+            "customLegend",
+            "legendBackgroundBorderColor",
+            "legendBackgroundBorderLineType",
+            "legendBackgroundBorderSize",
+            "legendBackgroundColor",
+            "legendColumns",
+            "legendDirection",
+            "legendHorizontalJustification",
+            "legendInside",
+            "legendKeyBackgroundBorderColor",
+            "legendKeyBackgroundBorderLineType",
+            "legendKeyBackgroundBorderSize",
+            "legendKeyBackgroundColor",
+            "legendKeyMargin",
+            "legendKeySize",
+            "legendMax",
+            "legendOrder",
+            "legendOrderByCols",
+            "legendPosition",
+            "legendRows",
+            "legendStyleGgplot",
+            "legendTextAlign",
+            "legendTextBaseline",
+            "legendTextColor",
+            "legendTextFontSize",
+            "legendTextFontStyle",
+            "legendTextMargin",
+            "legendTextRotate",
+            "legendTextScaleFontFactor",
+            "legendTitleAlign",
+            "legendTitleBaseline",
+            "legendTitleColor",
+            "legendTitleFontSize",
+            "legendTitleFontStyle",
+            "legendTitleMargin",
+            "legendTitleRotate",
+            "legendTitleScaleFontFactor",
+            "legendVerticalJustification",
+            "showColorEdgeLegend",
+            "showColorLabelLegend",
+            "showColorLegend",
+            "showColorNodeLegend",
+            "showConnectLegend",
+            "showLegend",
+            "showLegendBorder",
+            "showLegendTitle",
+            "showLineEdgeLegend",
+            "showLineLegend",
+            "showOutlineLegend",
+            "showPatternLegend",
+            "showPatternNodeLegend",
+            "showSampleLegend",
+            "showShapeLegend",
+            "showShapeNodeLegend",
+            "showSizeEdgeLegend",
+            "showSizeLabelLegend",
+            "showSizeLegend",
+            "showSizeNodeLegend",
+            "showVariableLegend"
+          ],
+          "graphTypes": [
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bullet",
+            "Cleveland",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Heatmap",
+            "Line",
+            "Lollipop",
+            "Pareto",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Tornado",
+            "Violin",
+            "Waterfall"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "legend"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Lines",
+          "summary": "Properties to adjust Lines",
+          "params": [
+            "dashLength",
+            "dotLength",
+            "arrowQuadraticFactor",
+            "arrowHeadType",
+            "arrowHeadTypeOpen",
+            "arrowHeadSize",
+            "arrowHeadAngle",
+            "capType",
+            "joinType",
+            "outlineWidth",
+            "lineThickness",
+            "adjustBezier"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "line style",
+            "linetype",
+            "dashed lines"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Overlays",
+          "summary": "Colored boxes to help in the visualization of samples and variables",
+          "params": [
+            "maxOverlayStringLen",
+            "overlayTextAlign",
+            "overlayTextBaseline",
+            "overlayTextColor",
+            "overlayTextFontSize",
+            "overlayTextFontStyle",
+            "overlayTextMargin",
+            "overlayTextRotate",
+            "overlayTextScaleFontFactor",
+            "overlaysLegendPosition",
+            "overlaysThickness",
+            "panelOverlayBackgroundBorderColor",
+            "panelOverlayBackgroundBorderLineType",
+            "panelOverlayBackgroundBorderSize",
+            "panelOverlayBackgroundColor",
+            "showNameOverlays",
+            "showOverlays",
+            "showSmpOverlaysLegend",
+            "showValueOverlays",
+            "showVarOverlaysLegend",
+            "smpOverlayProperties",
+            "smpOverlays",
+            "smpOverlaysLegendColumns",
+            "varOverlayProperties",
+            "varOverlays",
+            "varOverlaysLegendColumns"
+          ],
+          "graphTypes": [
+            "Bar",
+            "BarLine",
+            "Boxplot",
+            "Bullet",
+            "Cleveland",
+            "DotLine",
+            "Dotplot",
+            "Dumbbell",
+            "Heatmap",
+            "Line",
+            "Lollipop",
+            "Pareto",
+            "Stacked",
+            "StackedLine",
+            "StackedPercent",
+            "StackedPercentLine",
+            "Tornado",
+            "Violin",
+            "Waterfall"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "overlays",
+            "annotation tracks"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Shadows",
+          "summary": "Shadow properties used in most visualizations",
+          "params": [
+            "showShadow",
+            "showTextShadow",
+            "shadowOffsetX",
+            "shadowOffsetY",
+            "shadowBlur",
+            "shadowColor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Shapes",
+          "summary": "Properties to adjust Shapes",
+          "params": [
+            "roundedPolygonRadius",
+            "useRoundRectangles",
+            "plotStyle"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "marker shapes",
+            "point shapes"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Sizes",
+          "summary": "Properties to adjust Sizes",
+          "params": [
+            "sizes",
+            "initialSize",
+            "sizeStep"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Text",
+          "summary": "Properties associated with text attributes",
+          "params": [
+            "fonts",
+            "fontsExternal",
+            "fontName",
+            "fontStyle",
+            "fontColor",
+            "fontSize",
+            "fontScaleFontFactor",
+            "align",
+            "baseline",
+            "maxTextSize",
+            "minTextSize",
+            "autoScaleFont"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "fonts",
+            "typography"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Titles and Subtitles",
+          "summary": "Properties associated with titles and subtitles",
+          "params": [
+            "subtitle",
+            "subtitleAlign",
+            "subtitleBaseline",
+            "subtitleColor",
+            "subtitleFontSize",
+            "subtitleFontStyle",
+            "subtitleMargin",
+            "subtitleRotate",
+            "subtitleScaleFontFactor",
+            "title",
+            "titleAlign",
+            "titleBaseline",
+            "titleColor",
+            "titleFontSize",
+            "titleFontStyle",
+            "titleMargin",
+            "titleRotate",
+            "titleScaleFontFactor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "title",
+            "subtitle",
+            "headline",
+            "chart title"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Transparency",
+          "summary": "General transparency properties used in all graphs",
+          "params": [
+            "transparency",
+            "transparencyHidden"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "opacity",
+            "alpha"
+          ]
+        }
+      ],
+      "graphTypes": []
+    },
+    {
+      "id": "interactivity",
+      "name": "Interactivity and authoring",
+      "summary": "Tooltips, zoom, events, menus, the Customizer, data table and history.",
+      "features": [
+        {
+          "kind": "feature",
+          "name": "Undo / redo, history and recipes",
+          "summary": "Committed actions (data, config, filters, sorting, grouping, facets, transforms, clustering) form an undo/redo stack with a history; the steps export as a replayable recipe and an audit trail.",
+          "params": [],
+          "docs": [
+            "https://www.canvasxpress.org/audit.html"
+          ],
+          "aliases": [
+            "undo",
+            "redo",
+            "history",
+            "audit trail",
+            "recipe",
+            "replay",
+            "provenance"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Saved states (chart and page)",
+          "summary": "Save named authoring states per chart, and page-level states that save and restore every chart on a page together.",
+          "params": [
+            "shelfStates"
+          ],
+          "docs": [],
+          "aliases": [
+            "saved views",
+            "bookmarks",
+            "snapshots",
+            "saved state",
+            "page state"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Linked charts (broadcast)",
+          "summary": "Selections and events broadcast between charts on a page so they stay linked.",
+          "params": [
+            "broadcast"
+          ],
+          "docs": [
+            "https://www.canvasxpress.org/broadcast.html"
+          ],
+          "aliases": [
+            "brushing and linking",
+            "linked brushing",
+            "coordinated views"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Context Menu",
+          "summary": "Parameters associated with the context menu",
+          "params": [
+            "contextMenuBackgroundColor",
+            "contextMenuBorderColor",
+            "contextMenuTextColor",
+            "contextMenuFontSize",
+            "contextMenuHoverColor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "right-click menu"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data Customizer",
+          "summary": "The in-chart Customizer: restyle, reconfigure and reshape the chart without code, including shelf-style field mapping.",
+          "params": [
+            "maxDataCustomizerEntries",
+            "customizerSize",
+            "customizerEntriesAsList",
+            "customizerGraphMaximize",
+            "customizerCloseBackgroundColor",
+            "customizerCloseTextColor",
+            "customizerBackgroundColor",
+            "customizerBorderColor",
+            "customizerTextColor",
+            "customizerFontSize",
+            "customizerHoverColor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "customizer",
+            "chart editor",
+            "no-code editor",
+            "shelves",
+            "drag and drop authoring"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data Table",
+          "summary": "The chart's data as an interactive table: search, sorting, pagination, pinned and hidden columns, per-column width, alignment and sprintf formats.",
+          "params": [
+            "dataTableAccentColor",
+            "dataTableActiveCellBorderColor",
+            "dataTableAutoColumnWidth",
+            "dataTableBannerBackgroundColor",
+            "dataTableBannerBorderColor",
+            "dataTableBannerImage",
+            "dataTableBannerShow",
+            "dataTableBannerTextAlign",
+            "dataTableBannerTextBaseline",
+            "dataTableBannerTextColor",
+            "dataTableBannerTextFontSize",
+            "dataTableBannerTextFontStyle",
+            "dataTableBannerTextMargin",
+            "dataTableBannerTextRotate",
+            "dataTableBannerTextScaleFontFactor",
+            "dataTableBorderColor",
+            "dataTableCellBackgroundColor",
+            "dataTableCellBorderColor",
+            "dataTableCellBorders",
+            "dataTableCellTextAlign",
+            "dataTableCellTextBaseline",
+            "dataTableCellTextColor",
+            "dataTableCellTextFontSize",
+            "dataTableCellTextFontStyle",
+            "dataTableCellTextMargin",
+            "dataTableCellTextRotate",
+            "dataTableCellTextScaleFontFactor",
+            "dataTableColAlignment",
+            "dataTableColFormat",
+            "dataTableColHide",
+            "dataTableColOrder",
+            "dataTableColPin",
+            "dataTableColProperties",
+            "dataTableColWidth",
+            "dataTableColorTransparency",
+            "dataTableColored",
+            "dataTableGrouped",
+            "dataTableHeaderBackgroundColor",
+            "dataTableHeaderTemplate",
+            "dataTableHeaderTextAlign",
+            "dataTableHeaderTextBaseline",
+            "dataTableHeaderTextColor",
+            "dataTableHeaderTextFontSize",
+            "dataTableHeaderTextFontStyle",
+            "dataTableHeaderTextMargin",
+            "dataTableHeaderTextRotate",
+            "dataTableHeaderTextScaleFontFactor",
+            "dataTableNetwork",
+            "dataTableOddCellBackgroundColor",
+            "dataTableOnSelectShow",
+            "dataTablePaginationBackgroundColor",
+            "dataTablePaginationBorderColor",
+            "dataTablePaginationSelectTextAlign",
+            "dataTablePaginationSelectTextBaseline",
+            "dataTablePaginationSelectTextColor",
+            "dataTablePaginationSelectTextFontSize",
+            "dataTablePaginationSelectTextFontStyle",
+            "dataTablePaginationSelectTextMargin",
+            "dataTablePaginationSelectTextRotate",
+            "dataTablePaginationSelectTextScaleFontFactor",
+            "dataTablePaginationShow",
+            "dataTablePaginationSize",
+            "dataTablePaginationTextAlign",
+            "dataTablePaginationTextBaseline",
+            "dataTablePaginationTextColor",
+            "dataTablePaginationTextFontSize",
+            "dataTablePaginationTextFontStyle",
+            "dataTablePaginationTextMargin",
+            "dataTablePaginationTextRotate",
+            "dataTablePaginationTextScaleFontFactor",
+            "dataTableRowGroups",
+            "dataTableRowHeight",
+            "dataTableRowLines",
+            "dataTableRowNumbersShow",
+            "dataTableScrollDirection",
+            "dataTableStatusBackgroundColor",
+            "dataTableStatusBorderColor",
+            "dataTableStatusShow",
+            "dataTableStatusTextAlign",
+            "dataTableStatusTextBaseline",
+            "dataTableStatusTextColor",
+            "dataTableStatusTextFontSize",
+            "dataTableStatusTextFontStyle",
+            "dataTableStatusTextMargin",
+            "dataTableStatusTextRotate",
+            "dataTableStatusTextScaleFontFactor",
+            "dataTableStripeTransparency",
+            "dataTableStriped",
+            "dataTableSummaryRowFunction",
+            "dataTableSummaryRowFunctions",
+            "dataTableSummaryRowLabel",
+            "dataTableSummaryRowShow",
+            "dataTableToolbarBackgroundColor",
+            "dataTableToolbarBorderColor",
+            "dataTableToolbarShow",
+            "dataTableTransposed",
+            "dataTableZeroHeader",
+            "datatableBackgroundColor",
+            "dataTableCellHoverBackgroundColor",
+            "dataTableRowHoverBackgroundColor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "data table",
+            "table view",
+            "grid view",
+            "pivot table view",
+            "datatable"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Data UI Widgets",
+          "summary": "Parameters associated with all data UI widgets",
+          "params": [
+            "dataUIStyle",
+            "widgetsTheme",
+            "widgetsBackgroundColor",
+            "widgetsBaseColor",
+            "widgetsBorderColor",
+            "widgetsHoverTransparency",
+            "widgetsAccentColor",
+            "widgetsContrastColor",
+            "widgetsStripedColor",
+            "widgetsFontColor",
+            "widgetsIconClsAColor",
+            "widgetsIconClsBColor",
+            "widgetsIconClsCColor",
+            "widgetsIconClsXColor",
+            "widgetsBorderRadius",
+            "widgetsFontSize"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "widgets",
+            "ui controls"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Events",
+          "summary": "Event parameters",
+          "params": [
+            "disableEvents",
+            "disableCode",
+            "disableMenu",
+            "disableToolbar",
+            "disableTooltipCallout",
+            "disableDataTable",
+            "disableGrid",
+            "disableChat",
+            "disableLLMService",
+            "disableDataFilters",
+            "disableCustomizer",
+            "disableCanvas",
+            "disableDrag",
+            "disableKeys",
+            "disableUndoRedoKeys",
+            "disableShowShortcuts",
+            "disablePlusMinusKeys",
+            "disableDocument",
+            "disableWindow",
+            "disableWheel",
+            "disableBeacon",
+            "disableCSSTransitions",
+            "playable",
+            "resizable",
+            "resizableX",
+            "resizableY",
+            "maxSubMenus",
+            "showPrimaryMenus",
+            "infoTimeOut",
+            "infoTimeIn",
+            "broadcast",
+            "broadcastGroup",
+            "broadcastFilter",
+            "toolbarType",
+            "toolbarSize",
+            "toolbarItems",
+            "toolbarCodes",
+            "toolbarFonts",
+            "toolbarSchemes",
+            "lazyLoad",
+            "hoverTemplate",
+            "hoverTemplate2",
+            "fullscreenExclude"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "click events",
+            "callbacks",
+            "linked charts",
+            "broadcast"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "HTML Widgets",
+          "summary": "General parameters for filtering with external HTML widgets",
+          "params": [
+            "htmlWidget",
+            "htmlWidgetType",
+            "htmlWidgetHeight"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Tooltip",
+          "summary": "Tooltip parameters",
+          "params": [
+            "tooltipTransparency",
+            "tooltipFontColor",
+            "tooltipBackgroundColor",
+            "tooltipBorderColor"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "tooltip",
+            "hover",
+            "popup"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Zooming, Panning and Resizing",
+          "summary": "Parameters associated with zooming, panning and resizing events",
+          "params": [
+            "zoom",
+            "zoomStep",
+            "zoomScale",
+            "zoomVariablesDisable",
+            "zoomSamplesDisable",
+            "zoomXDisable",
+            "zoomYDisable",
+            "zoomDisable",
+            "panningX",
+            "panningY",
+            "panningStep"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "zoom",
+            "pan",
+            "resize",
+            "brushing"
+          ]
+        }
+      ],
+      "graphTypes": []
+    },
+    {
+      "id": "accessibility",
+      "name": "Accessibility",
+      "summary": "Screen-reader, keyboard and visual accessibility.",
+      "features": [
+        {
+          "kind": "feature",
+          "name": "Screen-reader and keyboard accessibility",
+          "summary": "Every chart gets a generated text summary and an off-screen data table kept in sync with the data, live-region announcements, a focusable canvas with arrow-key navigation between data points, keyboard-operable widgets, a visible focus outline, a high-contrast theme, and reduced motion when the OS requests it. WCAG 2.1 AA conformance report (VPAT-style) published.",
+          "params": [],
+          "docs": [
+            "https://www.canvasxpress.org/accessibility.html"
+          ],
+          "aliases": [
+            "accessibility",
+            "a11y",
+            "wcag",
+            "screen reader",
+            "alt text",
+            "aria",
+            "keyboard navigation",
+            "reduced motion",
+            "vpat",
+            "section 508"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Colourblind simulation",
+          "summary": "Preview a chart as seen with deuteranopia or protanopia, from the menu or the Customizer theme panel.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "colorblind",
+            "color blind",
+            "colour blind",
+            "colourblind",
+            "cvd",
+            "deuteranopia",
+            "protanopia",
+            "color vision deficiency"
+          ]
+        }
+      ],
+      "graphTypes": []
+    },
+    {
+      "id": "ai",
+      "name": "AI and natural language",
+      "summary": "Generating and modifying charts from plain English.",
+      "features": [
+        {
+          "kind": "category",
+          "name": "LLM",
+          "summary": "Generate or modify a chart config from plain English, with the built-in service or your own endpoint.",
+          "params": [
+            "llmServiceURL",
+            "dashboardsServiceURL",
+            "connectorsServiceURL",
+            "llmTemperature",
+            "llmSelectFirst",
+            "llmBehaviour",
+            "llmPrompt",
+            "llmStack",
+            "llmHeader",
+            "llmUseAutocomplete",
+            "llmCodeExamplesShow",
+            "llmTool",
+            "llmCodeExamples",
+            "llmCodeMaxSentences",
+            "llmMinCoverageFactor",
+            "llmMinParameterCoverage",
+            "prompt"
+          ],
+          "graphTypes": "all",
+          "docs": [
+            "https://www.canvasxpress.org/llm.html"
+          ],
+          "examples": [],
+          "aliases": [
+            "ai",
+            "natural language",
+            "llm",
+            "copilot",
+            "text to chart",
+            "chatbot",
+            "chart recommendation",
+            "show me"
+          ]
+        }
+      ],
+      "graphTypes": []
+    },
+    {
+      "id": "export",
+      "name": "Export, integration and reproducibility",
+      "summary": "Image export, language bindings, specs and platform services.",
+      "features": [
+        {
+          "kind": "feature",
+          "name": "Image and vector export",
+          "summary": "Export to PNG (with high-resolution magnification), SVG, and the reproducible JSON config.",
+          "params": [
+            "printMagnification",
+            "printType",
+            "saveFilename"
+          ],
+          "docs": [],
+          "aliases": [
+            "svg",
+            "svg export",
+            "vector export",
+            "png",
+            "save as image"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Reproducible specs (save and reload)",
+          "summary": "A chart's full state serialises to a portable JSON config (getConfig) that reloads to the identical view, in JavaScript, R or Python.",
+          "params": [],
+          "docs": [
+            "https://www.canvasxpress.org/spec.html"
+          ],
+          "aliases": [
+            "reproducibility",
+            "reproducible",
+            "json spec",
+            "save and load",
+            "portable spec"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Grammar of graphics and ggplot2 conversion",
+          "summary": "Layered grammar-of-graphics rendering (geoms, stats, scales, coords, facets); R ggplot2 plots convert to CanvasXpress with close visual fidelity.",
+          "params": [],
+          "docs": [
+            "https://www.canvasxpress.org/ggplot-interface.html",
+            "https://www.canvasxpress.org/cxplot-interface.html"
+          ],
+          "aliases": [
+            "ggplot2",
+            "ggplot",
+            "grammar of graphics",
+            "geom",
+            "aes",
+            "layers"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Language bindings and frameworks",
+          "summary": "The same chart specification works in JavaScript, the R htmlwidget (Shiny, R Markdown, Quarto), Python (Jupyter, Dash, Streamlit, Flask) and Julia (CanvasXpress.jl: IJulia, Pluto, VS Code, Documenter), plus React, VS Code notebooks and Observable.",
+          "params": [],
+          "docs": [
+            "https://www.canvasxpress.org/r-interface.html",
+            "https://www.canvasxpress.org/python-interface.html",
+            "https://www.canvasxpress.org/julia-interface.html",
+            "https://www.canvasxpress.org/react-interface.html",
+            "https://www.canvasxpress.org/integration.html"
+          ],
+          "aliases": [
+            "r",
+            "shiny",
+            "python",
+            "jupyter",
+            "dash",
+            "streamlit",
+            "flask",
+            "julia",
+            "pluto",
+            "ijulia",
+            "react",
+            "vue",
+            "htmlwidget",
+            "quarto",
+            "observable",
+            "notebook"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Dashboards and connectors",
+          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, share links and live sources, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
+          "params": [
+            "dashboardsServiceURL",
+            "connectorsServiceURL"
+          ],
+          "docs": [
+            "https://www.canvasxpress.org/authenticated-data.html"
+          ],
+          "aliases": [
+            "dashboard",
+            "dashboards",
+            "bi",
+            "cross-filtering",
+            "linked views",
+            "sql",
+            "database",
+            "google sheets",
+            "share link",
+            "snowflake",
+            "bigquery",
+            "duckdb",
+            "data warehouse",
+            "calculated fields",
+            "e-signature",
+            "electronic signature",
+            "21 cfr part 11",
+            "audit trail",
+            "version history",
+            "scheduled refresh"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Debug",
+          "summary": "Debugging parameters",
+          "params": [
+            "debug",
+            "debugWithArea",
+            "verbose",
+            "offline",
+            "showVersion",
+            "showCode",
+            "codeType"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "General",
+          "summary": "General properties used in all visualizations",
+          "params": [
+            "graphType",
+            "yieldingRender",
+            "theme"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "Plot Performance",
+          "summary": "Settings that keep very large charts responsive: yielding render, streaming window and related performance switches.",
+          "params": [
+            "overplotPixels",
+            "streamWindow",
+            "streamEvict"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "performance",
+            "large data",
+            "big data",
+            "rendering speed"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Print",
+          "summary": "Image export: download or open in a window, high-resolution magnification, thumbnails and file naming.",
+          "params": [
+            "cacheBase64",
+            "printType",
+            "printMagnification",
+            "printThumbnail",
+            "saveFilename"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "png export",
+            "image export",
+            "download image",
+            "high resolution",
+            "print"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "R",
+          "summary": "Parameters associated with R",
+          "params": [
+            "loadRDatasets",
+            "Rdataset"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        },
+        {
+          "kind": "category",
+          "name": "cxplot",
+          "summary": "General properties used in cxplot",
+          "params": [
+            "aes",
+            "ggplot"
+          ],
+          "graphTypes": "all",
+          "docs": [],
+          "examples": [],
+          "aliases": []
+        }
+      ],
+      "graphTypes": []
+    }
+  ]
+}

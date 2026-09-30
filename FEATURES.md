@@ -1,0 +1,361 @@
+# CanvasXpress Feature Inventory
+
+A complete, generated map of CanvasXpress features (v70.7): 70 graph types (65 distinct; the rest are alternative names) and 1702 configuration parameters in 139 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+
+## Families
+
+- **Everyday charts** — Business and general-purpose chart types.
+- **Distributions and multivariate charts** — Charts that show the shape of data and relationships between many variables.
+- **Scientific and omics charts** — Chart types for genomics, clinical and life-science data.
+- **Networks, flows and hierarchies** — Graphs of connections, flows between stages and nested structures.
+- **Maps** — Geographic maps: choropleth, symbol and connection maps.
+- **KPI and finance** — Indicator gauges, bullet graphs and financial composites.
+- **Analytics built into the chart** — Clustering, statistics, fits and forecasts computed inside the chart.
+- **Data handling and wrangling** — Input formats, filtering, sorting, selection, transforms and reshaping.
+- **Layout, faceting and axes** — Panels, small multiples, axes, margins and plot areas.
+- **Styling, themes and annotation** — Colours, themes, titles, legends, annotations and animation.
+- **Interactivity and authoring** — Tooltips, zoom, events, menus, the Customizer, data table and history.
+- **Accessibility** — Screen-reader, keyboard and visual accessibility.
+- **AI and natural language** — Generating and modifying charts from plain English.
+- **Export, integration and reproducibility** — Image export, language bindings, specs and platform services.
+
+## Everyday charts
+
+Business and general-purpose chart types.
+
+### Graph types
+
+- **Area** (`graphType: "Area"`) — Area chart, stacked or overlapping. Also known as: area chart, stacked area. Examples: [1](https://www.canvasxpress.org/examples/area-1.html), [2](https://www.canvasxpress.org/examples/area-2.html), [3](https://www.canvasxpress.org/examples/area-3.html) (16 in the gallery).
+- **AreaLine** (`graphType: "AreaLine"`) — Area chart combined with lines on a second axis. Also known as: area and line. Examples: [1](https://www.canvasxpress.org/examples/arealine-1.html), [2](https://www.canvasxpress.org/examples/arealine-2.html), [3](https://www.canvasxpress.org/examples/arealine-3.html) (4 in the gallery).
+- **Bar** (`graphType: "Bar"`) — Bar and column chart (grouped; lollipop, arrow, bullet and swimmer variants via barType). Also known as: bar chart, column chart, grouped bar, arrow bars. Examples: [1](https://www.canvasxpress.org/examples/bar-1.html), [2](https://www.canvasxpress.org/examples/bar-2.html), [3](https://www.canvasxpress.org/examples/bar-3.html) (33 in the gallery).
+- **BarLine** (`graphType: "BarLine"`) — Bars combined with lines on a second axis. Also known as: combo chart, bar and line, dual axis chart. Examples: [1](https://www.canvasxpress.org/examples/barline-1.html), [2](https://www.canvasxpress.org/examples/barline-2.html), [3](https://www.canvasxpress.org/examples/barline-3.html).
+- **Bump** (`graphType: "Bump"`) — Bump chart of rank changes over time. Also known as: bump chart, rank chart. Examples: [1](https://www.canvasxpress.org/examples/scatter2d-18.html).
+- **Cleveland** (`graphType: "Cleveland"`) — Cleveland dot plot. Also known as: cleveland dot plot, dot chart.
+- **Donut** (`graphType: "Donut"`) — Donut chart. Also known as: donut chart, doughnut, ring chart.
+- **DotLine** (`graphType: "DotLine"`) — Dot plot combined with lines on a second axis. Also known as: dot and line. Examples: [1](https://www.canvasxpress.org/examples/dotline-1.html), [2](https://www.canvasxpress.org/examples/dotline-2.html), [3](https://www.canvasxpress.org/examples/dotline-3.html).
+- **Dotplot** (`graphType: "Dotplot"`) — Dot plot of values per category. Also known as: dot plot, strip plot, jitter plot. Examples: [1](https://www.canvasxpress.org/examples/dotplot-1.html), [2](https://www.canvasxpress.org/examples/dotplot-2.html), [3](https://www.canvasxpress.org/examples/dotplot-3.html) (18 in the gallery).
+- **Dumbbell** (`graphType: "Dumbbell"`) — Dumbbell chart comparing two values per category. Also known as: dumbbell chart, connected dot plot, barbell chart, range plot. Examples: [1](https://www.canvasxpress.org/examples/dumbbell-1.html), [2](https://www.canvasxpress.org/examples/dumbbell-2.html), [3](https://www.canvasxpress.org/examples/dumbbell-3.html) (8 in the gallery).
+- **Gantt** (`graphType: "Gantt"`) — Gantt chart of tasks over time. Also known as: gantt chart, timeline, project schedule. Examples: [1](https://www.canvasxpress.org/examples/gantt-1.html), [2](https://www.canvasxpress.org/examples/gantt-2.html), [3](https://www.canvasxpress.org/examples/gantt-3.html) (6 in the gallery).
+- **Line** (`graphType: "Line"`) — Line chart. Also known as: line chart. Examples: [1](https://www.canvasxpress.org/examples/line-1.html), [2](https://www.canvasxpress.org/examples/line-3.html), [3](https://www.canvasxpress.org/examples/line-4.html).
+- **Lollipop** (`graphType: "Lollipop"`) — Lollipop chart. Also known as: lollipop chart.
+- **Pareto** (`graphType: "Pareto"`) — Pareto chart (sorted bars plus cumulative line). Also known as: pareto chart.
+- **Pie** (`graphType: "Pie"`) — Pie chart. Also known as: pie chart. Examples: [1](https://www.canvasxpress.org/examples/pie-1.html), [2](https://www.canvasxpress.org/examples/pie-2.html), [3](https://www.canvasxpress.org/examples/pie-3.html).
+- **Radar** (`graphType: "Radar"`) — Radar chart. Also known as: radar chart, spider chart, web chart, star plot.
+- **Scatter2D** (`graphType: "Scatter2D"`) — 2D scatter plot, the base for fits, densities, histograms, KM curves and more. Also known as: scatter plot, scatter chart, xy plot. Examples: [1](https://www.canvasxpress.org/examples/scatter2d-1.html), [2](https://www.canvasxpress.org/examples/scatter2d-2.html), [3](https://www.canvasxpress.org/examples/scatter2d-3.html) (118 in the gallery).
+- **ScatterBubble2D** (`graphType: "ScatterBubble2D"`) — 2D scatter with sized bubbles. Also known as: bubble chart, bubble plot. Examples: [1](https://www.canvasxpress.org/examples/scatterbubble2d-1.html), [2](https://www.canvasxpress.org/examples/scatterbubble2d-2.html), [3](https://www.canvasxpress.org/examples/scatterbubble2d-3.html) (5 in the gallery).
+- **Spaghetti** (`graphType: "Spaghetti"`) — Spaghetti plot of many individual trajectories. Also known as: spaghetti plot, trajectories.
+- **Stacked** (`graphType: "Stacked"`) — Stacked bar chart. Also known as: stacked bar, stacked column. Examples: [1](https://www.canvasxpress.org/examples/stacked-1.html), [2](https://www.canvasxpress.org/examples/stacked-2.html), [3](https://www.canvasxpress.org/examples/stacked-3.html) (7 in the gallery).
+- **StackedLine** (`graphType: "StackedLine"`) — Stacked bars combined with lines on a second axis. Also known as: stacked bar and line. Examples: [1](https://www.canvasxpress.org/examples/stackedline-1.html), [2](https://www.canvasxpress.org/examples/stackedline-2.html).
+- **StackedPercent** (`graphType: "StackedPercent"`) — 100% stacked bar chart. Also known as: 100% stacked, percent stacked, proportional bar. Examples: [1](https://www.canvasxpress.org/examples/stackedpercent-1.html), [2](https://www.canvasxpress.org/examples/stackedpercent-2.html), [3](https://www.canvasxpress.org/examples/stackedpercent-3.html) (5 in the gallery).
+- **StackedPercentLine** (`graphType: "StackedPercentLine"`) — 100% stacked bars combined with lines. Also known as: percent stacked and line. Examples: [1](https://www.canvasxpress.org/examples/stackedpercentline-1.html), [2](https://www.canvasxpress.org/examples/stackedpercentline-2.html).
+- **Streamgraph** (`graphType: "Streamgraph"`) — Streamgraph (centred stacked areas). Also known as: streamgraph, stream graph, themeriver.
+- **TagCloud** (`graphType: "TagCloud"`) — Tag / word cloud. Also known as: tag cloud. Examples: [1](https://www.canvasxpress.org/examples/tagcloud-1.html).
+- **TimeSeries** (`graphType: "TimeSeries"`) — Time-series chart on a date axis. Also known as: time series chart, timeline chart.
+- **Tornado** (`graphType: "Tornado"`) — Tornado chart (back-to-back horizontal bars). Also known as: tornado chart, butterfly chart, population pyramid.
+- **Waterfall** (`graphType: "Waterfall"`) — Waterfall chart of cumulative changes. Also known as: waterfall chart, bridge chart. Examples: [1](https://www.canvasxpress.org/examples/waterfall-4.html), [2](https://www.canvasxpress.org/examples/waterfall-5.html).
+- **WordCloud** (`graphType: "WordCloud"`) — Word cloud. Alternative name for TagCloud. Also known as: word cloud, wordcloud.
+
+### Features
+
+- **Area Graphs** — General parameters in area graphs. Parameters: `areaType`, `areaStyle`. Applies to: Area, AreaLine.
+- **Bar Graphs** — General parameters in bar graphs. Parameters: `barType`, `barZero`. Applies to: Bar, BarLine, Bullet, Lollipop, Pareto, Waterfall.
+- **Dotplot Graphs** — General parameters in dotplot graphs. Parameters: `dotplotType`. Applies to: Boxplot, Cleveland, DotLine, Dotplot, Dumbbell, Violin.
+- **Dumbbell Graphs** — General parameters in dumbbell graphs. Parameters: `dumbbellType`. Applies to: Boxplot, Cleveland, DotLine, Dotplot, Dumbbell, Violin.
+- **Gantt Charts** — General parameters in gantt charts. Parameters: `ganttStart`, `ganttEnd`, `ganttCompletion`, `ganttDependency`, `ganttDependencyEnd`, `ganttDependencyColor`, `ganttDependencyThickness`, `ganttCompletionTransparency`. Applies to: Gantt.
+- **Line Graphs** — General parameters in line graphs. Parameters: `lineDecoration`, `lineErrorType`, `coordinateLineColor`, `lineType`, `tension`, `tensionSegments`. Applies to: Area, AreaLine, BarLine, DotLine, Line, ParallelCoordinates, Pareto, StackedLine, StackedPercentLine.
+- **Lollipop Graphs** — General parameters in lollipop graphs. Parameters: `barLollipopOpen`. Applies to: Bar.
+- **Pie Charts** — General parameters in pie charts. Parameters: `pieType`, `pieSegmentPrecision`, `pieSegmentSeparation`, `pieSegmentLabels`, `pieLabelType`, `maxPieSectors`, `showPieValues`, `showPieSampleLabel` and 3 more. Applies to: Pie.
+- **Scatter Plots** — General parameters in scatter plots. Parameters: `dataLabelBackgroundBorderColor`, `dataLabelBackgroundBorderLineType`, `dataLabelBackgroundBorderSize`, `dataLabelBackgroundColor`, `functionColor`, `groupingFactorWindow`, `isBumpPlot`, `isDataLabels` and 9 more.
+- **Stream Plots** — General parameters in scatter plots. Parameters: `scatterStreamType`, `scatterStreamBandwidth`, `scatterStreamNumber`, `scatterStreamExtraSpan`, `scatterStreamTrueRange`, `scatterStreamWiggles`. Applies to: Scatter2D.
+- **Tag Cloud** — General parameters used in tag clouds. Parameters: `tagCloudTextWeightFactor`, `tagCloudTextGridSize`, `tagCloudTextEllipticity`, `tagCloudTextRotateRatio`, `tagCloudShape`. Applies to: TagCloud.
+- **Waterfall Graphs** — General parameters in waterfall graphs. Parameters: `waterfallNetColor`, `waterfallIncreaseColor`, `waterfallDecreaseColor`. Applies to: Bar.
+
+## Distributions and multivariate charts
+
+Charts that show the shape of data and relationships between many variables.
+
+### Graph types
+
+- **Boxplot** (`graphType: "Boxplot"`) — Box-and-whisker plot with outliers, notches and overlaid points. Also known as: box plot, box and whisker. Examples: [1](https://www.canvasxpress.org/examples/boxplot-1.html), [2](https://www.canvasxpress.org/examples/boxplot-2.html), [3](https://www.canvasxpress.org/examples/boxplot-3.html) (59 in the gallery).
+- **Bin** (`graphType: "Bin"`) — 2D binned scatter (rectangular bins). Also known as: 2d histogram, bin2d.
+- **Binplot** (`graphType: "Binplot"`) — 2D binned plot (rectangular bins). Alternative name for Bin. Also known as: binplot.
+- **CDF** (`graphType: "CDF"`) — Empirical cumulative distribution function. Also known as: ecdf, cumulative distribution.
+- **Contour** (`graphType: "Contour"`) — Contour plot of a 2D density or surface. Also known as: contour. Examples: [1](https://www.canvasxpress.org/examples/contour-6.html).
+- **Correlation** (`graphType: "Correlation"`) — Correlation matrix plot. Also known as: correlation heatmap, correlogram. Examples: [1](https://www.canvasxpress.org/examples/correlation-1.html), [2](https://www.canvasxpress.org/examples/correlation-2.html), [3](https://www.canvasxpress.org/examples/correlation-3.html).
+- **Density** (`graphType: "Density"`) — Kernel density plot. Also known as: density plot.
+- **Distribution** (`graphType: "Distribution"`) — Distribution plot (same renderer as Histogram). Alternative name for Histogram. Also known as: distribution chart.
+- **Hex** (`graphType: "Hex"`) — Hexagonal-bin scatter. Also known as: hexbin, hexagonal binning.
+- **Hexplot** (`graphType: "Hexplot"`) — Hexagonal-bin plot. Alternative name for Hex. Also known as: hexplot.
+- **Histogram** (`graphType: "Histogram"`) — Histogram with configurable bins. Also known as: histogram.
+- **ParallelCoordinates** (`graphType: "ParallelCoordinates"`) — Parallel coordinates plot. Also known as: parallel coordinates, parallel axes. Examples: [1](https://www.canvasxpress.org/examples/parallelcoordinates-1.html), [2](https://www.canvasxpress.org/examples/parallelcoordinates-2.html).
+- **QQ** (`graphType: "QQ"`) — Quantile-quantile plot. Also known as: qq plot, q-q plot.
+- **Quantile** (`graphType: "Quantile"`) — Quantile-quantile plot (same renderer as QQ). Alternative name for QQ. Also known as: quantile-quantile.
+- **Ridgeline** (`graphType: "Ridgeline"`) — Ridgeline plot of stacked densities. Also known as: ridgeline, joy plot, ggridges.
+- **Scatter3D** (`graphType: "Scatter3D"`) — 3D scatter plot with rotation. Also known as: 3d scatter, 3d plot. Examples: [1](https://www.canvasxpress.org/examples/scatter3d-1.html), [2](https://www.canvasxpress.org/examples/scatter3d-2.html), [3](https://www.canvasxpress.org/examples/scatter3d-3.html) (11 in the gallery).
+- **SPLOM** (`graphType: "SPLOM"`) — Scatter-plot matrix. Also known as: scatterplot matrix, pairs plot, ggpairs.
+- **Violin** (`graphType: "Violin"`) — Violin plot. Also known as: violin plot.
+
+### Features
+
+- **Bin Plots** — Parameters used to create bin plots in 2d scatter plots. Parameters: `binplotBins`, `binplotBinWidth`, `binplotShape`, `binplotColorScheme`. Applies to: Bin, Binplot, Hex, Hexplot, Scatter2D. Also known as: 2d binning.
+- **Boxplot Graphs** — General parameters in Boxplot Graphs. Parameters: `boxplotOutliersRatio`, `boxplotOutliersColor`, `boxplotOutliersBorderColor`, `boxplotOutliersShape`, `boxplotWhiskersType`, `boxplotType`, `boxplotNotched`, `boxplotTransparency` and 15 more. Applies to: Boxplot.
+- **Contours** — Parameters used to create contours in one and two dimensional plots. Parameters: `isContour`, `contourFilled`, `contourFilledTransparency`, `showContourBands`, `contourBandsColor`, `contourLevelWidth`, `contourLevelNumber`, `contourStat` and 6 more. Applies to: Pareto, Heatmap, Scatter2D. Also known as: contour plot, 2d density contour.
+- **Correlation Graphs** — General parameters for correlation. Parameters: `correlationAxis`, `correlationAnchorLegend`, `correlationAnchorLegendAlignWidth`, `correlationLabelInterval`, `correlationType`. Applies to: Correlation. Also known as: correlation matrix, correlogram, corrplot.
+- **Density Plots** — Parameters used to create density plots in 1d and 2d scatter plots. Parameters: `showScatterDensity`, `densityKernel`, `densityPosition`, `bandwidthRule`, `bandwidthCut`, `bandwidthAdjust`. Applies to: Density, Distribution, Histogram, Ridgeline, Violin. Also known as: kde, kernel density.
+- **General One Dimensional Graphs** — General properties used in one dimensional visualizations. Parameters: `graphOrientation`, `invertGraph`.
+- **Histograms** — Parameters used to create histograms in 2d scatter plots. Parameters: `histogramAsDotplot`, `histogramBinWidth`, `histogramBins`, `histogramBreaks`, `histogramDensityFillTransparency`, `histogramDotplotBorderColor`, `histogramDotplotBorderLineType`, `histogramDotplotBorderSize` and 21 more. Applies to: Scatter2D.
+- **Parallel Coordinates Graphs** — General parameters in Parallel Coordinates Graphs. Applies to: ParallelCoordinates.
+- **Ridgeline Plots** — Parameters used to create ridgeline plots in 1d and 2d scatter plots. Parameters: `ridgelineScale`, `ridgelineViolin`. Applies to: Scatter2D.
+- **Scatter Plot Matrix** — Parameters used to create a matrix of 2d scatter plots. Parameters: `scatterPlotMatrix`, `scatterPlotMatrixType`, `showScatterPlotMatrixLabels`. Applies to: Scatter2D.
+- **Violin Plots** — General parameters in Boxplot Graphs. Parameters: `showViolinBoxplot`, `violinTrim`, `violinScale`, `showBoxplotIfViolin`, `boxplotWidthRatioIfViolin`, `violinTransparency`, `violinColor`, `violinBorderColor` and 4 more. Applies to: Boxplot.
+
+## Scientific and omics charts
+
+Chart types for genomics, clinical and life-science data.
+
+### Graph types
+
+- **Circular** (`graphType: "Circular"`) — Circos-style circular plot with tracks, arcs, connections and ideograms. Also known as: circos, circular genome plot. Examples: [1](https://www.canvasxpress.org/examples/circular-1.html), [2](https://www.canvasxpress.org/examples/circular-2.html), [3](https://www.canvasxpress.org/examples/circular-3.html) (31 in the gallery).
+- **Fish** (`graphType: "Fish"`) — Fish plot of clonal evolution over time. Also known as: fish plot, clonal evolution, muller plot. Examples: [1](https://www.canvasxpress.org/examples/fish-1.html), [2](https://www.canvasxpress.org/examples/fish-2.html), [3](https://www.canvasxpress.org/examples/fish-3.html) (5 in the gallery).
+- **Genome** (`graphType: "Genome"`) — Genome browser with feature, sequence and signal tracks. Also known as: genome browser, igv-like tracks, genomic tracks. Examples: [1](https://www.canvasxpress.org/examples/genome-1.html), [2](https://www.canvasxpress.org/examples/genome-2.html), [3](https://www.canvasxpress.org/examples/genome-3.html) (4 in the gallery).
+- **Heatmap** (`graphType: "Heatmap"`) — Heatmap with clustering dendrograms, annotation colour bars and overlays. Also known as: heat map, clustered heatmap, complexheatmap, pheatmap. Examples: [1](https://www.canvasxpress.org/examples/heatmap-1.html), [2](https://www.canvasxpress.org/examples/heatmap-2.html), [3](https://www.canvasxpress.org/examples/heatmap-3.html) (36 in the gallery).
+- **KaplanMeier** (`graphType: "KaplanMeier"`) — Kaplan-Meier survival curves. Also known as: survival curve, kaplan-meier, survival analysis. Examples: [1](https://www.canvasxpress.org/examples/kaplan-meier-9.html).
+- **Oncoprint** (`graphType: "Oncoprint"`) — Oncoprint of genomic alterations per sample. Also known as: oncoprint, mutation matrix, waterfall mutation plot.
+- **Upset** (`graphType: "Upset"`) — UpSet plot of set intersections. Also known as: upset plot, set intersections.
+- **Volcano** (`graphType: "Volcano"`) — Volcano plot (fold change vs significance). Also known as: volcano plot, enhancedvolcano.
+- **Venn** (`graphType: "Venn"`) — Venn diagram. Also known as: venn diagram, euler diagram. Examples: [1](https://www.canvasxpress.org/examples/venn-1.html), [2](https://www.canvasxpress.org/examples/venn-2.html), [3](https://www.canvasxpress.org/examples/venn-3.html).
+
+### Features
+
+- **Circular Graph Arc Sectors** — General parameters for arc sectors in circular graphs. Parameters: `circularArcSectorSeparation`, `circularArcSectorRadius`. Applies to: Circular.
+- **Circular Graph Connections** — General parameters for connections in circular graphs. Parameters: `showCircularConnections`, `circularConnections`, `circularConnectionsTransparency`. Applies to: Circular.
+- **Circular Graph Tracks** — General parameters for tracks in circular graphs. Parameters: `circularTrackSeparation`, `circularTrackName`, `circularTrackGraphType`, `circularTrackGraphWeight`, `circularTrackOrder`. Applies to: Circular.
+- **Circular Graphs** — General parameters in circular graphs. Parameters: `circularType`, `circularCenterProportion`, `circularRotate`, `circularArc`, `circularLetterSeparationFactor`, `circularOverlayLevelOrientation`, `circularSampleLabelOrientation`, `circularLabelsAlign` and 7 more. Applies to: Circular. Also known as: circos.
+- **Fish Graphs** — General parameters in fish graphs. Parameters: `fishParents`, `fishTimepoints`, `fishSeparateIndependentClones`, `fishShape`, `fishAxis`, `fishAxisLabels`, `fishCloneLabels`. Applies to: Fish.
+- **Genome Browser** — General parameters used in genome browser. Parameters: `genomeTicks`, `wireColor`, `genomeResolution`. Applies to: Genome.
+- **Genome Browser Features** — General parameters used in genome browser features. Parameters: `featureNameAlign`, `featureNameBaseline`, `featureNameColor`, `featureNameFontSize`, `featureNameFontStyle`, `featureNameMargin`, `featureNameRotate`, `featureNameScaleFontFactor` and 22 more. Applies to: Genome.
+- **Genome Browser Sequences** — General parameters used in genome browser sequeces. Parameters: `sequenceAlign`, `sequenceBaseline`, `sequenceColor`, `sequenceFontSize`, `sequenceFontStyle`, `sequenceMargin`, `sequenceRotate`, `sequenceScaleFontFactor` and 28 more. Applies to: Genome.
+- **Genome Browser Tracks** — General parameters used in genome browser tracks. Parameters: `trackNameAlign`, `trackNameBaseline`, `trackNameColor`, `trackNameFontSize`, `trackNameFontStyle`, `trackNameMargin`, `trackNameRotate`, `trackNameScaleFontFactor` and 3 more. Applies to: Genome.
+- **Heatmap Color Indicators** — General parameters for heatmap color indicators. Parameters: `showHeatmapIndicator`, `heatmapIndicatorHeight`, `heatmapIndicatorWidth`, `adjustAspectRatioHeatmapIndicator`, `heatmapIndicatorPosition`, `heatmapIndicatorBeforeOverlays`, `heatmapIndicatorHistogram`, `heatmapIndicatorHistogramColor`. Applies to: Heatmap. Also known as: annotation bars, color bars.
+- **Heatmap Graphs** — General parameters for heatmaps. Parameters: `heatmapAutoAdjust`, `heatmapCellBox`, `heatmapCellBoxColor`, `heatmapCellBoxWidth`, `heatmapCellBoxColorHighlight`, `heatmapCellBoxHighlightWidth`, `heatmapHighlightByRowCol`, `heatmapHighlightByRowColIntersectionColor` and 10 more. Applies to: Heatmap.
+- **Ideograms** — General parameters for Ideograms. Parameters: `ideogram`, `ideogramChromosomeNumber`, `ideogramSegmentAlign`, `ideogramSegmentBaseline`, `ideogramSegmentColor`, `ideogramSegmentFontSize`, `ideogramSegmentFontStyle`, `ideogramSegmentMargin` and 7 more. Applies to: Circular, Genome. Also known as: chromosome ideogram, karyotype.
+- **Kaplan Meier Plots** — Parameters used to create kaplan meier curves in 2d scatter plots. Parameters: `showKMConfidenceIntervals`, `showKMMedianSurvivalTime`, `kmConfidenceLevel`, `kmConfidenceIntervalType`, `kmInvertCensored`, `kmCensoredRug`, `kmRiskTable`, `kmPvalue` and 3 more. Applies to: Scatter2D.
+- **Manhattan Plots** — General parameters in scatter plots. Parameters: `chromosomeLengths`, `armLengths`, `manhattanMarkerChromosomeNumber`, `manhattanMarkerPosition`, `manhattanMarkerLogPValue`, `manhattanCNV`, `manhattanRangeStart`, `manhattanRangeEnd` and 4 more. Applies to: Scatter2D.
+- **Oncoprint Graphs** — General parameters for oncoprints. Parameters: `oncoprintCNA`, `oncoprintMUT`, `oncoprintEXP`, `oncoprintNoAlterations`, `oncoprintColSummary`, `oncoprintRowSummary`, `oncoprintAlteredText`, `oncoprintPresorted` and 2 more. Applies to: Heatmap.
+- **R-Axis** — R axis parameters. Parameters: `rAxis`, `rAxisCeilValue`, `rAxisExact`, `rAxisFactorValue`, `rAxisFloorValue`, `rAxisGridMajorColor`, `rAxisGridMajorLineType`, `rAxisGridMajorShow` and 51 more. Applies to: Circular.
+- **Swimmer Graphs** — General parameters in swimmer graphs. Parameters: `swimHigh`, `swimStart`, `swimEnd`, `swimStatus`, `swimHighCap`. Applies to: Bar. Also known as: swimmer plot, swimmer lane.
+- **UpSet Plots** — General parameters for upset. Parameters: `nUpSets`, `upSetSets`, `upsetShadeColor`, `upsetShadeAlpha`, `upsetMatrixDotAlpha`, `upsetMatrixColor`, `upsetMainBarColor`, `upsetSetsBarColor` and 3 more. Applies to: Heatmap.
+- **Venn Diagrams** — General parameters in Venn diagrams. Parameters: `vennLegendColors`, `vennGroups`, `vennColors`. Applies to: Venn.
+- **Visium Plots** — General parameters in scatter plots. Parameters: `visiumFlip`, `visiumPanning`, `visiumFixedAspectRatio`. Applies to: Scatter2D.
+
+## Networks, flows and hierarchies
+
+Graphs of connections, flows between stages and nested structures.
+
+### Graph types
+
+- **Alluvial** (`graphType: "Alluvial"`) — Alluvial diagram of flows between categorical stages. Also known as: alluvial, ggalluvial.
+- **Bubble** (`graphType: "Bubble"`) — Circle-packing bubble chart of a hierarchy. Also known as: circle packing, packed bubbles.
+- **Chord** (`graphType: "Chord"`) — Chord diagram of flows between groups on a circle. Also known as: chord diagram.
+- **Network** (`graphType: "Network"`) — Network graph with force-directed, circular, radial and cola layouts and community detection. Also known as: network graph, node-link diagram, graph visualization, force graph. Examples: [1](https://www.canvasxpress.org/examples/network-1.html), [2](https://www.canvasxpress.org/examples/network-2.html), [3](https://www.canvasxpress.org/examples/network-3.html) (36 in the gallery).
+- **Ribbon** (`graphType: "Ribbon"`) — Ribbon diagram: a Sankey-style flow of records across categorical axes (sankeyAxes). Also known as: ribbon chart, ribbon diagram, parallel sets.
+- **Sankey** (`graphType: "Sankey"`) — Sankey diagram of flows between nodes. Also known as: sankey diagram, flow diagram. Examples: [1](https://www.canvasxpress.org/examples/sankey-1.html), [2](https://www.canvasxpress.org/examples/sankey-2.html), [3](https://www.canvasxpress.org/examples/sankey-3.html) (19 in the gallery).
+- **Sunburst** (`graphType: "Sunburst"`) — Sunburst chart of a hierarchy. Also known as: sunburst, radial treemap, multi-level pie.
+- **Tree** (`graphType: "Tree"`) — Tree diagram / dendrogram layout. Also known as: tree diagram, hierarchy tree. Examples: [1](https://www.canvasxpress.org/examples/tree-1.html), [2](https://www.canvasxpress.org/examples/tree-2.html), [3](https://www.canvasxpress.org/examples/tree-3.html) (6 in the gallery).
+- **TreeBracket** (`graphType: "TreeBracket"`) — Tournament-style bracket drawn from a hierarchy (Final, Semifinal, ...). Also known as: bracket, tournament bracket.
+- **Treemap** (`graphType: "Treemap"`) — Treemap of a hierarchy. Also known as: treemap, tree map. Examples: [1](https://www.canvasxpress.org/examples/treemap-1.html), [2](https://www.canvasxpress.org/examples/treemap-2.html).
+
+### Features
+
+- **Bubble Graphs** — General parameters in circular bubble graphs. Parameters: `bubbleColor`, `bubbleOutlineColor`, `bubbleLabel`, `bubbleLabelPosition`, `bubbleLabelLineType`. Applies to: Bubble.
+- **Chord Graphs** — General parameters in circular chord graphs. Parameters: `chordThickness`, `chordColor`, `chordScaleShow`. Applies to: Chord.
+- **Hierarchy** — General parameters to build hierarchy for circular (sunburst) trees and bubbles graphs. Parameters: `hierarchy`. Applies to: Bubble, Circular, Sunburst, Tree, TreeBracket, TreeBracket.
+- **Network Algorithm Parameters** — General parameters used in the layout algorithms for networks. Parameters: `networkConvergenceThreshold`, `attractiveForceFunction`, `repulsiveForceFunction`, `useBarnesHutSimulation`, `networkDisjoint`, `networkSpeed`, `networkGravity`, `networkSpringLength` and 5 more. Applies to: Network. Also known as: force-directed layout.
+- **Network Cola Algorithm Parameters** — General parameters used in the cola layout algorithm for networks. Parameters: `networkColaLinkDistance`, `networkColaAvoidOverlaps`, `networkColaHandleDisconnected`, `networkColaConvergenceThreshold`, `networkColaGroupCompactness`, `networkColaSymmetricDiffLinkLengths`, `networkColaJaccardLinkLength`, `networkColaJaccardLinkLengthDefault` and 8 more. Applies to: Network. Also known as: cola layout, constraint layout.
+- **Network Communities** — General parameters used in network communities. Parameters: `showNetworkCommunities`, `calculateNetworkCommunities`, `coordinateNetworkConvexHullCommunityColor`, `hullScale`. Applies to: Network. Also known as: community detection, louvain, modularity.
+- **Network Graphs** — General parameters used in networks. Parameters: `calculateLayout`, `edgeColor`, `edgeSeparationFactor`, `highlightNode`, `ignoreEventlessOrder`, `is3DNetwork`, `isNetworkMetrics`, `labelNodePosition` and 24 more. Applies to: Network.
+- **Network Node and Edge Attributes** — General parameters used for nodes and edges in networks. Parameters: `colorNodeBy`, `shapeNodeBy`, `sizeNodeBy`, `patternNodeBy`, `colorEdgeBy`, `sizeEdgeBy`, `lineEdgeBy`, `minEdgeSize` and 1 more. Applies to: Network.
+- **Sankey Diagrams** — General parameters in sankey diagrams. Parameters: `sankeyAxes`, `sankeyAxesOrder`, `sankeyLinkLineWidth`, `sankeyLinkOrder`, `sankeyLinksColor`, `sankeyLinksOpacity`, `sankeyLodeGuidance`, `sankeyNodePadding` and 31 more. Applies to: Sankey.
+- **Tree Bracket** — General parameters in tree brackets. Parameters: `treeBracketFactor`, `treeBracketLengthFactor`. Applies to: Tree.
+- **Treemap Graphs** — General parameters for treemaps. Parameters: `treemapBorderWidth`, `treemapBorderColor`. Applies to: Treemap.
+- **Trees** — General parameters in trees. Parameters: `treeNodeSizeScaleFactor`, `treeLabelAlign`, `treeLinkColor`, `treeNodeOutlineColor`, `treeLinkWidth`, `treeInverted`, `treeType`, `treeClickDisable`. Applies to: Tree.
+- **Workflow Charts** — General parameters in workflow charts. Parameters: `workflowCurrentAlign`, `workflowCurrentBaseline`, `workflowCurrentColor`, `workflowCurrentFontSize`, `workflowCurrentFontStyle`, `workflowCurrentMargin`, `workflowCurrentRotate`, `workflowCurrentScaleFontFactor` and 19 more. Also known as: workflow, flowchart, pipeline diagram.
+
+## Maps
+
+Geographic maps: choropleth, symbol and connection maps.
+
+### Graph types
+
+- **Map** (`graphType: "Map"`) — Geographic map (choropleth, markers, connections, region pies). Also known as: choropleth map, geo chart. Examples: [1](https://www.canvasxpress.org/examples/map-1.html), [2](https://www.canvasxpress.org/examples/map-2.html), [3](https://www.canvasxpress.org/examples/map-3.html) (18 in the gallery).
+
+### Features
+
+- **Maps** — Geographic maps from TopoJSON/GeoJSON with built-in basemaps (continents, countries, US states, US zip codes), markers, connections and pie charts on regions. Parameters: `topoJSON`, `mapId`, `mapZipCodeIds`, `mapProjection`, `mapConfig`, `mapConfigFeatures`, `mapSmps`, `hiddenMapFeatures` and 5 more. Applies to: Map. Also known as: map, maps, choropleth, geographic, geo, geojson, topojson, symbol map, bubble map, world map, us map, zip code map. See: https://www.canvasxpress.org/examples/map-1.html.
+- **Maps Albers** — Map albers properties used in map visualizations. Parameters: `mapLatitudeOrigin`, `mapCentralMeridian`, `mapStandardParallel1`, `mapStandardParallel2`. Applies to: Map. Also known as: albers projection.
+- **Maps Leaflet** — Map leaflet properties used in map visualizations. Parameters: `useLeaflet`, `leafletAlpha`, `leafletZoomAlphaColor`, `leafletTileType`. Applies to: Map. Also known as: leaflet, tile map, slippy map, basemap tiles.
+- **Maps Orthographic** — Map orthographic properties used in map visualizations. Parameters: `mapGraticuleShow`, `mapGraticuleType`. Applies to: Map. Also known as: globe, orthographic projection.
+
+## KPI and finance
+
+Indicator gauges, bullet graphs and financial composites.
+
+### Graph types
+
+- **Bullet** (`graphType: "Bullet"`) — Bullet graph: a measure against a target over qualitative ranges. Also known as: bullet chart, bullet graph, kpi. Examples: [1](https://www.canvasxpress.org/examples/bullet-1.html), [2](https://www.canvasxpress.org/examples/bullet-2.html), [3](https://www.canvasxpress.org/examples/bullet-3.html) (6 in the gallery).
+- **Meter** (`graphType: "Meter"`) — Meter / gauge / ring indicator sharing the range and target model with bullets. Also known as: gauge, speedometer, dial, ring meter. Examples: [1](https://www.canvasxpress.org/examples/meter-1.html), [2](https://www.canvasxpress.org/examples/meter-2.html), [3](https://www.canvasxpress.org/examples/meter-3.html) (24 in the gallery).
+- **OptionsWall** (`graphType: "OptionsWall"`) — Candlesticks plus an options chain (implied volatility / premium flanks) on a shared price axis. Also known as: candlestick, ohlc, options chain, stock chart. Examples: [1](https://www.canvasxpress.org/examples/optionswall-1.html), [2](https://www.canvasxpress.org/examples/optionswall-2.html).
+
+### Features
+
+- **Bullet Graphs** — General parameters in bullet graphs. Parameters: `bulletWidthRatio`, `bulletStyle`, `progressWidthRatio`, `progressTrackColor`, `bulletTargetVarName`, `bulletTargetWidthRatio`, `bulletTargetVarColor`, `bulletTargetType` and 1 more. Applies to: Bullet.
+- **Meter Graphs** — General parameters in meter graphs. Parameters: `meterType`, `meterAlign`, `meterCard`, `meterTopology`, `meterNeedleColor`, `meterBackgroundColor`, `meterCardBackgroundColor`, `meterCardBorderColor` and 6 more. Applies to: Meter.
+- **OptionsWall Charts** — Composite price + options-chain wall (candlestick center, put/call flanks, shared strike axis, spot ruler). Parameters: `optionsWallChain`, `optionsWallSpot`, `optionsWallExpiry`, `optionsWallCadence`, `optionsWallFlankMetric`, `optionsWallPutsSide`, `optionsWallPanelRatio`, `optionsWallMoneynessShading` and 5 more. Applies to: OptionsWall.
+- **Ranges** — General parameters use in graphs that utilize ranges. Parameters: `rangeColors`, `rangeColorTransparency`, `rangeStackShow`, `rangeStack`, `rangeSegments`. Applies to: Bar, Bullet, Meter. Also known as: qualitative ranges, performance bands.
+
+## Analytics built into the chart
+
+Clustering, statistics, fits and forecasts computed inside the chart.
+
+### Features
+
+- **Forecasting** — showForecast projects a regularly spaced series forward with a prediction interval (SES, Holt, Holt-Winters; matches R stats::HoltWinters), per group or on date axes. Parameters: `showForecast`. Also known as: time series forecast, predictive analytics. See: https://www.canvasxpress.org/forecasting.html.
+- **Clustering** — Hierarchical clustering (euclidean / manhattan / max distance; single / complete / average linkage) and k-means, on samples or variables, with mean/median imputation. Parameters: `clusteringDistance`, `linkage`, `clusterAxis`, `kmeansVarClusters`, `kmeansSmpClusters`, `maxIterations`, `imputeMethod`, `samplesClustered` and 3 more. Also known as: clustering, hierarchical clustering, hclust, k-means, kmeans, cluster analysis. See: https://www.canvasxpress.org/examples/heatmap-1.html.
+- **Confidence Intervals** — Parameters used to create regression, loess and quantiles confidence intervals in 2d scatter plots. Parameters: `confidenceIntervalColor`, `showConfidenceIntervals`, `confidenceIntervalsMax`, `confidenceLevel`, `confidenceIntervalColorCoordinate`. Applies to: Scatter2D. Also known as: confidence interval, confidence band.
+- **Data Transformation** — log2/log10, exponential, square root, percentile, z-score and ratio transforms, plus a declarative dplyr/tidyr-style data pipeline. Parameters: `transformData`, `transformAxis`, `dataPipeline`. Also known as: transform, log scale data, z-score, normalize, dplyr, tidyr, data pipeline, wrangling.
+- **Dendrograms** — General parameters in dendrograms. Parameters: `colorSmpDendrogramBy`, `colorVarDendrogramBy`, `showSmpDendrogram`, `showVarDendrogram`, `smpDendrogramHang`, `smpDendrogramNewick`, `smpDendrogramPosition`, `smpDendrogramUseHeight` and 6 more. Also known as: dendrogram, cluster tree.
+- **Error Bars** — Error bar and confidence intervals related parameters. Parameters: `showErrorBars`, `errorBarsType`, `errorBarsColor`, `errorBarsThickness`, `errorBarsWidth`, `standardDeviationType`. Also known as: error bars, standard error, standard deviation.
+- **Fit Lines** — Parameters used to create regression, loess and quantiles lines in 2d scatter plots. Parameters: `fitLineColor`, `fitLineTransparency`, `fitLineType`, `fitLineWidth`. Applies to: Scatter2D. Also known as: trend line, trendline, fit line. See: https://www.canvasxpress.org/examples/linear-fit-1.html, https://www.canvasxpress.org/examples/nonlinear-fit-1.html.
+- **Forecast** — Parameters used to project an ordered, regularly spaced series forward (exponential smoothing, as R stats::HoltWinters) in 2d scatter plots. Parameters: `showForecast`, `forecastMethod`, `forecastHorizon`, `forecastSeasonLength`, `showForecastInterval`, `forecastLevel`, `forecastLineType`. Applies to: Scatter2D. Also known as: forecast, forecasting, prediction interval, holt-winters, exponential smoothing. See: https://www.canvasxpress.org/forecasting.html.
+- **Loess** — Parameters used to create smooth lines in 2d scatter plots. Parameters: `showLoessFit`, `loessDegree`, `loessSteps`, `loessBandwidth`, `loessCell`, `loessSpan`, `loessNormalize`, `loessFamily` and 2 more. Applies to: Scatter2D. Also known as: loess, lowess, smoothing, geom_smooth.
+- **Quantile Regression Plots** — Parameters used to create Quantile Regression plots in 2d scatter plots. Parameters: `quantiles`, `showQuantileRegressionFit`. Applies to: Scatter2D. Also known as: quantile regression, quantreg.
+- **Regression** — Parameters used to create regression lines in 2d scatter plots. Parameters: `showRegressionFit`, `showRegressionFitEquation`, `regressionFitEquationPosition`, `showRegressionFullRange`, `regressionType`, `regressionOrder`. Applies to: Scatter2D. Also known as: regression, linear regression, polynomial fit, curve fitting.
+
+## Data handling and wrangling
+
+Input formats, filtering, sorting, selection, transforms and reshaping.
+
+### Features
+
+- **Live streaming data** — pushData appends new samples to a rendered chart and keeps a rolling window (streamWindow), recomputing fits and filters; dashboards subscribe panels to Server-Sent-Events streams without code. Parameters: `streamWindow`. Also known as: streaming, real-time, realtime, live data, live chart, sse, server-sent events. See: https://www.canvasxpress.org/streaming.html.
+- **File formats and data loading** — Load JSON, XML, CSV/TSV and other delimited text, Apache Parquet, GML/GPML network files (including WikiPathways) and archives, by drag-and-drop or URL. Also known as: csv, tsv, parquet, json, xml, gpml, gml, file import, drag and drop, upload data, wikipathways. See: https://www.canvasxpress.org/files.html.
+- **Data wrangling** — A declarative dplyr/tidyr-style pipeline (dataPipeline), flexible group-by aggregation (aggregations) and formula-based calculated fields (calculatedFields, a safe evaluator, no eval). Parameters: `dataPipeline`, `aggregations`, `calculatedFields`. Also known as: pivot, reshape, mutate, summarise, binning, derived column. See: https://www.canvasxpress.org/wrangling.html.
+- **DOE** — Parameters for building graphs from metadata (design of experiments). Parameters: `maxDOENumber`, `includeDOE`, `extendedDOE`, `asDOE`.
+- **Data** — Data related parameters. Parameters: `appendNetworkData`, `dataTextAlign`, `dataTextBaseline`, `dataTextColor`, `dataTextFontSize`, `dataTextFontStyle`, `dataTextMargin`, `dataTextRotate` and 7 more.
+- **Data Context** — Data context related parameters. Parameters: `asSampleFactors`, `asVariableFactors`, `stringSampleFactors`, `stringVariableFactors`, `stringNodeAttributes`, `stringEdgeAttributes`.
+- **Data Filters** — Filter by sample, variable, network node/edge or genome feature annotations (and/or), plus calculated fields, flexible aggregation and saved authoring states. Parameters: `dataFilterWidth`, `dataFilterMaxItems`, `calculatedFields`, `shelfStates`, `aggregations`, `filterType`, `filterMode`, `filterSkipNullKeys` and 16 more. Also known as: filter, filters, filtering, slicer, calculated field, calculated fields, aggregation, group by.
+- **Data Ratio Reference** — Data ratio related parameters. Parameters: `ratioReference`, `ratioSampleReference`, `ratioGroupReference`, `ratioLevelReference`.
+- **Data Selection** — Parameters used to select data in all visualizations. Parameters: `selectionMode`, `selectionColor`, `selectionMetadata`, `selectedDataPoints`. Also known as: selection, select data, lasso.
+- **Data Sorting** — Data sorting related parameters. Parameters: `sortDir`, `sortCaseSensitive`, `sortData`, `sortOnGrouping`, `sortIncludeEmpty`, `numericGroupSort`. Also known as: sort, sorting, reorder.
+- **Data Time Series** — Time series related parameters. Parameters: `timeFormat`, `isGraphTime`. Also known as: time series, dates, date axis.
+- **Graph Metadata** — General graph metadata properties used in all graphs. Parameters: `tags`, `metaData`, `password`.
+- **Missing Data** — Missing data related parameters. Parameters: `missingDataColor`, `missingDataValue`, `nanOmit`. Also known as: missing values, na, nan.
+- **Plot Data Type** — Type of plot. Parameters: `isR`, `isChat`, `isCxplot`, `isGGMatrix`, `ggMatrixRole`, `isDataFrame`.
+- **Random** — Properties used to generate random data sets. Parameters: `randomSeed`, `pseudoRandom`, `randomMethod`.
+- **Samples** — Properties associated with samples. Parameters: `highlightSmp`, `maxSmpStringLen`, `showSampleNames`, `smpHighlightColor`, `smpLabelAutoAlignPosition`, `smpLabelImage`, `smpLabelImageRound`, `smpLabelInterval` and 17 more.
+- **Variables** — Properties associated with variables. Parameters: `highlightVar`, `maxVarStringLen`, `showVariableNames`, `varHighlightColor`, `varLabelInterval`, `varTextAlign`, `varTextBaseline`, `varTextColor` and 14 more.
+
+## Layout, faceting and axes
+
+Panels, small multiples, axes, margins and plot areas.
+
+### Features
+
+- **3D Attributes** — General parameters in 3d scatter plots and networks. Parameters: `xRotate`, `yRotate`, `zRotate`, `x3DRatio`, `y3DRatio`, `z3DRatio`, `show3DGrid`, `rotationSensitivity` and 2 more. Applies to: Bar, Network, Scatter3D. Also known as: 3d rotation, 3d chart.
+- **Aspect Ratio, Space and Width** — Properties used to adjust the aspect ratio, space and width in most visualizations. Parameters: `percentAspectRatioPlotArea`, `fixedAspectRatio`, `variableSpace`, `widthFactor`, `dataPointSize`, `dataPointSizeScaleFactor`, `setPlotX`, `setPlotY` and 2 more. Also known as: aspect ratio, bar width, spacing.
+- **Axis** — General axis parameters. Parameters: `axisExtension`, `axisAlgorithm`, `axisWilkinsonLoose`, `axisCoordinate`. Also known as: axes.
+- **Combination Plot Strips** — Parameters used in strips complex plots. Parameters: `stripBackgroundBorderColor`, `stripBackgroundBorderLineType`, `stripBackgroundBorderSize`, `stripBackgroundColor`, `stripTextAlign`, `stripTextBaseline`, `stripTextColor`, `stripTextFontSize` and 8 more. Also known as: facet strips, strip labels.
+- **Combination Plots** — Parameters used in complex plots. Parameters: `layoutTopology`, `layoutAdjust`, `layoutGlobalGroups`, `layoutCollapse`, `layoutSpacing`, `layoutType`, `layoutRemoveEmpty`, `layoutCanvasCompartments` and 1 more. Also known as: combination chart, composite plot, multi-panel figure.
+- **Data Faceting** — Split a chart into panels by one or two factors (wrap, rows or columns). Parameters: `segregateSamplesBy`, `segregateVariablesBy`, `splitSamplesBy`, `splitVariablesBy`, `splitSeparation`. Also known as: faceting, facet, facet_wrap, facet_grid, small multiples, trellis, panels. See: https://www.canvasxpress.org/examples/facet-1.html, https://www.canvasxpress.org/examples/layout-1.html.
+- **Marginal Text** — Properties associated with marginal text. Parameters: `bottomMarginalText`, `bottomMarginalTextAlign`, `bottomMarginalTextBaseline`, `bottomMarginalTextColor`, `bottomMarginalTextFontSize`, `bottomMarginalTextFontStyle`, `bottomMarginalTextMargin`, `bottomMarginalTextRotate` and 28 more.
+- **Margins** — Margin properties used in most visualizations. Parameters: `margin`, `marginLeft`, `marginTop`, `marginBottom`, `marginRight`.
+- **Plot Area** — General parameters for the plotting area in one dimensional plots. Parameters: `guidesColor`, `guidesLength`, `guidesLineType`, `guidesShow`, `guidesTransparency`, `guidesWidth`, `guideStyle`, `blockContrast` and 14 more.
+- **Plot Mode** — Properties to customize the plot. Parameters: `isEditable`, `isReproducibleResearch`, `reproduceTime`, `reproduceVideoMode`.
+- **Plot View** — General view properties. Parameters: `view`.
+- **Plot and Panel Areas** — General plot and panel properties used in all graphs. Parameters: `panelBackgroundBorderColor`, `panelBackgroundBorderLineType`, `panelBackgroundBorderSize`, `panelBackgroundColor`, `plotBackgroundBorderColor`, `plotBackgroundBorderLineType`, `plotBackgroundBorderSize`, `plotBackgroundColor` and 3 more.
+- **Scrollbar** — Parameters associated with custom scrollbar styling. Parameters: `scrollbarBackgroundColor`, `scrollbarAltBackgroundColor`, `scrollbarThumbColor`, `scrollbarThumbHoverColor`.
+- **Text Placement** — Properties associated with text placements attributes. Parameters: `optimizeTextPosition`, `optimizeTextPositionStrategy`, `optimizeTextPositionEnforceBounds`, `optimizeTextPositionTemperature`, `optimizeTextPositionCooling`. Also known as: label placement, labels.
+- **X-Axis** — X axis parameters. Parameters: `setMaxX`, `setMaxX2`, `setMinX`, `setMinX2`, `setPanningMaxX`, `setPanningMinX`, `xAxis`, `xAxis2` and 76 more. Also known as: x axis.
+- **Y-Axis** — Y axes parameters. Parameters: `setMaxY`, `setMinY`, `setPanningMaxY`, `setPanningMinY`, `yAxis`, `yAxis2Rotate`, `yAxis2Show`, `yAxis2Title` and 71 more. Also known as: y axis, log scale, secondary axis, dual axis.
+- **Z-Axis** — Z axes parameters. Parameters: `setMaxZ`, `setMinZ`, `zAxis`, `zAxis2Title`, `zAxisCeilValue`, `zAxisCurrent`, `zAxisExact`, `zAxisFactorValue` and 51 more. Applies to: ScatterBubble2D, Scatter3D. Also known as: z axis.
+
+## Styling, themes and annotation
+
+Colours, themes, titles, legends, annotations and animation.
+
+### Features
+
+- **Themes** — 20+ built-in themes that control all non-data elements, including ggplot, bw, minimal, classic, Economist, Wall Street Journal, Tableau, Excel, Stata, solarized, dark and high-contrast. Parameters: `theme`. Also known as: theme, themes, chart theme, ggplot theme, economist theme, wsj theme, dark mode, high contrast, style preset, branding.
+- **UI theming (widget styles, dark mode, design tokens)** — The widgets around a chart (toolbar, menus, Customizer, data table, filters, dialogs) share one set of design tokens: dataUIStyle presets (all WCAG AA), light/dark/auto widgets that follow the chart theme, widgetsTheme or a page container's data-cx-ui-theme, and --cx-ui-* CSS variables to override any colour per page or per chart. In dark each preset keeps its own accent colour, lightened to stay readable (getDarkAccent; --cx-ui-dark-accent* to set it yourself), and colorful's per-item colours follow. Per-chart, so charts on one page can differ. Parameters: `dataUIStyle`, `widgetsTheme`. Also known as: ui theme, widget theme, dark widgets, dark ui, theming, design tokens, css variables, css custom properties, ui style, widget style, data-cx-ui-theme, dark accent, dark mode accent, per-style dark mode, accent color, getDarkAccent.
+- **Animations and Visualization Transitions** — Animation and visualization transition parameters. Parameters: `showAnimation`, `showTransition`, `transitionStep`, `transitionStaggering`, `transitionType`, `transitionFunction`, `transitionSpeed`. Also known as: animation, transitions, animated charts.
+- **Citations or References** — A citation or reference line on the chart (bottom right), with its own font, colour and alignment. Parameters: `citation`, `citationAlign`, `citationBaseline`, `citationColor`, `citationFontSize`, `citationFontStyle`, `citationMargin`, `citationRotate` and 1 more. Also known as: caption, source line, credit.
+- **Colors** — Properties to adjust Colors. Parameters: `colorScheme`, `colors`, `colorSpectrum`, `colorSpectrumBinned`, `colorSpectrumBreaks`, `colorSpectrumZeroValue`, `oddColor`, `evenColor` and 3 more. Also known as: color palette, colour palette, colour scheme, color scheme, palette.
+- **Data Point Attributes** — General attributes for data points in scatter and one dimensional plots. Parameters: `colorBy`, `colorKey`, `colorByData`, `colorLegendTitle`, `shapeBy`, `shapeByContinuous`, `shapeKey`, `shapeByData` and 36 more. Also known as: marker style, point style.
+- **Decorations** — Annotations drawn in data coordinates: reference lines, shaded ranges, text, points and markers. Parameters: `decorations`, `decorationsBackgroundBorderColor`, `decorationsBackgroundBorderLineType`, `decorationsBackgroundBorderSize`, `decorationsBackgroundColor`, `decorationsClipped`, `decorationsColors`, `decorationsHeight` and 18 more. Also known as: annotation, annotations, callout, reference line, threshold line, range highlight, shaded band, highlight band, text annotation, markers.
+- **Foreground and Background** — Foreground and Background properties used in all visualizations. Parameters: `foreground`, `background`. Also known as: background color, background image.
+- **General Attributes** — Properties related to Shapes, Images and Patterns. Parameters: `shapes`, `images`, `patterns`, `linePatterns`, `patternStrokeColor`, `patternFillColor`, `patternStrokeWidth`. Also known as: patterns, hatching.
+- **Gradients** — Properties used to adjust color gradients in all visualizations. Parameters: `gradient`, `gradientType`, `gradientOrientation`. Also known as: gradient, color ramp, continuous color scale.
+- **Grey Out** — Emphasise chosen data and grey out, ghost or focus the rest, declaratively (highlightBy) or by selection. Parameters: `highlightGreyOut`, `highlightColor`, `highlightMode`, `highlightBy`. Also known as: gghighlight, highlight, focus, ghost, emphasis, grey out. See: https://www.canvasxpress.org/highlighting.html.
+- **Images** — General parameters with images. Parameters: `imageTimeOut`, `imageMaxTries`. Also known as: logo, images.
+- **Legends** — Legends for variables and samples. Parameters: `customLegend`, `legendBackgroundBorderColor`, `legendBackgroundBorderLineType`, `legendBackgroundBorderSize`, `legendBackgroundColor`, `legendColumns`, `legendDirection`, `legendHorizontalJustification` and 51 more. Also known as: legend.
+- **Lines** — Properties to adjust Lines. Parameters: `dashLength`, `dotLength`, `arrowQuadraticFactor`, `arrowHeadType`, `arrowHeadTypeOpen`, `arrowHeadSize`, `arrowHeadAngle`, `capType` and 4 more. Also known as: line style, linetype, dashed lines.
+- **Overlays** — Colored boxes to help in the visualization of samples and variables. Parameters: `maxOverlayStringLen`, `overlayTextAlign`, `overlayTextBaseline`, `overlayTextColor`, `overlayTextFontSize`, `overlayTextFontStyle`, `overlayTextMargin`, `overlayTextRotate` and 18 more. Also known as: overlays, annotation tracks.
+- **Shadows** — Shadow properties used in most visualizations. Parameters: `showShadow`, `showTextShadow`, `shadowOffsetX`, `shadowOffsetY`, `shadowBlur`, `shadowColor`.
+- **Shapes** — Properties to adjust Shapes. Parameters: `roundedPolygonRadius`, `useRoundRectangles`, `plotStyle`. Also known as: marker shapes, point shapes.
+- **Sizes** — Properties to adjust Sizes. Parameters: `sizes`, `initialSize`, `sizeStep`.
+- **Text** — Properties associated with text attributes. Parameters: `fonts`, `fontsExternal`, `fontName`, `fontStyle`, `fontColor`, `fontSize`, `fontScaleFontFactor`, `align` and 4 more. Also known as: fonts, typography.
+- **Titles and Subtitles** — Properties associated with titles and subtitles. Parameters: `subtitle`, `subtitleAlign`, `subtitleBaseline`, `subtitleColor`, `subtitleFontSize`, `subtitleFontStyle`, `subtitleMargin`, `subtitleRotate` and 10 more. Also known as: title, subtitle, headline, chart title.
+- **Transparency** — General transparency properties used in all graphs. Parameters: `transparency`, `transparencyHidden`. Also known as: opacity, alpha.
+
+## Interactivity and authoring
+
+Tooltips, zoom, events, menus, the Customizer, data table and history.
+
+### Features
+
+- **Undo / redo, history and recipes** — Committed actions (data, config, filters, sorting, grouping, facets, transforms, clustering) form an undo/redo stack with a history; the steps export as a replayable recipe and an audit trail. Also known as: undo, redo, history, audit trail, recipe, replay, provenance. See: https://www.canvasxpress.org/audit.html.
+- **Saved states (chart and page)** — Save named authoring states per chart, and page-level states that save and restore every chart on a page together. Parameters: `shelfStates`. Also known as: saved views, bookmarks, snapshots, saved state, page state.
+- **Linked charts (broadcast)** — Selections and events broadcast between charts on a page so they stay linked. Parameters: `broadcast`. Also known as: brushing and linking, linked brushing, coordinated views. See: https://www.canvasxpress.org/broadcast.html.
+- **Context Menu** — Parameters associated with the context menu. Parameters: `contextMenuBackgroundColor`, `contextMenuBorderColor`, `contextMenuTextColor`, `contextMenuFontSize`, `contextMenuHoverColor`. Also known as: right-click menu.
+- **Data Customizer** — The in-chart Customizer: restyle, reconfigure and reshape the chart without code, including shelf-style field mapping. Parameters: `maxDataCustomizerEntries`, `customizerSize`, `customizerEntriesAsList`, `customizerGraphMaximize`, `customizerCloseBackgroundColor`, `customizerCloseTextColor`, `customizerBackgroundColor`, `customizerBorderColor` and 3 more. Also known as: customizer, chart editor, no-code editor, shelves, drag and drop authoring.
+- **Data Table** — The chart's data as an interactive table: search, sorting, pagination, pinned and hidden columns, per-column width, alignment and sprintf formats. Parameters: `dataTableAccentColor`, `dataTableActiveCellBorderColor`, `dataTableAutoColumnWidth`, `dataTableBannerBackgroundColor`, `dataTableBannerBorderColor`, `dataTableBannerImage`, `dataTableBannerShow`, `dataTableBannerTextAlign` and 92 more. Also known as: data table, table view, grid view, pivot table view, datatable.
+- **Data UI Widgets** — Parameters associated with all data UI widgets. Parameters: `dataUIStyle`, `widgetsTheme`, `widgetsBackgroundColor`, `widgetsBaseColor`, `widgetsBorderColor`, `widgetsHoverTransparency`, `widgetsAccentColor`, `widgetsContrastColor` and 8 more. Also known as: widgets, ui controls.
+- **Events** — Event parameters. Parameters: `disableEvents`, `disableCode`, `disableMenu`, `disableToolbar`, `disableTooltipCallout`, `disableDataTable`, `disableGrid`, `disableChat` and 35 more. Also known as: click events, callbacks, linked charts, broadcast.
+- **HTML Widgets** — General parameters for filtering with external HTML widgets. Parameters: `htmlWidget`, `htmlWidgetType`, `htmlWidgetHeight`.
+- **Tooltip** — Tooltip parameters. Parameters: `tooltipTransparency`, `tooltipFontColor`, `tooltipBackgroundColor`, `tooltipBorderColor`. Also known as: tooltip, hover, popup.
+- **Zooming, Panning and Resizing** — Parameters associated with zooming, panning and resizing events. Parameters: `zoom`, `zoomStep`, `zoomScale`, `zoomVariablesDisable`, `zoomSamplesDisable`, `zoomXDisable`, `zoomYDisable`, `zoomDisable` and 3 more. Also known as: zoom, pan, resize, brushing.
+
+## Accessibility
+
+Screen-reader, keyboard and visual accessibility.
+
+### Features
+
+- **Screen-reader and keyboard accessibility** — Every chart gets a generated text summary and an off-screen data table kept in sync with the data, live-region announcements, a focusable canvas with arrow-key navigation between data points, keyboard-operable widgets, a visible focus outline, a high-contrast theme, and reduced motion when the OS requests it. WCAG 2.1 AA conformance report (VPAT-style) published. Also known as: accessibility, a11y, wcag, screen reader, alt text, aria, keyboard navigation, reduced motion, vpat, section 508. See: https://www.canvasxpress.org/accessibility.html.
+- **Colourblind simulation** — Preview a chart as seen with deuteranopia or protanopia, from the menu or the Customizer theme panel. Also known as: colorblind, color blind, colour blind, colourblind, cvd, deuteranopia, protanopia, color vision deficiency.
+
+## AI and natural language
+
+Generating and modifying charts from plain English.
+
+### Features
+
+- **LLM** — Generate or modify a chart config from plain English, with the built-in service or your own endpoint. Parameters: `llmServiceURL`, `dashboardsServiceURL`, `connectorsServiceURL`, `llmTemperature`, `llmSelectFirst`, `llmBehaviour`, `llmPrompt`, `llmStack` and 9 more. Also known as: ai, natural language, llm, copilot, text to chart, chatbot, chart recommendation, show me. See: https://www.canvasxpress.org/llm.html.
+
+## Export, integration and reproducibility
+
+Image export, language bindings, specs and platform services.
+
+### Features
+
+- **Image and vector export** — Export to PNG (with high-resolution magnification), SVG, and the reproducible JSON config. Parameters: `printMagnification`, `printType`, `saveFilename`. Also known as: svg, svg export, vector export, png, save as image.
+- **Reproducible specs (save and reload)** — A chart's full state serialises to a portable JSON config (getConfig) that reloads to the identical view, in JavaScript, R or Python. Also known as: reproducibility, reproducible, json spec, save and load, portable spec. See: https://www.canvasxpress.org/spec.html.
+- **Grammar of graphics and ggplot2 conversion** — Layered grammar-of-graphics rendering (geoms, stats, scales, coords, facets); R ggplot2 plots convert to CanvasXpress with close visual fidelity. Also known as: ggplot2, ggplot, grammar of graphics, geom, aes, layers. See: https://www.canvasxpress.org/ggplot-interface.html, https://www.canvasxpress.org/cxplot-interface.html.
+- **Language bindings and frameworks** — The same chart specification works in JavaScript, the R htmlwidget (Shiny, R Markdown, Quarto), Python (Jupyter, Dash, Streamlit, Flask) and Julia (CanvasXpress.jl: IJulia, Pluto, VS Code, Documenter), plus React, VS Code notebooks and Observable. Also known as: r, shiny, python, jupyter, dash, streamlit, flask, julia, pluto, ijulia, react, vue, htmlwidget, quarto, observable, notebook. See: https://www.canvasxpress.org/r-interface.html, https://www.canvasxpress.org/python-interface.html, https://www.canvasxpress.org/julia-interface.html, https://www.canvasxpress.org/react-interface.html, https://www.canvasxpress.org/integration.html.
+- **Dashboards and connectors** — canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, share links and live sources, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo. Parameters: `dashboardsServiceURL`, `connectorsServiceURL`. Also known as: dashboard, dashboards, bi, cross-filtering, linked views, sql, database, google sheets, share link, snowflake, bigquery, duckdb, data warehouse, calculated fields, e-signature, electronic signature, 21 cfr part 11, audit trail, version history, scheduled refresh. See: https://www.canvasxpress.org/authenticated-data.html.
+- **Debug** — Debugging parameters. Parameters: `debug`, `debugWithArea`, `verbose`, `offline`, `showVersion`, `showCode`, `codeType`.
+- **General** — General properties used in all visualizations. Parameters: `graphType`, `yieldingRender`, `theme`.
+- **Plot Performance** — Settings that keep very large charts responsive: yielding render, streaming window and related performance switches. Parameters: `overplotPixels`, `streamWindow`, `streamEvict`. Also known as: performance, large data, big data, rendering speed.
+- **Print** — Image export: download or open in a window, high-resolution magnification, thumbnails and file naming. Parameters: `cacheBase64`, `printType`, `printMagnification`, `printThumbnail`, `saveFilename`. Also known as: png export, image export, download image, high resolution, print.
+- **R** — Parameters associated with R. Parameters: `loadRDatasets`, `Rdataset`.
+- **cxplot** — General properties used in cxplot. Parameters: `aes`, `ggplot`.
