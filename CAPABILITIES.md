@@ -132,7 +132,8 @@ deferred work here.
   `new CanvasXpress(...)` call, the R htmlwidget, and the Python package.
 - **Notebook and framework support** — Jupyter, Dash, Shiny, Streamlit, Flask, Quarto, and
   Observable.
-- **Export** — charts export to PNG (high-resolution via `printMagnification`), SVG, and
+- **Export** — charts export to PNG (high-resolution via `printMagnification`), SVG, vector PDF
+  (`savePDF()`: native writer, tagged with the alt text, chart JSON attached and re-loadable), and
   reproducible JSON/config.
 
 ## Reproducibility

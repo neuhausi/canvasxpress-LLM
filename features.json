@@ -1,12 +1,12 @@
 {
-  "engineVersion": "70.7",
+  "engineVersion": "70.8",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1702,
+    "parameters": 1734,
     "categories": 139,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
-    "curatedFeatures": 16
+    "curatedFeatures": 22
   },
   "families": [
     {
@@ -74,7 +74,8 @@
           "name": "Dumbbell Graphs",
           "summary": "General parameters in dumbbell graphs",
           "params": [
-            "dumbbellType"
+            "dumbbellType",
+            "dumbbellArrowDirection"
           ],
           "graphTypes": [
             "Boxplot",
@@ -119,7 +120,8 @@
             "coordinateLineColor",
             "lineType",
             "tension",
-            "tensionSegments"
+            "tensionSegments",
+            "showLineEndLabels"
           ],
           "graphTypes": [
             "Area",
@@ -156,6 +158,7 @@
           "summary": "General parameters in pie charts",
           "params": [
             "pieType",
+            "pieShape",
             "pieSegmentPrecision",
             "pieSegmentSeparation",
             "pieSegmentLabels",
@@ -288,7 +291,7 @@
             "stacked area"
           ],
           "aliasOf": null,
-          "exampleCount": 16,
+          "exampleCount": 23,
           "examples": [
             "https://www.canvasxpress.org/examples/area-1.html",
             "https://www.canvasxpress.org/examples/area-2.html",
@@ -302,7 +305,7 @@
             "area and line"
           ],
           "aliasOf": null,
-          "exampleCount": 4,
+          "exampleCount": 6,
           "examples": [
             "https://www.canvasxpress.org/examples/arealine-1.html",
             "https://www.canvasxpress.org/examples/arealine-2.html",
@@ -316,10 +319,12 @@
             "bar chart",
             "column chart",
             "grouped bar",
-            "arrow bars"
+            "arrow bars",
+            "split bars",
+            "bar chart with value labels"
           ],
           "aliasOf": null,
-          "exampleCount": 33,
+          "exampleCount": 42,
           "examples": [
             "https://www.canvasxpress.org/examples/bar-1.html",
             "https://www.canvasxpress.org/examples/bar-2.html",
@@ -335,7 +340,7 @@
             "dual axis chart"
           ],
           "aliasOf": null,
-          "exampleCount": 3,
+          "exampleCount": 4,
           "examples": [
             "https://www.canvasxpress.org/examples/barline-1.html",
             "https://www.canvasxpress.org/examples/barline-2.html",
@@ -415,10 +420,14 @@
             "dumbbell chart",
             "connected dot plot",
             "barbell chart",
-            "range plot"
+            "range plot",
+            "arrow plot",
+            "before after arrow chart",
+            "before after arrow plot",
+            "arrow dumbbell"
           ],
           "aliasOf": null,
-          "exampleCount": 8,
+          "exampleCount": 17,
           "examples": [
             "https://www.canvasxpress.org/examples/dumbbell-1.html",
             "https://www.canvasxpress.org/examples/dumbbell-2.html",
@@ -445,10 +454,12 @@
           "name": "Line",
           "summary": "Line chart.",
           "aliases": [
-            "line chart"
+            "line chart",
+            "slope chart",
+            "slope graph"
           ],
           "aliasOf": null,
-          "exampleCount": 3,
+          "exampleCount": 9,
           "examples": [
             "https://www.canvasxpress.org/examples/line-1.html",
             "https://www.canvasxpress.org/examples/line-3.html",
@@ -477,12 +488,22 @@
         },
         {
           "name": "Pie",
-          "summary": "Pie chart.",
+          "summary": "Pie chart; pieShape:'half' gives a semicircle (election donut with pieInnerRadius) and pieType:'parliament' a seat-dot hemicycle.",
           "aliases": [
-            "pie chart"
+            "pie chart",
+            "parliament chart",
+            "parliament",
+            "hemicycle",
+            "seat chart",
+            "election chart",
+            "half donut",
+            "semicircle donut",
+            "election donut",
+            "half pie",
+            "semicircle pie"
           ],
           "aliasOf": null,
-          "exampleCount": 3,
+          "exampleCount": 7,
           "examples": [
             "https://www.canvasxpress.org/examples/pie-1.html",
             "https://www.canvasxpress.org/examples/pie-2.html",
@@ -511,7 +532,7 @@
             "xy plot"
           ],
           "aliasOf": null,
-          "exampleCount": 118,
+          "exampleCount": 135,
           "examples": [
             "https://www.canvasxpress.org/examples/scatter2d-1.html",
             "https://www.canvasxpress.org/examples/scatter2d-2.html",
@@ -552,7 +573,7 @@
             "stacked column"
           ],
           "aliasOf": null,
-          "exampleCount": 7,
+          "exampleCount": 12,
           "examples": [
             "https://www.canvasxpress.org/examples/stacked-1.html",
             "https://www.canvasxpress.org/examples/stacked-2.html",
@@ -656,10 +677,11 @@
             "bridge chart"
           ],
           "aliasOf": null,
-          "exampleCount": 2,
+          "exampleCount": 4,
           "examples": [
             "https://www.canvasxpress.org/examples/waterfall-4.html",
-            "https://www.canvasxpress.org/examples/waterfall-5.html"
+            "https://www.canvasxpress.org/examples/waterfall-5.html",
+            "https://www.canvasxpress.org/examples/waterfall-6.html"
           ]
         },
         {
@@ -984,7 +1006,7 @@
             "box and whisker"
           ],
           "aliasOf": null,
-          "exampleCount": 59,
+          "exampleCount": 61,
           "examples": [
             "https://www.canvasxpress.org/examples/boxplot-1.html",
             "https://www.canvasxpress.org/examples/boxplot-2.html",
@@ -1609,6 +1631,7 @@
             "rAxisLogTicksShow",
             "rAxisLogTicksTransparency",
             "rAxisLogTicksWidth",
+            "rAxisNumberFormat",
             "rAxisPercentShow",
             "rAxisSetLabels",
             "rAxisSetMinorValues",
@@ -2351,6 +2374,29 @@
       "summary": "Geographic maps: choropleth, symbol and connection maps.",
       "features": [
         {
+          "kind": "feature",
+          "name": "Classed choropleths and symbol maps",
+          "summary": "Maps: colorSpectrumBreaksMethod classifies a numeric colorBy into one colour class per colorSpectrum colour by Jenks natural breaks, quantile or equal width (or give colorSpectrumBreaks by hand) — fills are exact class colours that agree with a stepped legend (equal swatches, every class edge labelled; colorLegendSteps). showMapLabels draws region names that fit inside their region and never overlap (largest first, contrast-aware colour). Proportional-symbol maps: sizeBy a sample draws one bubble per region (world maps included) in mapBubbleColor, with a matching size legend. Insets: per-feature translate/scale via mapConfigFeatures.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "jenks",
+            "natural breaks",
+            "classed choropleth",
+            "classified choropleth",
+            "choropleth classification",
+            "quantile classification",
+            "equal interval classification",
+            "stepped legend",
+            "map labels",
+            "region labels",
+            "proportional symbol map",
+            "bubble map legend",
+            "size legend",
+            "inset map"
+          ]
+        },
+        {
           "kind": "category",
           "name": "Maps",
           "summary": "Geographic maps from TopoJSON/GeoJSON with built-in basemaps (continents, countries, US states, US zip codes), markers, connections and pie charts on regions.",
@@ -2366,6 +2412,10 @@
             "visibleMapFeatures",
             "mapColor",
             "mapOutlineColor",
+            "mapBubbleColor",
+            "showMapLabels",
+            "mapLabelProperty",
+            "mapLabelColor",
             "mapMarkerShape",
             "mapMarkerShapeScaleFactor"
           ],
@@ -2429,7 +2479,9 @@
             "leaflet",
             "tile map",
             "slippy map",
-            "basemap tiles"
+            "basemap tiles",
+            "locator map",
+            "street map"
           ]
         },
         {
@@ -2460,7 +2512,7 @@
             "geo chart"
           ],
           "aliasOf": null,
-          "exampleCount": 18,
+          "exampleCount": 28,
           "examples": [
             "https://www.canvasxpress.org/examples/map-1.html",
             "https://www.canvasxpress.org/examples/map-2.html",
@@ -2583,7 +2635,7 @@
             "kpi"
           ],
           "aliasOf": null,
-          "exampleCount": 6,
+          "exampleCount": 7,
           "examples": [
             "https://www.canvasxpress.org/examples/bullet-1.html",
             "https://www.canvasxpress.org/examples/bullet-2.html",
@@ -3136,6 +3188,27 @@
             "summarise",
             "binning",
             "derived column"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Publishing tables (in-cell graphics)",
+          "summary": "The data table (view:'table') draws per-column in-cell graphics with dataTableColRenderer: bars behind the values scaled to the column (zero baseline for negatives; summary and annotation rows excluded) and sparklines of each row across chosen columns (which may be hidden); heat colouring of cells via dataTableColored (toolbar colour toggle). dataTableColFormat takes sprintf strings or locale-aware number formats (comma, percent, dollar, compact, {locale, style, currency, decimals}). Graphics are re-applied on every render, so they follow virtual scrolling, sorting, filtering and pagination; the header menu toggles bars per column.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "table sparklines",
+            "sparkline",
+            "sparklines",
+            "in-cell charts",
+            "in-cell bars",
+            "table bars",
+            "bar chart in table",
+            "heat table",
+            "conditional formatting",
+            "data bars",
+            "publishing table",
+            "table formatting"
           ]
         },
         {
@@ -3750,7 +3823,8 @@
             "isCxplot",
             "isGGMatrix",
             "ggMatrixRole",
-            "isDataFrame"
+            "isDataFrame",
+            "responsiveRules"
           ],
           "graphTypes": "all",
           "docs": [],
@@ -4278,6 +4352,7 @@
             "showDataValues",
             "dataValuesFrequency",
             "dataValuesPosition",
+            "dataValuesHideOverlap",
             "binned",
             "binAlignment",
             "jitter",
@@ -4421,6 +4496,7 @@
             "setPanningMinX",
             "xAxis",
             "xAxis2",
+            "xAxis2NumberFormat",
             "xAxis2Rotate",
             "xAxis2Show",
             "xAxis2TickFormat",
@@ -4460,6 +4536,7 @@
             "xAxisLogTicksTransparency",
             "xAxisLogTicksWidth",
             "xAxisMinorTicks",
+            "xAxisNumberFormat",
             "xAxisRugHeight",
             "xAxisRugPosition",
             "xAxisRugShow",
@@ -4618,6 +4695,7 @@
             "yAxisLogTicksTransparency",
             "yAxisLogTicksWidth",
             "yAxisMinorTicks",
+            "yAxisNumberFormat",
             "yAxisRugHeight",
             "yAxisRugPosition",
             "yAxisRugShow",
@@ -4718,6 +4796,7 @@
             "zAxisLogTicksShow",
             "zAxisLogTicksTransparency",
             "zAxisLogTicksWidth",
+            "zAxisNumberFormat",
             "zAxisSetLabels",
             "zAxisSetMinorValues",
             "zAxisSetValues",
@@ -4821,6 +4900,83 @@
           ]
         },
         {
+          "kind": "feature",
+          "name": "Locale-aware number formatting",
+          "summary": "numberFormat (global) plus tooltipNumberFormat, legendNumberFormat, dataLabelNumberFormat and per-axis x/y/zAxisNumberFormat format displayed values with presets (comma, percent, dollar, euro, pound, yen, compact), sprintf strings, or an object {locale, style: decimal|percent|currency|compact, currency, decimals, grouping, prefix, suffix}. Intl.NumberFormat-backed with memoized formatter instances and a hand-written grouping fallback; axis width measurement follows the formatted strings. Default off keeps the legacy formatNumber output. An explicit *AxisTickFormat (sprintf) still wins per axis.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "number format",
+            "thousands separator",
+            "currency format",
+            "percent format",
+            "locale",
+            "compact numbers",
+            "number formatting",
+            "locale number formatting",
+            "d3-format",
+            "label_comma",
+            "label_percent",
+            "label_dollar"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Structured chart footer",
+          "summary": "Publication footer drawn on the canvas (included in PNG/SVG/PDF exports): notes (multiline), source with optional sourceUrl link, byline, and a 'Get the data' CSV download (showDataDownload), aligned with footerAlign. Clickable parts use a DOM overlay in the CanvasXpress wrapper. All off by default; the legacy citation keeps its exact position when used alone and moves above the footer block when both are set.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "chart footer",
+            "footer",
+            "source line",
+            "data source attribution",
+            "byline",
+            "get the data",
+            "download the data",
+            "chart notes",
+            "footnote",
+            "caption block"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Editorial annotations and direct labels",
+          "summary": "Callouts: decorations.marker anchors text to a data point (variable+sample) with a line, straight arrow or curved arrow connector, placed at plot-area fractions and draggable — drag writes the x/y fractions back into the config for reproducibility. Free text: decorations.text (scatter: data units or relative fractions; 1D: smp/catX + value). Direct labels: showLineEndLabels puts each series name at its line's end in the series color, hides the legend, nudges overlaps apart and reserves the right margin.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "direct labels",
+            "end-of-line labels",
+            "line end labels",
+            "annotation callout",
+            "callout",
+            "text annotation with arrow",
+            "curved arrow annotation",
+            "drag annotation",
+            "direct labeling",
+            "inline legend"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Editorial theme and responsive rules",
+          "summary": "theme:'editorial' — publication look: light horizontal gridlines only, no panel box or tick marks, left-aligned title, muted grey text, restrained colourblind-safe PaulTol palette, white background. responsiveRules — width-based config overrides ([{maxWidth, minWidth, config}]) applied at render/resize (move or hide the legend, shrink fonts, thin labels at narrow widths) and reverted automatically when the width stops matching; the saved configuration is never mutated.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "editorial theme",
+            "publication theme",
+            "newsroom theme",
+            "responsive rules",
+            "responsive legend",
+            "breakpoint config",
+            "mobile chart layout",
+            "responsive chart layout",
+            "newsroom chart"
+          ]
+        },
+        {
           "kind": "category",
           "name": "Animations and Visualization Transitions",
           "summary": "Animation and visualization transition parameters",
@@ -4855,7 +5011,13 @@
             "citationFontStyle",
             "citationMargin",
             "citationRotate",
-            "citationScaleFontFactor"
+            "citationScaleFontFactor",
+            "notes",
+            "source",
+            "sourceUrl",
+            "byline",
+            "showDataDownload",
+            "footerAlign"
           ],
           "graphTypes": "all",
           "docs": [],
@@ -4876,6 +5038,8 @@
             "colorSpectrum",
             "colorSpectrumBinned",
             "colorSpectrumBreaks",
+            "colorSpectrumBreaksMethod",
+            "colorLegendSteps",
             "colorSpectrumZeroValue",
             "oddColor",
             "evenColor",
@@ -5217,6 +5381,7 @@
             "legendDirection",
             "legendHorizontalJustification",
             "legendInside",
+            "legendJustifyTo",
             "legendKeyBackgroundBorderColor",
             "legendKeyBackgroundBorderLineType",
             "legendKeyBackgroundBorderSize",
@@ -5428,7 +5593,14 @@
           "graphTypes": "all",
           "docs": [],
           "examples": [],
-          "aliases": []
+          "aliases": [
+            "bubble size",
+            "size_max",
+            "sizeref",
+            "sizemode",
+            "scale_size_area",
+            "size by area"
+          ]
         },
         {
           "kind": "category",
@@ -5446,7 +5618,11 @@
             "baseline",
             "maxTextSize",
             "minTextSize",
-            "autoScaleFont"
+            "autoScaleFont",
+            "numberFormat",
+            "tooltipNumberFormat",
+            "legendNumberFormat",
+            "dataLabelNumberFormat"
           ],
           "graphTypes": "all",
           "docs": [],
@@ -5461,6 +5637,7 @@
           "name": "Titles and Subtitles",
           "summary": "Properties associated with titles and subtitles",
           "params": [
+            "a11yDescription",
             "subtitle",
             "subtitleAlign",
             "subtitleBaseline",
@@ -5648,11 +5825,15 @@
             "dataTableColOrder",
             "dataTableColPin",
             "dataTableColProperties",
+            "dataTableColRenderer",
             "dataTableColWidth",
             "dataTableColorTransparency",
             "dataTableColored",
+            "dataTableFitHeight",
+            "dataTableFitWidth",
             "dataTableGrouped",
             "dataTableHeaderBackgroundColor",
+            "dataTableHeaderIcons",
             "dataTableHeaderTemplate",
             "dataTableHeaderTextAlign",
             "dataTableHeaderTextBaseline",
@@ -5887,7 +6068,7 @@
         {
           "kind": "feature",
           "name": "Screen-reader and keyboard accessibility",
-          "summary": "Every chart gets a generated text summary and an off-screen data table kept in sync with the data, live-region announcements, a focusable canvas with arrow-key navigation between data points, keyboard-operable widgets, a visible focus outline, a high-contrast theme, and reduced motion when the OS requests it. WCAG 2.1 AA conformance report (VPAT-style) published.",
+          "summary": "Every chart gets a generated text summary (or the author's own alt text, a11yDescription, also written into SVG exports and as the tagged figure in PDF exports) and an off-screen data table kept in sync with the data, live-region announcements, a focusable canvas with arrow-key navigation between data points, keyboard-operable widgets, a visible focus outline, a high-contrast theme, and reduced motion when the OS requests it. WCAG 2.1 AA conformance report (VPAT-style) published.",
           "params": [],
           "docs": [
             "https://www.canvasxpress.org/accessibility.html"
@@ -5902,7 +6083,13 @@
             "keyboard navigation",
             "reduced motion",
             "vpat",
-            "section 508"
+            "section 508",
+            "alt text override",
+            "custom alt text",
+            "custom aria label",
+            "accessibility description",
+            "chart description",
+            "a11ydescription"
           ]
         },
         {
@@ -5980,7 +6167,7 @@
         {
           "kind": "feature",
           "name": "Image and vector export",
-          "summary": "Export to PNG (with high-resolution magnification), SVG, and the reproducible JSON config.",
+          "summary": "Export to PNG (with high-resolution magnification), SVG, vector PDF (native writer: tagged with the alt text, the chart JSON attached like PNG/SVG and re-loadable), and the reproducible JSON config.",
           "params": [
             "printMagnification",
             "printType",
@@ -5992,7 +6179,13 @@
             "svg export",
             "vector export",
             "png",
-            "save as image"
+            "save as image",
+            "pdf",
+            "pdf export",
+            "export to pdf",
+            "vector pdf",
+            "save as pdf",
+            "print to pdf"
           ]
         },
         {
@@ -6063,7 +6256,7 @@
         {
           "kind": "feature",
           "name": "Dashboards and connectors",
-          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, share links and live sources, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
+          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, a data-first wizard (upload or paste data parsed by the CanvasXpress engine, a column check that flags bad cells, chart suggestions from the canvasxpress-mcp selector, one-click publish), share links and live sources, export of a dashboard (or a one-panel dashboard) as self-contained HTML, PNG or a print-ready PDF, publish & embed of a whole dashboard or a single chart (stable share URL republished in place on save, an auto-resizing iframe, a <cxd-embed> web component and a PNG fallback for RSS/email), an organisation brand lock (CXD_BRAND) enforced on saves and shared views, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
           "params": [
             "dashboardsServiceURL",
             "connectorsServiceURL"
@@ -6091,7 +6284,26 @@
             "21 cfr part 11",
             "audit trail",
             "version history",
-            "scheduled refresh"
+            "scheduled refresh",
+            "embed chart",
+            "embed a chart",
+            "iframe embed",
+            "publish chart",
+            "publish and embed",
+            "web component embed",
+            "responsive embed",
+            "brand lock",
+            "organisation theme",
+            "data wizard",
+            "chart wizard",
+            "data-first wizard",
+            "upload and visualize",
+            "chart from data",
+            "chart suggestions",
+            "suggested charts",
+            "bad cells",
+            "data check",
+            "paste data"
           ]
         },
         {
