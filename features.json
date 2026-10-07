@@ -1,12 +1,12 @@
 {
-  "engineVersion": "70.8",
+  "engineVersion": "71.1",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1734,
-    "categories": 139,
+    "parameters": 1772,
+    "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
-    "curatedFeatures": 22
+    "curatedFeatures": 24
   },
   "families": [
     {
@@ -20,7 +20,9 @@
           "summary": "General parameters in area graphs",
           "params": [
             "areaType",
-            "areaStyle"
+            "areaStyle",
+            "areaShowColumns",
+            "areaColumnWidth"
           ],
           "graphTypes": [
             "Area",
@@ -291,7 +293,7 @@
             "stacked area"
           ],
           "aliasOf": null,
-          "exampleCount": 23,
+          "exampleCount": 25,
           "examples": [
             "https://www.canvasxpress.org/examples/area-1.html",
             "https://www.canvasxpress.org/examples/area-2.html",
@@ -324,7 +326,7 @@
             "bar chart with value labels"
           ],
           "aliasOf": null,
-          "exampleCount": 42,
+          "exampleCount": 43,
           "examples": [
             "https://www.canvasxpress.org/examples/bar-1.html",
             "https://www.canvasxpress.org/examples/bar-2.html",
@@ -532,7 +534,7 @@
             "xy plot"
           ],
           "aliasOf": null,
-          "exampleCount": 135,
+          "exampleCount": 140,
           "examples": [
             "https://www.canvasxpress.org/examples/scatter2d-1.html",
             "https://www.canvasxpress.org/examples/scatter2d-2.html",
@@ -1295,6 +1297,45 @@
         },
         {
           "kind": "category",
+          "name": "Clustree Plots",
+          "summary": "Clustering-tree (clustree) plots: a layered node-link diagram, built on Scatter2D with scatterType clustree, showing how cluster assignments evolve across increasing clustering resolutions. Node size = cluster cell count, node color = resolution level, edge width/color = count of observations transitioning between clusters at adjacent resolutions.",
+          "params": [
+            "clustreeFlip",
+            "clustreeShowAxes",
+            "clustreeNodeLabels",
+            "clustreeNodeTextSize",
+            "clustreePrefix",
+            "clustreeSweeps",
+            "clustreeNodePalette",
+            "clustreeEdgePalette",
+            "clustreeEdgeWidth",
+            "clustreeEdgeMinAlpha",
+            "clustreeEdgeArrows",
+            "clustreeArrowSize",
+            "clustreeShowEdgeLegend"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [
+            "https://www.canvasxpress.org/examples/scatter2d-1.html"
+          ],
+          "aliases": [
+            "clustree",
+            "clustree plot",
+            "ClustreePlot",
+            "clustering tree",
+            "cluster tree",
+            "resolution tree",
+            "cluster resolution tree",
+            "cluster stability tree",
+            "cluster stability plot",
+            "scrna cluster tree"
+          ]
+        },
+        {
+          "kind": "category",
           "name": "Fish Graphs",
           "summary": "General parameters in fish graphs",
           "params": [
@@ -1724,6 +1765,55 @@
         },
         {
           "kind": "category",
+          "name": "Vector Field Plots",
+          "summary": "Vector-field plots: velocity / quiver / streamplot visualizations over a 2D coordinate space (a direction + magnitude per sample), built on Scatter2D with scatterType vectorfield. plot_type modes: raw (one arrow per sample), grid (field averaged onto a regular grid, one arrow per cell = quiver), stream (RK4-integrated streamlines = streamplot). Arrow length encodes magnitude; color by group (raw) or by magnitude gradient (grid/stream). Covers plotthis VelocityPlot (RNA velocity over an embedding) and matplotlib quiver / streamplot.",
+          "params": [
+            "vectorFieldMode",
+            "vectorScale",
+            "vectorArrowSize",
+            "vectorLineWidth",
+            "vectorGridSize",
+            "vectorDensity",
+            "vectorColorByMagnitude",
+            "vectorColorValueColor",
+            "vectorPalette",
+            "vectorGroupPalette",
+            "vectorXBy",
+            "vectorYBy",
+            "vectorUBy",
+            "vectorVBy",
+            "vectorGroupBy",
+            "streamlineColor",
+            "streamlineSteps",
+            "streamlineStepSize",
+            "streamlineSeedStride",
+            "vectorMinMagnitude",
+            "vectorShowLegend"
+          ],
+          "graphTypes": [
+            "Scatter2D"
+          ],
+          "docs": [],
+          "examples": [
+            "https://www.canvasxpress.org/examples/scatter2d-1.html"
+          ],
+          "aliases": [
+            "velocity plot",
+            "VelocityPlot",
+            "RNA velocity",
+            "vector field",
+            "vector field plot",
+            "quiver",
+            "quiver plot",
+            "streamplot",
+            "stream plot",
+            "streamline plot",
+            "flow field",
+            "velocity field"
+          ]
+        },
+        {
+          "kind": "category",
           "name": "Venn Diagrams",
           "summary": "General parameters in Venn diagrams",
           "params": [
@@ -1813,7 +1903,7 @@
             "pheatmap"
           ],
           "aliasOf": null,
-          "exampleCount": 36,
+          "exampleCount": 37,
           "examples": [
             "https://www.canvasxpress.org/examples/heatmap-1.html",
             "https://www.canvasxpress.org/examples/heatmap-2.html",
@@ -2360,10 +2450,11 @@
             "tree map"
           ],
           "aliasOf": null,
-          "exampleCount": 2,
+          "exampleCount": 3,
           "examples": [
             "https://www.canvasxpress.org/examples/treemap-1.html",
-            "https://www.canvasxpress.org/examples/treemap-2.html"
+            "https://www.canvasxpress.org/examples/treemap-2.html",
+            "https://www.canvasxpress.org/examples/treemap-4.html"
           ]
         }
       ]
@@ -2481,7 +2572,12 @@
             "slippy map",
             "basemap tiles",
             "locator map",
-            "street map"
+            "street map",
+            "basemap",
+            "map tiles",
+            "satellite map",
+            "OpenStreetMap",
+            "terrain map"
           ]
         },
         {
@@ -3172,7 +3268,7 @@
         {
           "kind": "feature",
           "name": "Data wrangling",
-          "summary": "A declarative dplyr/tidyr-style pipeline (dataPipeline), flexible group-by aggregation (aggregations) and formula-based calculated fields (calculatedFields, a safe evaluator, no eval).",
+          "summary": "A declarative dplyr/tidyr-style pipeline (dataPipeline), flexible group-by aggregation (aggregations) and formula-based calculated fields (calculatedFields, a safe evaluator, no eval). Calculated fields include level-of-detail aggregates that rejoin to row level (sum(V, by=A), Tableau {FIXED}), ordered table calculations (cumsum/cumprod/lag/lead/movavg/movsum/rank/denserank/pctchange/pcttotal/first/last, partitioned by by= and ordered by order=) and a UTC date family (datetrunc/datediff/dateadd/year/quarter/month/week/day/weekday/hour/fiscalyear/dateformat, plus asof() for deterministic 'current date'); the no-eval grammar supports named arguments (by=, order=, unit=, n=, k=, desc=). Materialized at load, not recomputed live against the interactively filtered view.",
           "params": [
             "dataPipeline",
             "aggregations",
@@ -3187,7 +3283,28 @@
             "mutate",
             "summarise",
             "binning",
-            "derived column"
+            "derived column",
+            "lod",
+            "lod expressions",
+            "level of detail",
+            "table calculation",
+            "table calculations",
+            "running total",
+            "running sum",
+            "window function",
+            "window functions",
+            "moving average",
+            "rank",
+            "percent of total",
+            "period over period",
+            "time intelligence",
+            "date functions",
+            "date arithmetic",
+            "year to date",
+            "dateadd",
+            "datediff",
+            "datetrunc",
+            "fiscal year"
           ]
         },
         {
@@ -3240,6 +3357,8 @@
             "dataTextMargin",
             "dataTextRotate",
             "dataTextScaleFontFactor",
+            "drillBreadcrumb",
+            "drillHierarchy",
             "groupingFactorLevelsOrder",
             "groupingFactors",
             "groupingFactorsLabelsHide",
@@ -4977,6 +5096,26 @@
           ]
         },
         {
+          "kind": "feature",
+          "name": "TrendPlot (stacked bars over a stacked area)",
+          "summary": "The Area graph can draw a solid bar/column mark at each category on top of the stacked area band (areaShowColumns), giving a plotthis/scplotter-style TrendPlot: stacked bars that preserve category separation with a semi-transparent stacked area behind them for the across-category trend. areaColumnWidth sets the bar width (0..1 of the slot). Composes with any areaType (stacked/percent/overlapping) and areaStyle (solid/translucent/outlined); areaType:\"percent\" gives the scale_y=TRUE 0-100% form.",
+          "params": [
+            "areaShowColumns",
+            "areaColumnWidth"
+          ],
+          "docs": [],
+          "aliases": [
+            "trendplot",
+            "trend plot",
+            "bar-area trend",
+            "stacked bar area",
+            "bars over area",
+            "column area trend",
+            "plotthis trendplot",
+            "scplotter trendplot"
+          ]
+        },
+        {
           "kind": "category",
           "name": "Animations and Visualization Transitions",
           "summary": "Animation and visualization transition parameters",
@@ -5544,7 +5683,12 @@
           "examples": [],
           "aliases": [
             "overlays",
-            "annotation tracks"
+            "annotation tracks",
+            "violin annotation track",
+            "violin heatmap overlay",
+            "violin overlay track",
+            "boxplot annotation track",
+            "anno_violin"
           ]
         },
         {
@@ -5739,6 +5883,24 @@
             "brushing and linking",
             "linked brushing",
             "coordinated views"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Drill-down",
+          "summary": "drillHierarchy (an array of sample annotations coarse->fine, e.g. [\"Region\",\"State\",\"City\"], or the date form {date, levels:[\"year\",\"quarter\",\"month\",\"day\"]}) turns a click into a drill: it filters to the clicked level value and regroups by the next annotation, with an HTML breadcrumb (drillBreadcrumb) that walks back, ESC to step up, and peer charts following the filter. One mechanism across Bar/Stacked/Pie/Dotplot/Boxplot/Line/Treemap (grouping), Circular/sunburst (hierarchy re-root) and Scatter2D (colorBy). drillDown/drillUp/drillReset are also a public API; drillPath serializes into saved/page states. Default-off.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "drill-through",
+            "drillthrough",
+            "drill through",
+            "drill down",
+            "drilldown",
+            "drill mode",
+            "drill-down hierarchy",
+            "hierarchy navigation",
+            "drill-through pages"
           ]
         },
         {
@@ -6256,7 +6418,7 @@
         {
           "kind": "feature",
           "name": "Dashboards and connectors",
-          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, a data-first wizard (upload or paste data parsed by the CanvasXpress engine, a column check that flags bad cells, chart suggestions from the canvasxpress-mcp selector, one-click publish), share links and live sources, export of a dashboard (or a one-panel dashboard) as self-contained HTML, PNG or a print-ready PDF, publish & embed of a whole dashboard or a single chart (stable share URL republished in place on save, an auto-resizing iframe, a <cxd-embed> web component and a PNG fallback for RSS/email), an organisation brand lock (CXD_BRAND) enforced on saves and shared views, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
+          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, a data-first wizard (upload or paste data parsed by the CanvasXpress engine, a column check that flags bad cells, chart suggestions from the canvasxpress-mcp selector, one-click publish), share links and live sources, export of a dashboard (or a one-panel dashboard) as self-contained HTML, PNG or a print-ready PDF, publish & embed of a whole dashboard or a single chart (stable share URL republished in place on save, an auto-resizing iframe, a <cxd-embed> web component and a PNG fallback for RSS/email), an organisation brand lock (CXD_BRAND) enforced on saves and shared views, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; declarative per-panel drill-through actions (spec 1.4: on a mark click, set a dashboard parameter and re-query, write a filter predicate into the global filter model, or focus another panel); canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
           "params": [
             "dashboardsServiceURL",
             "connectorsServiceURL"
