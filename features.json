@@ -1,5 +1,5 @@
 {
-  "engineVersion": "71.1",
+  "engineVersion": "71.2",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
     "parameters": 1772,
@@ -4972,7 +4972,7 @@
         {
           "kind": "feature",
           "name": "Themes",
-          "summary": "20+ built-in themes that control all non-data elements, including ggplot, bw, minimal, classic, Economist, Wall Street Journal, Tableau, Excel, Stata, solarized, dark and high-contrast.",
+          "summary": "20+ built-in themes that control all non-data elements, including ggplot, bw, minimal, classic, Economist, Wall Street Journal, Tableau, Excel, Stata, solarized, dark and high-contrast, plus the canvasxpress.org style presets as themes of the same name (paper, slate, mono, sunrise and the always-dark ocean, midnight, graphite, forest -- one name styles the chart and its widgets). The widgets colour looks modern/bms/colorful/rdc/ngs360 are themes too (theme: \"bms\", or [chart, widgets]); every chart theme (economist, ggplot, wsj, tableau, stata, solarized, excel, highcharts, paultol, editorial, bw, highcontrast ...) also styles its widgets from its own accent, aliases resolve to one style (wsj = wallstreet = wallstreetjournal); dataUIStyle is the border density (default/minimal) and composes with any theme.",
           "params": [
             "theme"
           ],
@@ -4987,6 +4987,20 @@
             "dark mode",
             "high contrast",
             "style preset",
+            "site theme",
+            "website style theme",
+            "slate theme",
+            "ocean theme",
+            "midnight theme",
+            "graphite theme",
+            "forest theme",
+            "sunrise theme",
+            "mono theme",
+            "widgets look",
+            "frame density",
+            "dataUIStyle",
+            "theme aliases",
+            "wallstreet theme",
             "branding"
           ]
         },
