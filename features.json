@@ -1,12 +1,12 @@
 {
-  "engineVersion": "71.2",
+  "engineVersion": "71.3",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1772,
+    "parameters": 1779,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
-    "curatedFeatures": 24
+    "curatedFeatures": 25
   },
   "families": [
     {
@@ -1180,7 +1180,7 @@
             "3d plot"
           ],
           "aliasOf": null,
-          "exampleCount": 11,
+          "exampleCount": 15,
           "examples": [
             "https://www.canvasxpress.org/examples/scatter3d-1.html",
             "https://www.canvasxpress.org/examples/scatter3d-2.html",
@@ -1216,6 +1216,28 @@
       "name": "Scientific and omics charts",
       "summary": "Chart types for genomics, clinical and life-science data.",
       "features": [
+        {
+          "kind": "feature",
+          "name": "3D surface resolution and aspect control",
+          "summary": "Scatter3D function (fx) surfaces: fxSamples sets the grid resolution (smoother mesh, finer colour); aspect3D switches the box between cube (each axis fills equal length) and data (scaled to the real per-axis data spans for true proportions). 3D axis major-tick counts are automatic (nice numbers from each axis range; override with xAxis3DTicks/yAxis3DTicks/zAxis3DTicks), which also tightens bounds so the surface fills and centers the box. Per-axis auto-ranging is built in, and xAxisExact/yAxisExact/zAxisExact give tight bounds.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "aspectmode",
+            "aspect ratio",
+            "data aspect",
+            "cube aspect",
+            "surface resolution",
+            "grid resolution",
+            "mesh resolution",
+            "3d aspect ratio",
+            "tick count",
+            "number of ticks",
+            "nticks",
+            "axis ticks",
+            "tick marks"
+          ]
+        },
         {
           "kind": "category",
           "name": "Circular Graph Arc Sectors",
@@ -2553,13 +2575,31 @@
         },
         {
           "kind": "category",
-          "name": "Maps Leaflet",
-          "summary": "Map leaflet properties used in map visualizations",
+          "name": "Maps Orthographic",
+          "summary": "Map orthographic properties used in map visualizations",
           "params": [
-            "useLeaflet",
-            "leafletAlpha",
-            "leafletZoomAlphaColor",
-            "leafletTileType"
+            "mapGraticuleShow",
+            "mapGraticuleType"
+          ],
+          "graphTypes": [
+            "Map"
+          ],
+          "docs": [],
+          "examples": [],
+          "aliases": [
+            "globe",
+            "orthographic projection"
+          ]
+        },
+        {
+          "kind": "category",
+          "name": "Maps Tiles",
+          "summary": "Raster tile basemap properties used in map visualizations",
+          "params": [
+            "showTiles",
+            "tileAlpha",
+            "tileZoomAlphaColor",
+            "tileType"
           ],
           "graphTypes": [
             "Map"
@@ -2578,24 +2618,6 @@
             "satellite map",
             "OpenStreetMap",
             "terrain map"
-          ]
-        },
-        {
-          "kind": "category",
-          "name": "Maps Orthographic",
-          "summary": "Map orthographic properties used in map visualizations",
-          "params": [
-            "mapGraticuleShow",
-            "mapGraticuleType"
-          ],
-          "graphTypes": [
-            "Map"
-          ],
-          "docs": [],
-          "examples": [],
-          "aliases": [
-            "globe",
-            "orthographic projection"
           ]
         }
       ],
@@ -4184,7 +4206,14 @@
             "x3DRatio",
             "y3DRatio",
             "z3DRatio",
+            "aspect3D",
+            "fxSamples",
+            "xAxis3DTicks",
+            "yAxis3DTicks",
+            "zAxis3DTicks",
             "show3DGrid",
+            "show3DMinorGrid",
+            "smoothSurface",
             "rotationSensitivity",
             "perspectiveFactor",
             "outline3DColor"

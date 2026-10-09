@@ -1,6 +1,6 @@
 # CanvasXpress Feature Inventory
 
-A complete, generated map of CanvasXpress features (v71.2): 70 graph types (65 distinct; the rest are alternative names) and 1772 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+A complete, generated map of CanvasXpress features (v71.3): 70 graph types (65 distinct; the rest are alternative names) and 1779 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
 
 ## Families
 
@@ -91,7 +91,7 @@ Charts that show the shape of data and relationships between many variables.
 - **QQ** (`graphType: "QQ"`) — Quantile-quantile plot. Also known as: qq plot, q-q plot.
 - **Quantile** (`graphType: "Quantile"`) — Quantile-quantile plot (same renderer as QQ). Alternative name for QQ. Also known as: quantile-quantile.
 - **Ridgeline** (`graphType: "Ridgeline"`) — Ridgeline plot of stacked densities. Also known as: ridgeline, joy plot, ggridges.
-- **Scatter3D** (`graphType: "Scatter3D"`) — 3D scatter plot with rotation. Also known as: 3d scatter, 3d plot. Examples: [1](https://www.canvasxpress.org/examples/scatter3d-1.html), [2](https://www.canvasxpress.org/examples/scatter3d-2.html), [3](https://www.canvasxpress.org/examples/scatter3d-3.html) (11 in the gallery).
+- **Scatter3D** (`graphType: "Scatter3D"`) — 3D scatter plot with rotation. Also known as: 3d scatter, 3d plot. Examples: [1](https://www.canvasxpress.org/examples/scatter3d-1.html), [2](https://www.canvasxpress.org/examples/scatter3d-2.html), [3](https://www.canvasxpress.org/examples/scatter3d-3.html) (15 in the gallery).
 - **SPLOM** (`graphType: "SPLOM"`) — Scatter-plot matrix. Also known as: scatterplot matrix, pairs plot, ggpairs.
 - **Violin** (`graphType: "Violin"`) — Violin plot. Also known as: violin plot.
 
@@ -127,6 +127,7 @@ Chart types for genomics, clinical and life-science data.
 
 ### Features
 
+- **3D surface resolution and aspect control** — Scatter3D function (fx) surfaces: fxSamples sets the grid resolution (smoother mesh, finer colour); aspect3D switches the box between cube (each axis fills equal length) and data (scaled to the real per-axis data spans for true proportions). 3D axis major-tick counts are automatic (nice numbers from each axis range; override with xAxis3DTicks/yAxis3DTicks/zAxis3DTicks), which also tightens bounds so the surface fills and centers the box. Per-axis auto-ranging is built in, and xAxisExact/yAxisExact/zAxisExact give tight bounds. Also known as: aspectmode, aspect ratio, data aspect, cube aspect, surface resolution, grid resolution, mesh resolution, 3d aspect ratio, tick count, number of ticks, nticks, axis ticks, tick marks.
 - **Circular Graph Arc Sectors** — General parameters for arc sectors in circular graphs. Parameters: `circularArcSectorSeparation`, `circularArcSectorRadius`. Applies to: Circular.
 - **Circular Graph Connections** — General parameters for connections in circular graphs. Parameters: `showCircularConnections`, `circularConnections`, `circularConnectionsTransparency`. Applies to: Circular.
 - **Circular Graph Tracks** — General parameters for tracks in circular graphs. Parameters: `circularTrackSeparation`, `circularTrackName`, `circularTrackGraphType`, `circularTrackGraphWeight`, `circularTrackOrder`. Applies to: Circular.
@@ -196,8 +197,8 @@ Geographic maps: choropleth, symbol and connection maps.
 - **Classed choropleths and symbol maps** — Maps: colorSpectrumBreaksMethod classifies a numeric colorBy into one colour class per colorSpectrum colour by Jenks natural breaks, quantile or equal width (or give colorSpectrumBreaks by hand) — fills are exact class colours that agree with a stepped legend (equal swatches, every class edge labelled; colorLegendSteps). showMapLabels draws region names that fit inside their region and never overlap (largest first, contrast-aware colour). Proportional-symbol maps: sizeBy a sample draws one bubble per region (world maps included) in mapBubbleColor, with a matching size legend. Insets: per-feature translate/scale via mapConfigFeatures. Also known as: jenks, natural breaks, classed choropleth, classified choropleth, choropleth classification, quantile classification, equal interval classification, stepped legend, map labels, region labels, proportional symbol map, bubble map legend, size legend, inset map.
 - **Maps** — Geographic maps from TopoJSON/GeoJSON with built-in basemaps (continents, countries, US states, US zip codes), markers, connections and pie charts on regions. Parameters: `topoJSON`, `mapId`, `mapZipCodeIds`, `mapProjection`, `mapConfig`, `mapConfigFeatures`, `mapSmps`, `hiddenMapFeatures` and 9 more. Applies to: Map. Also known as: map, maps, choropleth, geographic, geo, geojson, topojson, symbol map, bubble map, world map, us map, zip code map. See: https://www.canvasxpress.org/examples/map-1.html.
 - **Maps Albers** — Map albers properties used in map visualizations. Parameters: `mapLatitudeOrigin`, `mapCentralMeridian`, `mapStandardParallel1`, `mapStandardParallel2`. Applies to: Map. Also known as: albers projection.
-- **Maps Leaflet** — Map leaflet properties used in map visualizations. Parameters: `useLeaflet`, `leafletAlpha`, `leafletZoomAlphaColor`, `leafletTileType`. Applies to: Map. Also known as: leaflet, tile map, slippy map, basemap tiles, locator map, street map, basemap, map tiles, satellite map, OpenStreetMap, terrain map.
 - **Maps Orthographic** — Map orthographic properties used in map visualizations. Parameters: `mapGraticuleShow`, `mapGraticuleType`. Applies to: Map. Also known as: globe, orthographic projection.
+- **Maps Tiles** — Raster tile basemap properties used in map visualizations. Parameters: `showTiles`, `tileAlpha`, `tileZoomAlphaColor`, `tileType`. Applies to: Map. Also known as: leaflet, tile map, slippy map, basemap tiles, locator map, street map, basemap, map tiles, satellite map, OpenStreetMap, terrain map.
 
 ## KPI and finance
 
@@ -265,7 +266,7 @@ Panels, small multiples, axes, margins and plot areas.
 
 ### Features
 
-- **3D Attributes** — General parameters in 3d scatter plots and networks. Parameters: `xRotate`, `yRotate`, `zRotate`, `x3DRatio`, `y3DRatio`, `z3DRatio`, `show3DGrid`, `rotationSensitivity` and 2 more. Applies to: Bar, Network, Scatter3D. Also known as: 3d rotation, 3d chart.
+- **3D Attributes** — General parameters in 3d scatter plots and networks. Parameters: `xRotate`, `yRotate`, `zRotate`, `x3DRatio`, `y3DRatio`, `z3DRatio`, `aspect3D`, `fxSamples` and 9 more. Applies to: Bar, Network, Scatter3D. Also known as: 3d rotation, 3d chart.
 - **Aspect Ratio, Space and Width** — Properties used to adjust the aspect ratio, space and width in most visualizations. Parameters: `percentAspectRatioPlotArea`, `fixedAspectRatio`, `variableSpace`, `widthFactor`, `dataPointSize`, `dataPointSizeScaleFactor`, `setPlotX`, `setPlotY` and 2 more. Also known as: aspect ratio, bar width, spacing.
 - **Axis** — General axis parameters. Parameters: `axisExtension`, `axisAlgorithm`, `axisWilkinsonLoose`, `axisCoordinate`. Also known as: axes.
 - **Combination Plot Strips** — Parameters used in strips complex plots. Parameters: `stripBackgroundBorderColor`, `stripBackgroundBorderLineType`, `stripBackgroundBorderSize`, `stripBackgroundColor`, `stripTextAlign`, `stripTextBaseline`, `stripTextColor`, `stripTextFontSize` and 8 more. Also known as: facet strips, strip labels.
