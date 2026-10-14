@@ -1,6 +1,6 @@
 # CanvasXpress Feature Inventory
 
-A complete, generated map of CanvasXpress features (v71.4): 70 graph types (65 distinct; the rest are alternative names) and 1779 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+A complete, generated map of CanvasXpress features (v71.5): 70 graph types (65 distinct; the rest are alternative names) and 1779 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
 
 ## Families
 
