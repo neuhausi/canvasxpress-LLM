@@ -1,6 +1,6 @@
 # CanvasXpress Feature Inventory
 
-A complete, generated map of CanvasXpress features (v71.6): 70 graph types (65 distinct; the rest are alternative names) and 1779 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+A complete, generated map of CanvasXpress features (v71.7): 70 graph types (65 distinct; the rest are alternative names) and 1780 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
 
 ## Families
 
@@ -178,7 +178,7 @@ Graphs of connections, flows between stages and nested structures.
 - **Network Communities** — General parameters used in network communities. Parameters: `showNetworkCommunities`, `calculateNetworkCommunities`, `coordinateNetworkConvexHullCommunityColor`, `hullScale`. Applies to: Network. Also known as: community detection, louvain, modularity.
 - **Network Graphs** — General parameters used in networks. Parameters: `calculateLayout`, `edgeColor`, `edgeSeparationFactor`, `highlightNode`, `ignoreEventlessOrder`, `is3DNetwork`, `isNetworkMetrics`, `labelNodePosition` and 24 more. Applies to: Network.
 - **Network Node and Edge Attributes** — General parameters used for nodes and edges in networks. Parameters: `colorNodeBy`, `shapeNodeBy`, `sizeNodeBy`, `patternNodeBy`, `colorEdgeBy`, `sizeEdgeBy`, `lineEdgeBy`, `minEdgeSize` and 1 more. Applies to: Network.
-- **Sankey Diagrams** — General parameters in sankey diagrams. Parameters: `sankeyAxes`, `sankeyAxesOrder`, `sankeyLinkLineWidth`, `sankeyLinkOrder`, `sankeyLinksColor`, `sankeyLinksOpacity`, `sankeyLodeGuidance`, `sankeyNodePadding` and 31 more. Applies to: Sankey.
+- **Sankey Diagrams** — General parameters in sankey diagrams. Parameters: `sankeyAxes`, `sankeyAxesOrder`, `sankeyHide`, `sankeyLinkLineWidth`, `sankeyLinkOrder`, `sankeyLinksColor`, `sankeyLinksOpacity`, `sankeyLodeGuidance` and 32 more. Applies to: Sankey.
 - **Tree Bracket** — General parameters in tree brackets. Parameters: `treeBracketFactor`, `treeBracketLengthFactor`. Applies to: Tree.
 - **Treemap Graphs** — General parameters for treemaps. Parameters: `treemapBorderWidth`, `treemapBorderColor`. Applies to: Treemap.
 - **Trees** — General parameters in trees. Parameters: `treeNodeSizeScaleFactor`, `treeLabelAlign`, `treeLinkColor`, `treeNodeOutlineColor`, `treeLinkWidth`, `treeInverted`, `treeType`, `treeClickDisable`. Applies to: Tree.

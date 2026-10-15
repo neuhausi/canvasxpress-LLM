@@ -1,8 +1,8 @@
 {
-  "engineVersion": "71.6",
+  "engineVersion": "71.7",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1779,
+    "parameters": 1780,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -2210,6 +2210,7 @@
           "params": [
             "sankeyAxes",
             "sankeyAxesOrder",
+            "sankeyHide",
             "sankeyLinkLineWidth",
             "sankeyLinkOrder",
             "sankeyLinksColor",
