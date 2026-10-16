@@ -1,6 +1,6 @@
 # CanvasXpress Feature Inventory
 
-A complete, generated map of CanvasXpress features (v71.7): 70 graph types (65 distinct; the rest are alternative names) and 1780 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+A complete, generated map of CanvasXpress features (v71.8): 70 graph types (65 distinct; the rest are alternative names) and 1782 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
 
 ## Families
 
@@ -225,7 +225,7 @@ Clustering, statistics, fits and forecasts computed inside the chart.
 
 - **Forecasting** — showForecast projects a regularly spaced series forward with a prediction interval (SES, Holt, Holt-Winters; matches R stats::HoltWinters), per group or on date axes. Parameters: `showForecast`. Also known as: time series forecast, predictive analytics. See: https://www.canvasxpress.org/forecasting.html.
 - **Clustering** — Hierarchical clustering (euclidean / manhattan / max distance; single / complete / average linkage) and k-means, on samples or variables, with mean/median imputation. Parameters: `clusteringDistance`, `linkage`, `clusterAxis`, `kmeansVarClusters`, `kmeansSmpClusters`, `maxIterations`, `imputeMethod`, `samplesClustered` and 3 more. Also known as: clustering, hierarchical clustering, hclust, k-means, kmeans, cluster analysis. See: https://www.canvasxpress.org/examples/heatmap-1.html.
-- **Confidence Intervals** — Parameters used to create regression, loess and quantiles confidence intervals in 2d scatter plots. Parameters: `confidenceIntervalColor`, `showConfidenceIntervals`, `confidenceIntervalsMax`, `confidenceLevel`, `confidenceIntervalColorCoordinate`. Applies to: Scatter2D. Also known as: confidence interval, confidence band.
+- **Confidence Intervals** — Parameters used to create regression, loess and quantiles confidence intervals in 2d scatter plots. Parameters: `confidenceIntervalColor`, `showConfidenceIntervals`, `confidenceIntervalsMax`, `confidenceLevel`, `confidenceIntervalColorCoordinate`, `selectableFits`. Applies to: Scatter2D. Also known as: confidence interval, confidence band.
 - **Data Transformation** — log2/log10, exponential, square root, percentile, z-score and ratio transforms, plus a declarative dplyr/tidyr-style data pipeline. Parameters: `transformData`, `transformAxis`, `dataPipeline`. Also known as: transform, log scale data, z-score, normalize, dplyr, tidyr, data pipeline, wrangling.
 - **Dendrograms** — General parameters in dendrograms. Parameters: `colorSmpDendrogramBy`, `colorVarDendrogramBy`, `showSmpDendrogram`, `showVarDendrogram`, `smpDendrogramHang`, `smpDendrogramNewick`, `smpDendrogramPosition`, `smpDendrogramUseHeight` and 6 more. Also known as: dendrogram, cluster tree.
 - **Error Bars** — Error bar and confidence intervals related parameters. Parameters: `showErrorBars`, `errorBarsType`, `errorBarsColor`, `errorBarsThickness`, `errorBarsWidth`, `standardDeviationType`. Also known as: error bars, standard error, standard deviation.
@@ -257,7 +257,7 @@ Input formats, filtering, sorting, selection, transforms and reshaping.
 - **Missing Data** — Missing data related parameters. Parameters: `missingDataColor`, `missingDataValue`, `nanOmit`. Also known as: missing values, na, nan.
 - **Plot Data Type** — Type of plot. Parameters: `isR`, `isChat`, `isCxplot`, `isGGMatrix`, `ggMatrixRole`, `isDataFrame`, `responsiveRules`.
 - **Random** — Properties used to generate random data sets. Parameters: `randomSeed`, `pseudoRandom`, `randomMethod`.
-- **Samples** — Properties associated with samples. Parameters: `highlightSmp`, `maxSmpStringLen`, `showSampleNames`, `smpHighlightColor`, `smpLabelAutoAlignPosition`, `smpLabelImage`, `smpLabelImageRound`, `smpLabelInterval` and 17 more.
+- **Samples** — Properties associated with samples. Parameters: `highlightSmp`, `maxSmpStringLen`, `showSampleNames`, `smpHighlightColor`, `smpLabelAutoAlignPosition`, `smpLabelImage`, `smpLabelImageRound`, `smpLabelInterval` and 18 more.
 - **Variables** — Properties associated with variables. Parameters: `highlightVar`, `maxVarStringLen`, `showVariableNames`, `varHighlightColor`, `varLabelInterval`, `varTextAlign`, `varTextBaseline`, `varTextColor` and 14 more.
 
 ## Layout, faceting and axes

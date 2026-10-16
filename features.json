@@ -1,8 +1,8 @@
 {
-  "engineVersion": "71.7",
+  "engineVersion": "71.8",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1780,
+    "parameters": 1782,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -2878,7 +2878,8 @@
             "showConfidenceIntervals",
             "confidenceIntervalsMax",
             "confidenceLevel",
-            "confidenceIntervalColorCoordinate"
+            "confidenceIntervalColorCoordinate",
+            "selectableFits"
           ],
           "graphTypes": [
             "Scatter2D"
@@ -4007,6 +4008,7 @@
             "smpTextFontStyle",
             "smpTextMargin",
             "smpTextRotate",
+            "smpTextRotateAuto",
             "smpTextScaleFontFactor",
             "smpTitle",
             "smpTitleAlign",
