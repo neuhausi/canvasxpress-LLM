@@ -1,12 +1,12 @@
 {
-  "engineVersion": "71.8",
+  "engineVersion": "71.9",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1782,
+    "parameters": 1785,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
-    "curatedFeatures": 25
+    "curatedFeatures": 26
   },
   "families": [
     {
@@ -326,7 +326,7 @@
             "bar chart with value labels"
           ],
           "aliasOf": null,
-          "exampleCount": 43,
+          "exampleCount": 44,
           "examples": [
             "https://www.canvasxpress.org/examples/bar-1.html",
             "https://www.canvasxpress.org/examples/bar-2.html",
@@ -1008,7 +1008,7 @@
             "box and whisker"
           ],
           "aliasOf": null,
-          "exampleCount": 61,
+          "exampleCount": 71,
           "examples": [
             "https://www.canvasxpress.org/examples/boxplot-1.html",
             "https://www.canvasxpress.org/examples/boxplot-2.html",
@@ -2814,6 +2814,55 @@
           "aliases": [
             "time series forecast",
             "predictive analytics"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Statistics as first-class objects (significance brackets, FDR, effect-size)",
+          "summary": "One-dimensional group charts (Boxplot, Violin, Bar) render pairwise significance brackets with a p-value or stars label via the opt-in statInference config, a renderer-first inference layer: the group-comparison test statistic is computed upstream (R/Python) and handed to the engine, which draws the bracket (horizontal rule + downward legs + centered label) and applies native multiple-testing correction. this.pAdjust matches R's stats::p.adjust() to double precision for BH/fdr, bonferroni, BY, holm, hochberg and none, so FDR control can recorrect client-side. Effect-size with confidence interval renders through the existing pointrange/errorbar geoms; volcano threshold lines through decorations. The same controls are authorable in the core library without code: a Statistics section in the Customizer (brackets, correction, annotation style, FDR cutoff via statInference.fdrThreshold, comparison editor, data transforms) and a matching Statistics submenu in the context menu.",
+          "params": [],
+          "docs": [
+            "https://www.canvasxpress.org/statistics.html",
+            "https://www.canvasxpress.org/examples/statistics.html"
+          ],
+          "aliases": [
+            "statistics customizer",
+            "statistics menu",
+            "fdr cutoff",
+            "significance bracket",
+            "significance brackets",
+            "significance stars",
+            "star annotation",
+            "p-value annotation",
+            "pairwise comparison",
+            "group comparison test",
+            "t-test",
+            "welch t-test",
+            "mann-whitney",
+            "wilcoxon",
+            "wilcoxon rank sum",
+            "anova",
+            "one-way anova",
+            "kruskal-wallis",
+            "kruskal wallis",
+            "multiple testing correction",
+            "p.adjust",
+            "p adjust",
+            "padjust",
+            "benjamini-hochberg",
+            "benjamini hochberg",
+            "bonferroni",
+            "holm",
+            "hochberg",
+            "fdr",
+            "false discovery rate",
+            "q-value",
+            "adjusted p-value",
+            "effect size",
+            "confidence interval tile",
+            "forest plot",
+            "ggsignif",
+            "ggpubr stat_compare_means"
           ]
         },
         {
@@ -5396,6 +5445,9 @@
             "showDecorations",
             "showDecorationsBorder",
             "showDecorationsLegend",
+            "showStatInference",
+            "statInference",
+            "volcano",
             "decorationsOnTop",
             "decorationsTransform"
           ],
