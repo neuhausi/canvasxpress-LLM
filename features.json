@@ -1,8 +1,8 @@
 {
-  "engineVersion": "72.4",
+  "engineVersion": "72.5",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1787,
+    "parameters": 1789,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -1541,6 +1541,7 @@
             "heatmapCellBox",
             "heatmapCellBoxColor",
             "heatmapCellBoxWidth",
+            "heatmapCellSpace",
             "heatmapCellBoxColorHighlight",
             "heatmapCellBoxHighlightWidth",
             "heatmapHighlightByRowCol",
@@ -1927,7 +1928,7 @@
             "pheatmap"
           ],
           "aliasOf": null,
-          "exampleCount": 38,
+          "exampleCount": 40,
           "examples": [
             "https://www.canvasxpress.org/examples/heatmap-1.html",
             "https://www.canvasxpress.org/examples/heatmap-2.html",
@@ -5276,6 +5277,7 @@
             "colorSpectrumBreaks",
             "colorSpectrumBreaksMethod",
             "colorLegendSteps",
+            "colorLegendLabels",
             "colorSpectrumZeroValue",
             "oddColor",
             "evenColor",
