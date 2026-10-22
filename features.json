@@ -1,8 +1,8 @@
 {
-  "engineVersion": "72.3",
+  "engineVersion": "72.4",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1785,
+    "parameters": 1787,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -293,7 +293,7 @@
             "stacked area"
           ],
           "aliasOf": null,
-          "exampleCount": 25,
+          "exampleCount": 26,
           "examples": [
             "https://www.canvasxpress.org/examples/area-1.html",
             "https://www.canvasxpress.org/examples/area-2.html",
@@ -1551,6 +1551,8 @@
             "heatmapCellMarkerColorColor",
             "heatmapCellMarkerSize",
             "heatmapCellMarkerWidth",
+            "heatmapCellText",
+            "heatmapCellTextColorColor",
             "varTitleLabelPosition",
             "smpTitleLabelPosition",
             "heatmapType",
@@ -1925,7 +1927,7 @@
             "pheatmap"
           ],
           "aliasOf": null,
-          "exampleCount": 37,
+          "exampleCount": 38,
           "examples": [
             "https://www.canvasxpress.org/examples/heatmap-1.html",
             "https://www.canvasxpress.org/examples/heatmap-2.html",
