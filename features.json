@@ -1,5 +1,5 @@
 {
-  "engineVersion": "72.6",
+  "engineVersion": "72.7",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
     "parameters": 1789,
@@ -6520,7 +6520,7 @@
         {
           "kind": "feature",
           "name": "Dashboards and connectors",
-          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, a data-first wizard (upload or paste data parsed by the CanvasXpress engine, a column check that flags bad cells, chart suggestions from the canvasxpress-mcp selector, one-click publish), share links and live sources, export of a dashboard (or a one-panel dashboard) as self-contained HTML, PNG or a print-ready PDF, publish & embed of a whole dashboard or a single chart (stable share URL republished in place on save, an auto-resizing iframe, a <cxd-embed> web component and a PNG fallback for RSS/email), an organisation brand lock (CXD_BRAND) enforced on saves and shared views, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; declarative per-panel drill-through actions (spec 1.4: on a mark click, set a dashboard parameter and re-query, write a filter predicate into the global filter model, or focus another panel); canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, pins, pins-s3, posit-connect, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
+          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, a data-first wizard (upload or paste data parsed by the CanvasXpress engine, a column check that flags bad cells, chart suggestions from the canvasxpress-mcp selector, one-click publish), share links and live sources, export of a dashboard (or a one-panel dashboard) as self-contained HTML, PNG or a print-ready PDF, publish & embed of a whole dashboard or a single chart (stable share URL republished in place on save, an auto-resizing iframe, a <cxd-embed> web component and a PNG fallback for RSS/email), an organisation brand lock (CXD_BRAND) enforced on saves and shared views, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; declarative per-panel drill-through actions (spec 1.4: on a mark click, set a dashboard parameter and re-query, write a filter predicate into the global filter model, or focus another panel); a whole linked dashboard from one table (the wizard and the canvasxpress-mcp suggest_canvasxpress_dashboard tool match a patient-cohort or sequencing run-QC table to filters, linked charts and a click-to-load case card); proactive insights (a fixed, deterministic strip of declared-threshold failures, Kruskal-Wallis group differences corrected for multiple testing and Tukey outliers, each caption carrying its figures, computed server-side under the viewer's row/column security, no model involved); storyboards (a guided tour: ordered steps that each set filters or a filter scheme, parameters and a panel in view with a line of narration, played with previous/play/next); and R (canvasXpressDashboards htmlwidget with Shiny inputs) and Python (canvasxpress-dashboards: Jupyter, Flask, Dash) wrappers that render a spec or turn a data frame into a dashboard; canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, pins, pins-s3, posit-connect, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
           "params": [
             "dashboardsServiceURL",
             "connectorsServiceURL"
@@ -6567,7 +6567,42 @@
             "suggested charts",
             "bad cells",
             "data check",
-            "paste data"
+            "paste data",
+            "storyboard",
+            "storyboards",
+            "story points",
+            "guided tour",
+            "dashboard tour",
+            "data story",
+            "narrated dashboard",
+            "slideshow of views",
+            "insights",
+            "proactive insights",
+            "automatic insights",
+            "outliers",
+            "outlier detection",
+            "anomaly detection",
+            "group difference",
+            "kruskal-wallis",
+            "dashboard from data",
+            "dashboard from a data frame",
+            "auto dashboard",
+            "suggest dashboard",
+            "case card",
+            "patient drill",
+            "dashboard in r",
+            "dashboard in python",
+            "htmlwidget dashboard",
+            "shiny dashboard",
+            "jupyter dashboard",
+            "flask dashboard",
+            "dash dashboard",
+            "canvasxpressdashboards",
+            "canvasxpress-dashboards pypi",
+            "python dashboard",
+            "r dashboard",
+            "dashboards in python",
+            "dashboards in r"
           ]
         },
         {
