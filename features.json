@@ -1,5 +1,5 @@
 {
-  "engineVersion": "72.5",
+  "engineVersion": "72.6",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
     "parameters": 1789,
@@ -461,7 +461,7 @@
             "slope graph"
           ],
           "aliasOf": null,
-          "exampleCount": 9,
+          "exampleCount": 10,
           "examples": [
             "https://www.canvasxpress.org/examples/line-1.html",
             "https://www.canvasxpress.org/examples/line-3.html",
