@@ -1,8 +1,8 @@
 {
-  "engineVersion": "72.7",
+  "engineVersion": "72.8",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1789,
+    "parameters": 1792,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -4606,17 +4606,36 @@
         {
           "kind": "category",
           "name": "Plot Mode",
-          "summary": "Properties to customize the plot",
+          "summary": "Edit/reproducible-research switches plus the automated demo driver: a declarative storyboard (demo config + cx.playDemo) operates the real UI with synthetic input events and a ghost cursor (toolbar, Customizer, data table, filters, context menus, lasso, drag and drop) for screen-recorded demo videos; the engine records it natively so demoRecording()/replayDemo() replay it in the Workflow widget.",
           "params": [
             "isEditable",
             "isReproducibleResearch",
             "reproduceTime",
-            "reproduceVideoMode"
+            "reproduceVideoMode",
+            "demo",
+            "demoAutoPlay",
+            "demoSpeed"
           ],
           "graphTypes": "all",
           "docs": [],
           "examples": [],
-          "aliases": []
+          "aliases": [
+            "demo video",
+            "demo driver",
+            "synthetic input",
+            "event catalog",
+            "demo recording",
+            "replay demo",
+            "playDemo",
+            "guided tour",
+            "product tour",
+            "walkthrough",
+            "screen recording demo",
+            "scripted cursor",
+            "automated demo",
+            "ghost cursor",
+            "reproducible research"
+          ]
         },
         {
           "kind": "category",
