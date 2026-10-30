@@ -1,8 +1,8 @@
 {
-  "engineVersion": "72.9",
+  "engineVersion": "73.0",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1792,
+    "parameters": 1793,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -5138,7 +5138,7 @@
         {
           "kind": "feature",
           "name": "Locale-aware number formatting",
-          "summary": "numberFormat (global) plus tooltipNumberFormat, legendNumberFormat, dataLabelNumberFormat and per-axis x/y/zAxisNumberFormat format displayed values with presets (comma, percent, dollar, euro, pound, yen, compact), sprintf strings, or an object {locale, style: decimal|percent|currency|compact, currency, decimals, grouping, prefix, suffix}. Intl.NumberFormat-backed with memoized formatter instances and a hand-written grouping fallback; axis width measurement follows the formatted strings. Default off keeps the legacy formatNumber output. An explicit *AxisTickFormat (sprintf) still wins per axis.",
+          "summary": "numberFormat (global) plus tooltipNumberFormat, legendNumberFormat, dataLabelNumberFormat, dataFilterNumberFormat (range-slider tick labels in the data filters) and per-axis x/y/zAxisNumberFormat format displayed values with presets (comma, percent, dollar, euro, pound, yen, compact), sprintf strings, or an object {locale, style: decimal|percent|currency|compact, currency, decimals, grouping, prefix, suffix}. Intl.NumberFormat-backed with memoized formatter instances and a hand-written grouping fallback; axis width measurement follows the formatted strings. Default off keeps the legacy formatNumber output. An explicit *AxisTickFormat (sprintf) still wins per axis.",
           "params": [],
           "docs": [],
           "aliases": [
@@ -5887,7 +5887,8 @@
             "numberFormat",
             "tooltipNumberFormat",
             "legendNumberFormat",
-            "dataLabelNumberFormat"
+            "dataLabelNumberFormat",
+            "dataFilterNumberFormat"
           ],
           "graphTypes": "all",
           "docs": [],
@@ -6403,7 +6404,7 @@
         {
           "kind": "category",
           "name": "LLM",
-          "summary": "Generate or modify a chart config from plain English, with the built-in service or your own endpoint.",
+          "summary": "Generate or modify a chart config from plain English, with the built-in service or your own endpoint. The canvasxpress-mcp connector also renders charts and linked dashboards live inside the chat as an MCP App (one call from a bundled dataset such as penguins, iris or mtcars, or from your own table), with Save (spec as a JSON download) and Open in Builder.",
           "params": [
             "llmServiceURL",
             "dashboardsServiceURL",
@@ -6429,6 +6430,10 @@
           ],
           "examples": [],
           "aliases": [
+            "mcp app",
+            "mcp",
+            "claude connector",
+            "dashboard in chat",
             "ai",
             "natural language",
             "llm",
@@ -6539,7 +6544,7 @@
         {
           "kind": "feature",
           "name": "Dashboards and connectors",
-          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, a data-first wizard (upload or paste data parsed by the CanvasXpress engine, a column check that flags bad cells, chart suggestions from the canvasxpress-mcp selector, one-click publish), share links and live sources, export of a dashboard (or a one-panel dashboard) as self-contained HTML, PNG or a print-ready PDF, publish & embed of a whole dashboard or a single chart (stable share URL republished in place on save, an auto-resizing iframe, a <cxd-embed> web component and a PNG fallback for RSS/email), an organisation brand lock (CXD_BRAND) enforced on saves and shared views, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; declarative per-panel drill-through actions (spec 1.4: on a mark click, set a dashboard parameter and re-query, write a filter predicate into the global filter model, or focus another panel); a whole linked dashboard from one table (the wizard and the canvasxpress-mcp suggest_canvasxpress_dashboard tool match a patient-cohort or sequencing run-QC table to filters, linked charts and a click-to-load case card); proactive insights (a fixed, deterministic strip of declared-threshold failures, Kruskal-Wallis group differences corrected for multiple testing and Tukey outliers, each caption carrying its figures, computed server-side under the viewer's row/column security, no model involved); storyboards (a guided tour: ordered steps that each set filters or a filter scheme, parameters and a panel in view with a line of narration, played with previous/play/next); and R (canvasXpressDashboards htmlwidget with Shiny inputs) and Python (canvasxpress-dashboards: Jupyter, Flask, Dash) wrappers that render a spec or turn a data frame into a dashboard; canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, pins, pins-s3, posit-connect, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
+          "summary": "canvasxpress-dashboards: linked multi-chart dashboards with shared filters, joins between sources, calculated fields on a source, a no-code builder, a data-first wizard (upload or paste data parsed by the CanvasXpress engine, a column check that flags bad cells, chart suggestions from the canvasxpress-mcp selector, one-click publish), share links and live sources, export of a dashboard (or a one-panel dashboard) as self-contained HTML, PNG or a print-ready PDF, publish & embed of a whole dashboard or a single chart (stable share URL republished in place on save, an auto-resizing iframe, a <cxd-embed> web component and a PNG fallback for RSS/email), an organisation brand lock (CXD_BRAND) enforced on saves and shared views, plus electronic records and signatures (immutable hash-chained version history with re-authenticated e-signatures, a Part 11 mapping) and scheduled data refresh; declarative per-panel drill-through actions (spec 1.4: on a mark click, set a dashboard parameter and re-query, write a filter predicate into the global filter model, or focus another panel); a whole linked dashboard from one table (the wizard and the canvasxpress-mcp suggest_canvasxpress_dashboard tool match a patient-cohort or sequencing run-QC table to filters, linked charts and a click-to-load case card; any other table with a factor and two numeric columns gets a generic explore dashboard, and the same dashboard renders live inside the chat as an MCP App whose Save downloads the spec as JSON that can be dropped on the Builder's Data page to open it); proactive insights (a fixed, deterministic strip of declared-threshold failures, Kruskal-Wallis group differences corrected for multiple testing and Tukey outliers, each caption carrying its figures, computed server-side under the viewer's row/column security, no model involved); storyboards (a guided tour: ordered steps that each set filters or a filter scheme, parameters and a panel in view with a line of narration, played with previous/play/next); and R (canvasXpressDashboards htmlwidget with Shiny inputs) and Python (canvasxpress-dashboards: Jupyter, Flask, Dash) wrappers that render a spec or turn a data frame into a dashboard; canvasxpress-connectors: SQL databases and cloud warehouses via SQLAlchemy, in-process DuckDB over Parquet/CSV, Google Sheets, Google Analytics, Salesforce and ServiceNow, with database pushdown (also in the browser) and no credential in the browser. Connector extras available: alphavantage, analytics, bigquery, databricks, duckdb, mssql, mysql, nasdaq, oracle, pins, pins-s3, posit-connect, postgres, redshift, salesforce, servicenow, sheets, snowflake, stooq, teradata, yahoo.",
           "params": [
             "dashboardsServiceURL",
             "connectorsServiceURL"
