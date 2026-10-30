@@ -1,6 +1,6 @@
 # CanvasXpress Feature Inventory
 
-A complete, generated map of CanvasXpress features (v73.0): 70 graph types (65 distinct; the rest are alternative names) and 1793 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+A complete, generated map of CanvasXpress features (v73.1): 70 graph types (65 distinct; the rest are alternative names) and 1793 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
 
 ## Families
 
@@ -352,6 +352,7 @@ Generating and modifying charts from plain English.
 
 ### Features
 
+- **Few-shot corpus generator** — generateExamples(graphs, count, sentences) produces plain-English prompt and chart-config pairs for every graph type (records with id, data, header, description, config). These are the few-shot examples the canvasxpress-mcp server retrieves from. The method name is kept un-obfuscated in the secure build; the function picks phrases with Math.random, so seed it for a reproducible corpus (canvasxpress-mcp scripts/generate_few_shots.py does). Also known as: generateexamples, few-shot examples, few shot examples, few-shot corpus, training examples, llm training data, prompt config pairs, synthetic prompts. See: https://www.canvasxpress.org/llm.html.
 - **LLM** — Generate or modify a chart config from plain English, with the built-in service or your own endpoint. The canvasxpress-mcp connector also renders charts and linked dashboards live inside the chat as an MCP App (one call from a bundled dataset such as penguins, iris or mtcars, or from your own table), with Save (spec as a JSON download) and Open in Builder. Parameters: `llmServiceURL`, `dashboardsServiceURL`, `connectorsServiceURL`, `llmTemperature`, `llmSelectFirst`, `llmBehaviour`, `llmPrompt`, `llmStack` and 9 more. Also known as: mcp app, mcp, claude connector, dashboard in chat, ai, natural language, llm, copilot, text to chart, chatbot, chart recommendation, show me. See: https://www.canvasxpress.org/llm.html.
 
 ## Export, integration and reproducibility

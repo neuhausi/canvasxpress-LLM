@@ -1,12 +1,12 @@
 {
-  "engineVersion": "73.0",
+  "engineVersion": "73.1",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
     "parameters": 1793,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
-    "curatedFeatures": 26
+    "curatedFeatures": 27
   },
   "families": [
     {
@@ -6401,6 +6401,25 @@
       "name": "AI and natural language",
       "summary": "Generating and modifying charts from plain English.",
       "features": [
+        {
+          "kind": "feature",
+          "name": "Few-shot corpus generator",
+          "summary": "generateExamples(graphs, count, sentences) produces plain-English prompt and chart-config pairs for every graph type (records with id, data, header, description, config). These are the few-shot examples the canvasxpress-mcp server retrieves from. The method name is kept un-obfuscated in the secure build; the function picks phrases with Math.random, so seed it for a reproducible corpus (canvasxpress-mcp scripts/generate_few_shots.py does).",
+          "params": [],
+          "docs": [
+            "https://www.canvasxpress.org/llm.html"
+          ],
+          "aliases": [
+            "generateexamples",
+            "few-shot examples",
+            "few shot examples",
+            "few-shot corpus",
+            "training examples",
+            "llm training data",
+            "prompt config pairs",
+            "synthetic prompts"
+          ]
+        },
         {
           "kind": "category",
           "name": "LLM",
