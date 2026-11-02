@@ -1,6 +1,6 @@
 # CanvasXpress Feature Inventory
 
-A complete, generated map of CanvasXpress features (v73.2): 70 graph types (65 distinct; the rest are alternative names) and 1793 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+A complete, generated map of CanvasXpress features (v73.3): 70 graph types (65 distinct; the rest are alternative names) and 1794 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
 
 ## Families
 
@@ -258,7 +258,7 @@ Input formats, filtering, sorting, selection, transforms and reshaping.
 - **Missing Data** — Missing data related parameters. Parameters: `missingDataColor`, `missingDataValue`, `nanOmit`. Also known as: missing values, na, nan.
 - **Plot Data Type** — Type of plot. Parameters: `isR`, `isChat`, `isCxplot`, `isGGMatrix`, `ggMatrixRole`, `isDataFrame`, `responsiveRules`.
 - **Random** — Properties used to generate random data sets. Parameters: `randomSeed`, `pseudoRandom`, `randomMethod`.
-- **Samples** — Properties associated with samples. Parameters: `highlightSmp`, `maxSmpStringLen`, `showSampleNames`, `smpHighlightColor`, `smpLabelAutoAlignPosition`, `smpLabelImage`, `smpLabelImageRound`, `smpLabelInterval` and 18 more.
+- **Samples** — Properties associated with samples. Parameters: `highlightSmp`, `maxSmpStringLen`, `showSampleNames`, `smpHighlightColor`, `smpLabelAutoAlignPosition`, `smpLabelImage`, `smpLabelImageRound`, `smpLabelInterval` and 19 more.
 - **Variables** — Properties associated with variables. Parameters: `highlightVar`, `maxVarStringLen`, `showVariableNames`, `varHighlightColor`, `varLabelInterval`, `varTextAlign`, `varTextBaseline`, `varTextColor` and 14 more.
 
 ## Layout, faceting and axes

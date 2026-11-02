@@ -1,8 +1,8 @@
 {
-  "engineVersion": "73.2",
+  "engineVersion": "73.3",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1793,
+    "parameters": 1794,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -4070,7 +4070,8 @@
             "smpTitleFontStyle",
             "smpTitleMargin",
             "smpTitleRotate",
-            "smpTitleScaleFontFactor"
+            "smpTitleScaleFontFactor",
+            "varTextRotateAuto"
           ],
           "graphTypes": [
             "Alluvial",
