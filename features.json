@@ -1,8 +1,8 @@
 {
-  "engineVersion": "73.5",
+  "engineVersion": "73.6",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1794,
+    "parameters": 1798,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -2537,7 +2537,10 @@
             "mapLabelProperty",
             "mapLabelColor",
             "mapMarkerShape",
-            "mapMarkerShapeScaleFactor"
+            "mapMarkerShapeScaleFactor",
+            "mapType",
+            "mapCartogramScale",
+            "mapCartogramSilhouette"
           ],
           "graphTypes": [
             "Map"
@@ -2637,10 +2640,16 @@
             "geo chart",
             "dot map",
             "connection map",
-            "bubble map"
+            "bubble map",
+            "cartogram",
+            "dorling cartogram",
+            "non-contiguous cartogram",
+            "contiguous cartogram",
+            "dougenik cartogram",
+            "value-by-area map"
           ],
           "aliasOf": null,
-          "exampleCount": 28,
+          "exampleCount": 31,
           "examples": [
             "https://www.canvasxpress.org/examples/map-1.html",
             "https://www.canvasxpress.org/examples/map-2.html",
@@ -5698,7 +5707,8 @@
             "showSizeLabelLegend",
             "showSizeLegend",
             "showSizeNodeLegend",
-            "showVariableLegend"
+            "showVariableLegend",
+            "sizeLegendNested"
           ],
           "graphTypes": [
             "Bar",
