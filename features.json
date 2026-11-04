@@ -1,5 +1,5 @@
 {
-  "engineVersion": "73.4",
+  "engineVersion": "73.5",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
     "parameters": 1794,
@@ -531,7 +531,9 @@
           "aliases": [
             "scatter plot",
             "scatter chart",
-            "xy plot"
+            "xy plot",
+            "beeswarm",
+            "convex hull chart"
           ],
           "aliasOf": null,
           "exampleCount": 140,
@@ -2359,6 +2361,7 @@
           "summary": "Alluvial diagram of flows between categorical stages.",
           "aliases": [
             "alluvial",
+            "alluvial diagram",
             "ggalluvial"
           ],
           "aliasOf": null,
@@ -2631,7 +2634,10 @@
           "summary": "Geographic map (choropleth, markers, connections, region pies).",
           "aliases": [
             "choropleth map",
-            "geo chart"
+            "geo chart",
+            "dot map",
+            "connection map",
+            "bubble map"
           ],
           "aliasOf": null,
           "exampleCount": 28,

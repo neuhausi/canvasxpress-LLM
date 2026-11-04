@@ -1,6 +1,6 @@
 # CanvasXpress Feature Inventory
 
-A complete, generated map of CanvasXpress features (v73.4): 70 graph types (65 distinct; the rest are alternative names) and 1794 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+A complete, generated map of CanvasXpress features (v73.5): 70 graph types (65 distinct; the rest are alternative names) and 1794 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
 
 ## Families
 
@@ -41,7 +41,7 @@ Business and general-purpose chart types.
 - **Pareto** (`graphType: "Pareto"`) — Pareto chart (sorted bars plus cumulative line). Also known as: pareto chart.
 - **Pie** (`graphType: "Pie"`) — Pie chart; pieShape:'half' gives a semicircle (election donut with pieInnerRadius) and pieType:'parliament' a seat-dot hemicycle. Also known as: pie chart, parliament chart, parliament, hemicycle, seat chart, election chart, half donut, semicircle donut, election donut, half pie, semicircle pie. Examples: [1](https://www.canvasxpress.org/examples/pie-1.html), [2](https://www.canvasxpress.org/examples/pie-2.html), [3](https://www.canvasxpress.org/examples/pie-3.html) (7 in the gallery).
 - **Radar** (`graphType: "Radar"`) — Radar chart. Also known as: radar chart, spider chart, web chart, star plot.
-- **Scatter2D** (`graphType: "Scatter2D"`) — 2D scatter plot, the base for fits, densities, histograms, KM curves and more. Also known as: scatter plot, scatter chart, xy plot. Examples: [1](https://www.canvasxpress.org/examples/scatter2d-1.html), [2](https://www.canvasxpress.org/examples/scatter2d-2.html), [3](https://www.canvasxpress.org/examples/scatter2d-3.html) (140 in the gallery).
+- **Scatter2D** (`graphType: "Scatter2D"`) — 2D scatter plot, the base for fits, densities, histograms, KM curves and more. Also known as: scatter plot, scatter chart, xy plot, beeswarm, convex hull chart. Examples: [1](https://www.canvasxpress.org/examples/scatter2d-1.html), [2](https://www.canvasxpress.org/examples/scatter2d-2.html), [3](https://www.canvasxpress.org/examples/scatter2d-3.html) (140 in the gallery).
 - **ScatterBubble2D** (`graphType: "ScatterBubble2D"`) — 2D scatter with sized bubbles. Also known as: bubble chart, bubble plot. Examples: [1](https://www.canvasxpress.org/examples/scatterbubble2d-1.html), [2](https://www.canvasxpress.org/examples/scatterbubble2d-2.html), [3](https://www.canvasxpress.org/examples/scatterbubble2d-3.html) (5 in the gallery).
 - **Spaghetti** (`graphType: "Spaghetti"`) — Spaghetti plot of many individual trajectories. Also known as: spaghetti plot, trajectories.
 - **Stacked** (`graphType: "Stacked"`) — Stacked bar chart. Also known as: stacked bar, stacked column. Examples: [1](https://www.canvasxpress.org/examples/stacked-1.html), [2](https://www.canvasxpress.org/examples/stacked-2.html), [3](https://www.canvasxpress.org/examples/stacked-3.html) (12 in the gallery).
@@ -157,7 +157,7 @@ Graphs of connections, flows between stages and nested structures.
 
 ### Graph types
 
-- **Alluvial** (`graphType: "Alluvial"`) — Alluvial diagram of flows between categorical stages. Also known as: alluvial, ggalluvial.
+- **Alluvial** (`graphType: "Alluvial"`) — Alluvial diagram of flows between categorical stages. Also known as: alluvial, alluvial diagram, ggalluvial.
 - **Bubble** (`graphType: "Bubble"`) — Circle-packing bubble chart of a hierarchy. Also known as: circle packing, packed bubbles.
 - **Chord** (`graphType: "Chord"`) — Chord diagram of flows between groups on a circle. Also known as: chord diagram.
 - **Network** (`graphType: "Network"`) — Network graph with force-directed, circular, radial and cola layouts and community detection. Also known as: network graph, node-link diagram, graph visualization, force graph. Examples: [1](https://www.canvasxpress.org/examples/network-1.html), [2](https://www.canvasxpress.org/examples/network-2.html), [3](https://www.canvasxpress.org/examples/network-3.html) (36 in the gallery).
@@ -190,7 +190,7 @@ Geographic maps: choropleth, symbol and connection maps.
 
 ### Graph types
 
-- **Map** (`graphType: "Map"`) — Geographic map (choropleth, markers, connections, region pies). Also known as: choropleth map, geo chart. Examples: [1](https://www.canvasxpress.org/examples/map-1.html), [2](https://www.canvasxpress.org/examples/map-2.html), [3](https://www.canvasxpress.org/examples/map-3.html) (28 in the gallery).
+- **Map** (`graphType: "Map"`) — Geographic map (choropleth, markers, connections, region pies). Also known as: choropleth map, geo chart, dot map, connection map, bubble map. Examples: [1](https://www.canvasxpress.org/examples/map-1.html), [2](https://www.canvasxpress.org/examples/map-2.html), [3](https://www.canvasxpress.org/examples/map-3.html) (28 in the gallery).
 
 ### Features
 
