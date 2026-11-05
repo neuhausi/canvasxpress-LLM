@@ -1,8 +1,8 @@
 {
-  "engineVersion": "73.7",
+  "engineVersion": "73.8",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1798,
+    "parameters": 1799,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -1793,8 +1793,9 @@
         {
           "kind": "category",
           "name": "Vector Field Plots",
-          "summary": "Vector-field plots: velocity / quiver / streamplot visualizations over a 2D coordinate space (a direction + magnitude per sample), built on Scatter2D with scatterType vectorfield. plot_type modes: raw (one arrow per sample), grid (field averaged onto a regular grid, one arrow per cell = quiver), stream (RK4-integrated streamlines = streamplot). Arrow length encodes magnitude; color by group (raw) or by magnitude gradient (grid/stream). Covers plotthis VelocityPlot (RNA velocity over an embedding) and matplotlib quiver / streamplot.",
+          "summary": "Vector-field plots: velocity / quiver / streamplot visualizations over a 2D coordinate space (a direction + magnitude per sample), built on Scatter2D with scatterType vectorfield, or as an overlay on a Map with mapVectorField true (positions from the lat/lng marker columns, velocity from vectorUBy/vectorVBy). plot_type modes: raw (one arrow per sample), grid (field averaged onto a regular grid, one arrow per cell = quiver), stream (RK4-integrated streamlines = streamplot). Arrow length encodes magnitude; color by group (raw) or by magnitude gradient (grid/stream). Covers plotthis VelocityPlot (RNA velocity over an embedding), matplotlib quiver / streamplot, and geographic wind / current / flow fields on a map.",
           "params": [
+            "mapVectorField",
             "vectorFieldMode",
             "vectorScale",
             "vectorArrowSize",
@@ -1818,11 +1819,13 @@
             "vectorShowLegend"
           ],
           "graphTypes": [
-            "Scatter2D"
+            "Scatter2D",
+            "Map"
           ],
           "docs": [],
           "examples": [
-            "https://www.canvasxpress.org/examples/scatter2d-1.html"
+            "https://www.canvasxpress.org/examples/scatter2d-1.html",
+            "https://www.canvasxpress.org/examples/map-1.html"
           ],
           "aliases": [
             "velocity plot",
@@ -1836,7 +1839,15 @@
             "stream plot",
             "streamline plot",
             "flow field",
-            "velocity field"
+            "velocity field",
+            "wind map",
+            "wind field map",
+            "quiver map",
+            "streamplot map",
+            "vector field map",
+            "flow map",
+            "ocean current map",
+            "map vector field"
           ]
         },
         {
@@ -2649,7 +2660,7 @@
             "value-by-area map"
           ],
           "aliasOf": null,
-          "exampleCount": 31,
+          "exampleCount": 34,
           "examples": [
             "https://www.canvasxpress.org/examples/map-1.html",
             "https://www.canvasxpress.org/examples/map-2.html",
