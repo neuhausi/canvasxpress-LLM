@@ -1,12 +1,12 @@
 {
-  "engineVersion": "73.8",
+  "engineVersion": "73.9",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
     "parameters": 1799,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
-    "curatedFeatures": 27
+    "curatedFeatures": 28
   },
   "families": [
     {
@@ -326,7 +326,7 @@
             "bar chart with value labels"
           ],
           "aliasOf": null,
-          "exampleCount": 44,
+          "exampleCount": 45,
           "examples": [
             "https://www.canvasxpress.org/examples/bar-1.html",
             "https://www.canvasxpress.org/examples/bar-2.html",
@@ -408,7 +408,7 @@
             "jitter plot"
           ],
           "aliasOf": null,
-          "exampleCount": 18,
+          "exampleCount": 19,
           "examples": [
             "https://www.canvasxpress.org/examples/dotplot-1.html",
             "https://www.canvasxpress.org/examples/dotplot-2.html",
@@ -461,7 +461,7 @@
             "slope graph"
           ],
           "aliasOf": null,
-          "exampleCount": 10,
+          "exampleCount": 11,
           "examples": [
             "https://www.canvasxpress.org/examples/line-1.html",
             "https://www.canvasxpress.org/examples/line-3.html",
@@ -536,7 +536,7 @@
             "convex hull chart"
           ],
           "aliasOf": null,
-          "exampleCount": 140,
+          "exampleCount": 143,
           "examples": [
             "https://www.canvasxpress.org/examples/scatter2d-1.html",
             "https://www.canvasxpress.org/examples/scatter2d-2.html",
@@ -1941,7 +1941,7 @@
             "pheatmap"
           ],
           "aliasOf": null,
-          "exampleCount": 40,
+          "exampleCount": 41,
           "examples": [
             "https://www.canvasxpress.org/examples/heatmap-1.html",
             "https://www.canvasxpress.org/examples/heatmap-2.html",
@@ -2892,6 +2892,49 @@
             "forest plot",
             "ggsignif",
             "ggpubr stat_compare_means"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "Model-evaluation plots",
+          "summary": "Client-side builders that turn a trained classifier's outputs into render-ready CanvasXpress specs: CanvasXpress.rocConfig / prConfig / confusionConfig / evalPlots (and the matching cx.* instance methods) compute the ROC sweep and trapezoidal AUC, the precision-recall curve and average precision, and the confusion-matrix counts, then emit a Scatter2D line curve with a reference-line decoration (ROC/PR) or a Heatmap (confusion). Also importanceConfig (horizontal feature-importance bar), calibrationConfig (reliability curve with the expected calibration error), learningCurveConfig (training vs validation score lines) and shapConfig (SHAP-summary beeswarm, a jittered Dotplot grouped by feature and coloured by feature value). No external dependency; the static form runs before any chart exists, the same standalone pattern as recommend().",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "roc",
+            "roc curve",
+            "auc",
+            "roc auc",
+            "auroc",
+            "precision recall",
+            "precision-recall curve",
+            "pr curve",
+            "average precision",
+            "confusion matrix",
+            "model evaluation",
+            "model evaluation plots",
+            "classifier evaluation",
+            "classifier metrics",
+            "rocconfig",
+            "prconfig",
+            "confusionconfig",
+            "evalplots",
+            "feature importance",
+            "variable importance",
+            "importance plot",
+            "calibration curve",
+            "reliability diagram",
+            "expected calibration error",
+            "learning curve",
+            "training curve",
+            "shap",
+            "shap summary",
+            "shap beeswarm",
+            "beeswarm plot",
+            "importanceconfig",
+            "calibrationconfig",
+            "learningcurveconfig",
+            "shapconfig"
           ]
         },
         {
