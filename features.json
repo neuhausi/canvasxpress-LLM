@@ -1,8 +1,8 @@
 {
-  "engineVersion": "73.9",
+  "engineVersion": "74.0",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1799,
+    "parameters": 1800,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -1781,7 +1781,8 @@
             "upsetSetsBarColor",
             "upsetPointSizeFactor",
             "upsetLineSizeFactor",
-            "upsetMatrixPlotBarRatio"
+            "upsetMatrixPlotBarRatio",
+            "upsetSetsBarRatio"
           ],
           "graphTypes": [
             "Heatmap"
