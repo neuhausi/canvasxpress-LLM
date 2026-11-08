@@ -1,8 +1,8 @@
 {
-  "engineVersion": "74.0",
+  "engineVersion": "74.1",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1800,
+    "parameters": 1802,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -777,6 +777,7 @@
             "contourBandsColor",
             "contourLevelWidth",
             "contourLevelNumber",
+            "contourPoints",
             "contourStat",
             "contourType",
             "contourLevels",
@@ -829,7 +830,8 @@
             "densityPosition",
             "bandwidthRule",
             "bandwidthCut",
-            "bandwidthAdjust"
+            "bandwidthAdjust",
+            "densityPoints"
           ],
           "graphTypes": [
             "Density",
@@ -2491,7 +2493,7 @@
             "tree map"
           ],
           "aliasOf": null,
-          "exampleCount": 3,
+          "exampleCount": 4,
           "examples": [
             "https://www.canvasxpress.org/examples/treemap-1.html",
             "https://www.canvasxpress.org/examples/treemap-2.html",

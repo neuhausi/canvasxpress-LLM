@@ -1,6 +1,6 @@
 # CanvasXpress Feature Inventory
 
-A complete, generated map of CanvasXpress features (v74.0): 70 graph types (65 distinct; the rest are alternative names) and 1800 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
+A complete, generated map of CanvasXpress features (v74.1): 70 graph types (65 distinct; the rest are alternative names) and 1802 configuration parameters in 141 categories, grouped into families. Each entry lists its key parameters, the graph types it applies to, documentation, gallery examples, and **also known as** terms used by other tools, so a search in any vocabulary finds it. Generated from the engine's parameter registry, so it matches the shipped code. The full parameter reference is in `SCHEMA.md` and the config JSON Schema.
 
 ## Families
 
@@ -99,9 +99,9 @@ Charts that show the shape of data and relationships between many variables.
 
 - **Bin Plots** — Parameters used to create bin plots in 2d scatter plots. Parameters: `binplotBins`, `binplotBinWidth`, `binplotShape`, `binplotColorScheme`. Applies to: Bin, Binplot, Hex, Hexplot, Scatter2D. Also known as: 2d binning.
 - **Boxplot Graphs** — General parameters in Boxplot Graphs. Parameters: `boxplotOutliersRatio`, `boxplotOutliersColor`, `boxplotOutliersBorderColor`, `boxplotOutliersShape`, `boxplotWhiskersType`, `boxplotType`, `boxplotNotched`, `boxplotTransparency` and 15 more. Applies to: Boxplot.
-- **Contours** — Parameters used to create contours in one and two dimensional plots. Parameters: `isContour`, `contourFilled`, `contourFilledTransparency`, `showContourBands`, `contourBandsColor`, `contourLevelWidth`, `contourLevelNumber`, `contourStat` and 6 more. Applies to: Pareto, Heatmap, Scatter2D. Also known as: contour plot, 2d density contour.
+- **Contours** — Parameters used to create contours in one and two dimensional plots. Parameters: `isContour`, `contourFilled`, `contourFilledTransparency`, `showContourBands`, `contourBandsColor`, `contourLevelWidth`, `contourLevelNumber`, `contourPoints` and 7 more. Applies to: Pareto, Heatmap, Scatter2D. Also known as: contour plot, 2d density contour.
 - **Correlation Graphs** — General parameters for correlation. Parameters: `correlationAxis`, `correlationAnchorLegend`, `correlationAnchorLegendAlignWidth`, `correlationLabelInterval`, `correlationType`. Applies to: Correlation. Also known as: correlation matrix, correlogram, corrplot.
-- **Density Plots** — Parameters used to create density plots in 1d and 2d scatter plots. Parameters: `showScatterDensity`, `densityKernel`, `densityPosition`, `bandwidthRule`, `bandwidthCut`, `bandwidthAdjust`. Applies to: Density, Distribution, Histogram, Ridgeline, Violin. Also known as: kde, kernel density.
+- **Density Plots** — Parameters used to create density plots in 1d and 2d scatter plots. Parameters: `showScatterDensity`, `densityKernel`, `densityPosition`, `bandwidthRule`, `bandwidthCut`, `bandwidthAdjust`, `densityPoints`. Applies to: Density, Distribution, Histogram, Ridgeline, Violin. Also known as: kde, kernel density.
 - **General One Dimensional Graphs** — General properties used in one dimensional visualizations. Parameters: `graphOrientation`, `invertGraph`.
 - **Histograms** — Parameters used to create histograms in 2d scatter plots. Parameters: `histogramAsDotplot`, `histogramBinWidth`, `histogramBins`, `histogramBreaks`, `histogramDensityFillTransparency`, `histogramDotplotBorderColor`, `histogramDotplotBorderLineType`, `histogramDotplotBorderSize` and 21 more. Applies to: Scatter2D.
 - **Parallel Coordinates Graphs** — General parameters in Parallel Coordinates Graphs. Applies to: ParallelCoordinates.
@@ -166,7 +166,7 @@ Graphs of connections, flows between stages and nested structures.
 - **Sunburst** (`graphType: "Sunburst"`) — Sunburst chart of a hierarchy. Also known as: sunburst, radial treemap, multi-level pie.
 - **Tree** (`graphType: "Tree"`) — Tree diagram / dendrogram layout. Also known as: tree diagram, hierarchy tree. Examples: [1](https://www.canvasxpress.org/examples/tree-1.html), [2](https://www.canvasxpress.org/examples/tree-2.html), [3](https://www.canvasxpress.org/examples/tree-3.html) (6 in the gallery).
 - **TreeBracket** (`graphType: "TreeBracket"`) — Tournament-style bracket drawn from a hierarchy (Final, Semifinal, ...). Also known as: bracket, tournament bracket.
-- **Treemap** (`graphType: "Treemap"`) — Treemap of a hierarchy. Also known as: treemap, tree map. Examples: [1](https://www.canvasxpress.org/examples/treemap-1.html), [2](https://www.canvasxpress.org/examples/treemap-2.html), [3](https://www.canvasxpress.org/examples/treemap-4.html).
+- **Treemap** (`graphType: "Treemap"`) — Treemap of a hierarchy. Also known as: treemap, tree map. Examples: [1](https://www.canvasxpress.org/examples/treemap-1.html), [2](https://www.canvasxpress.org/examples/treemap-2.html), [3](https://www.canvasxpress.org/examples/treemap-4.html) (4 in the gallery).
 
 ### Features
 
