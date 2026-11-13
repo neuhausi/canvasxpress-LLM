@@ -1,8 +1,8 @@
 {
-  "engineVersion": "74.1",
+  "engineVersion": "74.2",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1802,
+    "parameters": 1807,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -4527,6 +4527,8 @@
           "params": [
             "segregateSamplesBy",
             "segregateVariablesBy",
+            "segregateLevelOrder",
+            "layoutSpaceFree",
             "splitSamplesBy",
             "splitVariablesBy",
             "splitSeparation"
@@ -4631,6 +4633,8 @@
             "dataValuesHideOverlap",
             "binned",
             "binAlignment",
+            "binMethod",
+            "binWidth",
             "jitter",
             "jitterFactor",
             "sina",
@@ -5725,6 +5729,7 @@
             "legendOrder",
             "legendOrderByCols",
             "legendPosition",
+            "legendPositionAuto",
             "legendRows",
             "legendStyleGgplot",
             "legendTextAlign",
