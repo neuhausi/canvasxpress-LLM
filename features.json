@@ -1,8 +1,8 @@
 {
-  "engineVersion": "74.4",
+  "engineVersion": "74.5",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1806,
+    "parameters": 1811,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
@@ -527,13 +527,17 @@
         },
         {
           "name": "Scatter2D",
-          "summary": "2D scatter plot, the base for fits, densities, histograms, KM curves and more.",
+          "summary": "2D scatter plot, the base for fits, densities, histograms, KM curves and more, including genome-wide Manhattan and CNV plots via scatterType.",
           "aliases": [
             "scatter plot",
             "scatter chart",
             "xy plot",
             "beeswarm",
-            "convex hull chart"
+            "convex hull chart",
+            "manhattan plot",
+            "gwas plot",
+            "genome-wide association plot",
+            "cnv plot"
           ],
           "aliasOf": null,
           "exampleCount": 143,
@@ -1386,6 +1390,9 @@
           "summary": "General parameters used in genome browser",
           "params": [
             "genomeTicks",
+            "genomeTrackPadding",
+            "genomeTicksPosition",
+            "genomeTicksUnit",
             "wireColor",
             "genomeResolution"
           ],
@@ -1430,7 +1437,8 @@
             "featureTranslateHeight",
             "featureTranslateShow",
             "featureTypeDefault",
-            "featureStaggered"
+            "featureStaggered",
+            "featurePriority"
           ],
           "graphTypes": [
             "Genome"
@@ -1920,14 +1928,28 @@
         },
         {
           "name": "Genome",
-          "summary": "Genome browser with feature, sequence and signal tracks.",
+          "summary": "Genome browser with feature, sequence and signal tracks. A dataframe track carries scatter, line, bar and lollipop sub-plots on independent left and right value axes, so a GWAS regional association (LocusZoom) plot is a two-track chart: -log10(p) coloured by LD r2 with the lead SNP and a recombination-rate line above, transcript models with exons, strand and priority row packing below.",
           "aliases": [
             "genome browser",
             "igv-like tracks",
-            "genomic tracks"
+            "genomic tracks",
+            "locuszoom",
+            "locuszoomr",
+            "regional association plot",
+            "regional plot",
+            "gwas locus plot",
+            "ld r2",
+            "linkage disequilibrium colouring",
+            "lead snp",
+            "index snp",
+            "recombination rate",
+            "gene track",
+            "transcript track",
+            "exon track",
+            "gencode browser"
           ],
           "aliasOf": null,
-          "exampleCount": 4,
+          "exampleCount": 8,
           "examples": [
             "https://www.canvasxpress.org/examples/genome-1.html",
             "https://www.canvasxpress.org/examples/genome-2.html",
@@ -5316,6 +5338,7 @@
           "params": [
             "showAnimation",
             "showTransition",
+            "disableAnimations",
             "transitionStep",
             "transitionStaggering",
             "transitionType",
@@ -6501,7 +6524,7 @@
         {
           "kind": "category",
           "name": "LLM",
-          "summary": "Generate or modify a chart config from plain English, with the built-in service or your own endpoint. The canvasxpress-mcp connector also renders charts and linked dashboards live inside the chat as an MCP App (one call from a bundled dataset such as penguins, iris or mtcars, or from your own table), with Save (spec as a JSON download) and Open in Builder.",
+          "summary": "Generate or modify a chart config from plain English, with the built-in service or your own endpoint. The canvasxpress-mcp connector also renders charts and linked dashboards live inside the chat as an MCP App (one call from a bundled dataset such as penguins, iris or mtcars, or from your own table), with Save (spec as a JSON download) and Open in Builder. Data that is not already in the chat gets in by dragging the file (or several related files) onto the panel, which uploads it through the host in pieces, so no rows pass through the model. It installs in Claude as a plugin from its own marketplace (/plugin install canvasxpress --marketplace neuhausi/canvasxpress-mcp), bundling the remote connector plus a canvasxpress-charts skill that teaches the tool flow: select, generate, modify, validate, render.",
           "params": [
             "llmServiceURL",
             "dashboardsServiceURL",
@@ -6530,6 +6553,11 @@
             "mcp app",
             "mcp",
             "claude connector",
+            "claude plugin",
+            "claude marketplace",
+            "plugin install",
+            "agent skill",
+            "drag the file",
             "dashboard in chat",
             "ai",
             "natural language",
