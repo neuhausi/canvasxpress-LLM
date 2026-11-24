@@ -1,5 +1,5 @@
 {
-  "engineVersion": "74.6",
+  "engineVersion": "74.7",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
     "parameters": 1823,
@@ -340,7 +340,9 @@
             "grouped bar",
             "arrow bars",
             "split bars",
-            "bar chart with value labels"
+            "bar chart with value labels",
+            "bar table",
+            "bar in table"
           ],
           "aliasOf": null,
           "exampleCount": 45,
@@ -443,7 +445,9 @@
             "arrow plot",
             "before after arrow chart",
             "before after arrow plot",
-            "arrow dumbbell"
+            "arrow dumbbell",
+            "ranged dot",
+            "ranged dot plot"
           ],
           "aliasOf": null,
           "exampleCount": 17,
@@ -475,7 +479,8 @@
           "aliases": [
             "line chart",
             "slope chart",
-            "slope graph"
+            "slope graph",
+            "slope"
           ],
           "aliasOf": null,
           "exampleCount": 11,
@@ -688,7 +693,9 @@
           "aliases": [
             "tornado chart",
             "butterfly chart",
-            "population pyramid"
+            "population pyramid",
+            "pyramid",
+            "pyramid chart"
           ],
           "aliasOf": null,
           "exampleCount": 0,
@@ -1202,7 +1209,8 @@
           "summary": "3D scatter plot with rotation.",
           "aliases": [
             "3d scatter",
-            "3d plot"
+            "3d plot",
+            "scatter 3d"
           ],
           "aliasOf": null,
           "exampleCount": 15,
@@ -1226,9 +1234,16 @@
         },
         {
           "name": "Violin",
-          "summary": "Violin plot.",
+          "summary": "Violin plot. Half-violins (violinSide lt/rb/split) plus jittered raw points (showBoxplotOriginalData) and an overlaid boxplot build raincloud plots, including paired/flanking rainclouds via connectBy.",
           "aliases": [
-            "violin plot"
+            "violin plot",
+            "raincloud",
+            "raincloud plot",
+            "rain cloud",
+            "half violin",
+            "half-violin",
+            "ggrain",
+            "geom_rain"
           ],
           "aliasOf": null,
           "exampleCount": 0,
@@ -1917,6 +1932,7 @@
           "summary": "Circos-style circular plot with tracks, arcs, connections and ideograms.",
           "aliases": [
             "circos",
+            "circos plot",
             "circular genome plot"
           ],
           "aliasOf": null,
@@ -1980,7 +1996,9 @@
             "heat map",
             "clustered heatmap",
             "complexheatmap",
-            "pheatmap"
+            "pheatmap",
+            "calendar heatmap",
+            "calendar"
           ],
           "aliasOf": null,
           "exampleCount": 41,
@@ -3358,7 +3376,8 @@
             "loess",
             "lowess",
             "smoothing",
-            "geom_smooth"
+            "geom_smooth",
+            "loess fit"
           ]
         },
         {
