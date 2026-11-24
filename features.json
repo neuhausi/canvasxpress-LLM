@@ -1,12 +1,12 @@
 {
-  "engineVersion": "74.5",
+  "engineVersion": "74.6",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1811,
+    "parameters": 1823,
     "categories": 141,
     "graphTypes": 70,
     "distinctGraphTypes": 65,
-    "curatedFeatures": 28
+    "curatedFeatures": 30
   },
   "families": [
     {
@@ -14,6 +14,21 @@
       "name": "Everyday charts",
       "summary": "Business and general-purpose chart types.",
       "features": [
+        {
+          "kind": "feature",
+          "name": "Scatter2D categorical axis",
+          "summary": "A direct-API Scatter2D config may name a VARIABLE (a data column, e.g. xAxis:['Species']) instead of a SAMPLE as an axis -- the classic sample-vs-sample Scatter2D convention still works unchanged. When an axis value resolves as a variable rather than a sample, the engine promotes it by transposing the whole matrix (the same primitive canvasXpress.cxplot.js already uses for ggplot-ingested scatter plots), so one point is drawn per original observation instead of the chart silently collapsing to a near-constant position.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "scatter plot categorical x axis",
+            "scatter plot categorical y axis",
+            "tidy data scatter plot",
+            "scatter by group",
+            "scatter2d column as axis",
+            "plot one variable against another"
+          ]
+        },
         {
           "kind": "category",
           "name": "Area Graphs",
@@ -123,7 +138,8 @@
             "lineType",
             "tension",
             "tensionSegments",
-            "showLineEndLabels"
+            "showLineEndLabels",
+            "connectNullData"
           ],
           "graphTypes": [
             "Area",
@@ -240,7 +256,8 @@
             "scatterStreamNumber",
             "scatterStreamExtraSpan",
             "scatterStreamTrueRange",
-            "scatterStreamWiggles"
+            "scatterStreamWiggles",
+            "streamInterpolateGaps"
           ],
           "graphTypes": [
             "Scatter2D"
@@ -540,7 +557,7 @@
             "cnv plot"
           ],
           "aliasOf": null,
-          "exampleCount": 143,
+          "exampleCount": 144,
           "examples": [
             "https://www.canvasxpress.org/examples/scatter2d-1.html",
             "https://www.canvasxpress.org/examples/scatter2d-2.html",
@@ -2712,7 +2729,8 @@
             "bulletTargetWidthRatio",
             "bulletTargetVarColor",
             "bulletTargetType",
-            "bulletTargetLineWidth"
+            "bulletTargetLineWidth",
+            "bulletColorByTarget"
           ],
           "graphTypes": [
             "Bullet"
@@ -4144,9 +4162,12 @@
             "showSampleNames",
             "smpHighlightColor",
             "smpLabelAutoAlignPosition",
+            "smpLabelDateAuto",
             "smpLabelImage",
             "smpLabelImageRound",
             "smpLabelInterval",
+            "smpLabelIntervalAuto",
+            "smpLabelTimeAuto",
             "smpTextAlign",
             "smpTextBaseline",
             "smpTextColor",
@@ -4156,6 +4177,7 @@
             "smpTextRotate",
             "smpTextRotateAuto",
             "smpTextScaleFontFactor",
+            "smpTimeScale",
             "smpTitle",
             "smpTitleAlign",
             "smpTitleBaseline",
@@ -4165,6 +4187,7 @@
             "smpTitleMargin",
             "smpTitleRotate",
             "smpTitleScaleFontFactor",
+            "smpValueScale",
             "varTextRotateAuto"
           ],
           "graphTypes": [
@@ -4247,7 +4270,9 @@
             "maxVarStringLen",
             "showVariableNames",
             "varHighlightColor",
+            "varLabelDateAuto",
             "varLabelInterval",
+            "varLabelIntervalAuto",
             "varTextAlign",
             "varTextBaseline",
             "varTextColor",
@@ -4345,6 +4370,21 @@
       "name": "Layout, faceting and axes",
       "summary": "Panels, small multiples, axes, margins and plot areas.",
       "features": [
+        {
+          "kind": "feature",
+          "name": "Automatic axis-label thinning",
+          "summary": "smpLabelIntervalAuto / varLabelIntervalAuto (default off) pick the sample/variable label draw interval from the measured label width against the available band width, instead of a fixed smpLabelInterval/varLabelInterval. Reachable via the Customizer axis-label controls and the sample/variable label context menus.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "auto label thinning",
+            "automatic tick decimation",
+            "label interval auto",
+            "smart tick spacing",
+            "avoid overlapping axis labels",
+            "crowded axis labels"
+          ]
+        },
         {
           "kind": "category",
           "name": "3D Attributes",
@@ -5391,7 +5431,9 @@
           "params": [
             "colorScheme",
             "colors",
+            "colorPaletteExtend",
             "colorSpectrum",
+            "colorSpectrumAuto",
             "colorSpectrumBinned",
             "colorSpectrumBreaks",
             "colorSpectrumBreaksMethod",
