@@ -1,11 +1,11 @@
 {
-  "engineVersion": "74.7",
+  "engineVersion": "74.8",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1823,
+    "parameters": 1830,
     "categories": 141,
-    "graphTypes": 70,
-    "distinctGraphTypes": 65,
+    "graphTypes": 74,
+    "distinctGraphTypes": 69,
     "curatedFeatures": 30
   },
   "families": [
@@ -139,7 +139,8 @@
             "tension",
             "tensionSegments",
             "showLineEndLabels",
-            "connectNullData"
+            "connectNullData",
+            "isSlopePlot"
           ],
           "graphTypes": [
             "Area",
@@ -215,6 +216,10 @@
             "scatterType",
             "showDataLabels",
             "showScatterLineOriginalData",
+            "sparklineAggregate",
+            "sparklineBaseline",
+            "sparklineMarkers",
+            "sparklineType",
             "scatterAxesEqual",
             "scatterOutlineThreshold"
           ],
@@ -422,9 +427,7 @@
           "name": "Dotplot",
           "summary": "Dot plot of values per category.",
           "aliases": [
-            "dot plot",
-            "strip plot",
-            "jitter plot"
+            "dot plot"
           ],
           "aliasOf": null,
           "exampleCount": 19,
@@ -477,10 +480,7 @@
           "name": "Line",
           "summary": "Line chart.",
           "aliases": [
-            "line chart",
-            "slope chart",
-            "slope graph",
-            "slope"
+            "line chart"
           ],
           "aliasOf": null,
           "exampleCount": 11,
@@ -549,7 +549,7 @@
         },
         {
           "name": "Scatter2D",
-          "summary": "2D scatter plot, the base for fits, densities, histograms, KM curves and more, including genome-wide Manhattan and CNV plots via scatterType.",
+          "summary": "2D scatter plot, the base for fits, densities, histograms, KM curves and more, including genome-wide Manhattan, CNV, and mirrored dual-study Miami plots via scatterType (scatterType miami adds a second -log10(p) track drawn downward with manhattanMarkerLogPValueBottom + manhattanColorsBottom).",
           "aliases": [
             "scatter plot",
             "scatter chart",
@@ -559,10 +559,14 @@
             "manhattan plot",
             "gwas plot",
             "genome-wide association plot",
-            "cnv plot"
+            "cnv plot",
+            "miami plot",
+            "mirrored manhattan",
+            "dual manhattan",
+            "two-study gwas"
           ],
           "aliasOf": null,
-          "exampleCount": 144,
+          "exampleCount": 146,
           "examples": [
             "https://www.canvasxpress.org/examples/scatter2d-1.html",
             "https://www.canvasxpress.org/examples/scatter2d-2.html",
@@ -594,6 +598,25 @@
           "aliasOf": null,
           "exampleCount": 0,
           "examples": []
+        },
+        {
+          "name": "Sparklines",
+          "summary": "Sparklines — small-multiples strip chart, one compact trend line per series (Tufte datawords); renders via faceted Scatter2D with free per-panel y-scales.",
+          "aliases": [
+            "sparkline",
+            "sparklines",
+            "spark lines",
+            "small multiples trend",
+            "dataword",
+            "trend strip",
+            "sparkline table"
+          ],
+          "aliasOf": null,
+          "exampleCount": 2,
+          "examples": [
+            "https://www.canvasxpress.org/examples/sparklines-1.html",
+            "https://www.canvasxpress.org/examples/sparklines-2.html"
+          ]
         },
         {
           "name": "Stacked",
@@ -692,10 +715,7 @@
           "summary": "Tornado chart (back-to-back horizontal bars).",
           "aliases": [
             "tornado chart",
-            "butterfly chart",
-            "population pyramid",
-            "pyramid",
-            "pyramid chart"
+            "butterfly chart"
           ],
           "aliasOf": null,
           "exampleCount": 0,
@@ -726,6 +746,36 @@
           "aliasOf": "TagCloud",
           "exampleCount": 0,
           "examples": []
+        },
+        {
+          "name": "Slope",
+          "summary": "Slope chart (line emphasising change between two groups).",
+          "aliases": [
+            "slope",
+            "slope chart",
+            "slope graph",
+            "before after chart"
+          ],
+          "aliasOf": null,
+          "exampleCount": 1,
+          "examples": [
+            "https://www.canvasxpress.org/examples/slope-1.html"
+          ]
+        },
+        {
+          "name": "Pyramid",
+          "summary": "Population pyramid (back-to-back horizontal bars); renders via Tornado.",
+          "aliases": [
+            "pyramid",
+            "pyramid chart",
+            "population pyramid",
+            "age pyramid"
+          ],
+          "aliasOf": null,
+          "exampleCount": 1,
+          "examples": [
+            "https://www.canvasxpress.org/examples/pyramid-1.html"
+          ]
         }
       ]
     },
@@ -1248,6 +1298,21 @@
           "aliasOf": null,
           "exampleCount": 0,
           "examples": []
+        },
+        {
+          "name": "StripPlot",
+          "summary": "Strip plot (jittered 1-D categorical points).",
+          "aliases": [
+            "strip plot",
+            "stripplot",
+            "jitter plot",
+            "geom_jitter"
+          ],
+          "aliasOf": null,
+          "exampleCount": 1,
+          "examples": [
+            "https://www.canvasxpress.org/examples/stripplot-1.html"
+          ]
         }
       ]
     },
@@ -1669,19 +1734,21 @@
         {
           "kind": "category",
           "name": "Manhattan Plots",
-          "summary": "General parameters in scatter plots",
+          "summary": "Genome-wide Manhattan plots on Scatter2D (scatterType manhattan / manhattanCNV): markers placed by cumulative genomic position against -log10(p-value), with alternating per-chromosome colours. scatterType miami draws a mirrored two-study Miami plot — a second study's -log10(p) track (manhattanMarkerLogPValueBottom) rendered downward below a shared, symmetric, absolute-valued genomic y-axis with its own banding palette (manhattanColorsBottom).",
           "params": [
             "chromosomeLengths",
             "armLengths",
             "manhattanMarkerChromosomeNumber",
             "manhattanMarkerPosition",
             "manhattanMarkerLogPValue",
+            "manhattanMarkerLogPValueBottom",
             "manhattanCNV",
             "manhattanRangeStart",
             "manhattanRangeEnd",
             "showmanhattanRangeMiddle",
             "manhattanRangeLineWidth",
             "manhattanColors",
+            "manhattanColorsBottom",
             "manhattanContrastColor"
           ],
           "graphTypes": [
@@ -1689,7 +1756,15 @@
           ],
           "docs": [],
           "examples": [],
-          "aliases": []
+          "aliases": [
+            "manhattan plot",
+            "miami",
+            "miami plot",
+            "mirrored manhattan",
+            "dual manhattan",
+            "two-study gwas",
+            "cnv plot"
+          ]
         },
         {
           "kind": "category",
@@ -3130,6 +3205,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -3272,6 +3348,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -3621,6 +3698,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -3704,6 +3782,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -3829,6 +3908,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -3931,6 +4011,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -4014,6 +4095,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -4112,6 +4194,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -4257,6 +4340,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -4358,6 +4442,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -4522,6 +4607,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -5003,6 +5089,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -5574,6 +5661,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
@@ -5667,6 +5755,7 @@
             "Scatter3D",
             "ScatterBubble2D",
             "Spaghetti",
+            "Sparklines",
             "SPLOM",
             "Stacked",
             "StackedLine",
