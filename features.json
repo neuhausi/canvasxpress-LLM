@@ -1,12 +1,12 @@
 {
-  "engineVersion": "74.8",
+  "engineVersion": "74.9",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1830,
+    "parameters": 1832,
     "categories": 141,
     "graphTypes": 74,
     "distinctGraphTypes": 69,
-    "curatedFeatures": 30
+    "curatedFeatures": 33
   },
   "families": [
     {
@@ -27,6 +27,27 @@
             "scatter by group",
             "scatter2d column as axis",
             "plot one variable against another"
+          ]
+        },
+        {
+          "kind": "feature",
+          "name": "arrayToCX graph-type transitions",
+          "summary": "When a flat 2-D records array (row 0 = headers, one row per observation) is handed to new CanvasXpress with a graphType whose data shape implies a DIFFERENT CanvasXpress renderer, arrayToCX reshapes the data and reseeds config into the right chart -- a port of the flint-chart TypeScript converter's chartType->graphType switches. Shape-driven: Bar with two band axes (no measure) -> per-cell-count Heatmap; Bar with category+value+series -> pivoted Stacked; Scatter2D with two categorical axes -> sized bubble Heatmap grid; Scatter2D with one categorical axis -> Dotplot strip. Name-remaps: Bubble -> Circular (circularType bubble); Radar -> Circular (circularType radar); Pyramid flat array -> back-to-back horizontal pyramid (first group negated); Ranged-dot -> Dumbbell (two endpoints as vars); Calendar -> weekday x week Heatmap; Streamgraph -> long-format Scatter2D stream (scatterType stream). Each branch fires ONLY for its source graphType token AND matching shape; any miss falls through to the generic records path unchanged.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "records array auto chart",
+            "tidy data to chart",
+            "bar chart two categorical columns heatmap",
+            "scatter categorical axes heatmap",
+            "scatter categorical axis dotplot",
+            "bubble chart from records",
+            "radar chart from records",
+            "population pyramid from flat array",
+            "ranged dot to dumbbell",
+            "calendar heatmap from dates",
+            "streamgraph from long format",
+            "auto reshape data to graph type"
           ]
         },
         {
@@ -566,7 +587,7 @@
             "two-study gwas"
           ],
           "aliasOf": null,
-          "exampleCount": 146,
+          "exampleCount": 147,
           "examples": [
             "https://www.canvasxpress.org/examples/scatter2d-1.html",
             "https://www.canvasxpress.org/examples/scatter2d-2.html",
@@ -5112,7 +5133,17 @@
           "docs": [],
           "examples": [],
           "aliases": [
-            "x axis"
+            "x axis",
+            "reverse x axis",
+            "reversed x axis",
+            "reverse axis",
+            "reversed axis",
+            "reverse numeric axis",
+            "descending axis",
+            "flip axis",
+            "flipped axis",
+            "high to low axis",
+            "reversed time axis"
           ]
         },
         {
@@ -5230,7 +5261,9 @@
             "y axis",
             "log scale",
             "secondary axis",
-            "dual axis"
+            "dual axis",
+            "reverse y axis",
+            "reversed y axis"
           ]
         },
         {
@@ -5317,6 +5350,22 @@
       "name": "Styling, themes and annotation",
       "summary": "Colours, themes, titles, legends, annotations and animation.",
       "features": [
+        {
+          "kind": "feature",
+          "name": "Smart data-driven defaults (autoDefaults)",
+          "summary": "One opt-in flag, autoDefaults (default off), applies the data-driven presentation defaults a consumer would otherwise hand-set: a sign-aware colour spectrum (sequential for a one-signed range, diverging across zero), a proportional time scale for date axes, a nested size legend, a continuous colour spectrum past 16 series, a Viridis sequential ramp for a ranked colour series (colorRankBy), an automatic Scatter2D-to-strip-plot switch for one categorical + one continuous axis, and the Kaplan-Meier p-value/at-risk table and Volcano cut-off lines. Each sub-default applies only when the user left it unset, so explicit config always wins and existing charts stay byte-identical with the flag off.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "autoDefaults",
+            "auto defaults",
+            "smart defaults",
+            "data-driven defaults",
+            "automatic defaults",
+            "colorRankBy",
+            "rank colouring"
+          ]
+        },
         {
           "kind": "feature",
           "name": "Themes",
@@ -5478,6 +5527,25 @@
           ]
         },
         {
+          "kind": "feature",
+          "name": "Two-point segment / error-bar decoration",
+          "summary": "decorations.segment draws a free-coordinate two-point line from (x,y) to (x2,y2) on a scatter plot, with optional perpendicular end caps (cap/capSize -> a capped error bar) and an optional anchor point (point/pointSize). Reverse-axis-aware (maps through scales.x/y.map). Composes a dot-plus-CI marker; distinct from decorations.range (a plot-spanning band) and decorations.error (sample-anchored bar/dotplot error bars).",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "error bar",
+            "error bars",
+            "capped error bar",
+            "range marker",
+            "whisker",
+            "confidence interval marker",
+            "two-point segment",
+            "segment decoration",
+            "vertical error bar",
+            "point range"
+          ]
+        },
+        {
           "kind": "category",
           "name": "Animations and Visualization Transitions",
           "summary": "Animation and visualization transition parameters",
@@ -5538,6 +5606,7 @@
             "colorScheme",
             "colors",
             "colorPaletteExtend",
+            "colorRankBy",
             "colorSpectrum",
             "colorSpectrumAuto",
             "colorSpectrumBinned",
@@ -6929,7 +6998,8 @@
           "params": [
             "graphType",
             "yieldingRender",
-            "theme"
+            "theme",
+            "autoDefaults"
           ],
           "graphTypes": "all",
           "docs": [],
