@@ -1,12 +1,12 @@
 {
-  "engineVersion": "75.0",
+  "engineVersion": "75.1",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
-    "parameters": 1832,
+    "parameters": 1834,
     "categories": 141,
     "graphTypes": 74,
     "distinctGraphTypes": 69,
-    "curatedFeatures": 33
+    "curatedFeatures": 34
   },
   "families": [
     {
@@ -4254,7 +4254,8 @@
             "isGGMatrix",
             "ggMatrixRole",
             "isDataFrame",
-            "responsiveRules"
+            "responsiveRules",
+            "responsiveNarrow"
           ],
           "graphTypes": "all",
           "docs": [],
@@ -6347,6 +6348,36 @@
           ]
         },
         {
+          "kind": "feature",
+          "name": "Touch gestures and mobile interaction",
+          "summary": "A dedicated additive module (canvasXpress.touch.js) gives the chart canvas core touch gestures on phones, tablets and hybrid laptops: one-finger tap -> hover tooltip + highlight + click, double-tap -> the dblclick Customizer, one-finger drag -> the per-graph-type modifier-less drag path (pan/rotate/move), and two-finger pinch -> the existing per-type wheel-zoom. The recognizer owns all touch (sets touch-action:none on the canvas and synthesizes the mouse-like events itself, so no browser-synthesized double click). Gated by the touchGestures flag (default on; set false to opt out); desktop static renders are byte-identical. Complemented by the responsiveNarrow preset, a one-flag opt-in that applies narrow-canvas overrides through the existing responsiveRules machinery.",
+          "params": [],
+          "docs": [],
+          "aliases": [
+            "touch",
+            "touch gestures",
+            "tap",
+            "double tap",
+            "tap to zoom",
+            "pinch",
+            "pinch zoom",
+            "pinch-zoom",
+            "pinch to zoom",
+            "swipe",
+            "pan",
+            "one finger pan",
+            "mobile",
+            "mobile gestures",
+            "phone",
+            "tablet",
+            "gesture",
+            "touchscreen",
+            "touchscreen support",
+            "responsive narrow",
+            "narrow canvas"
+          ]
+        },
+        {
           "kind": "category",
           "name": "Context Menu",
           "summary": "Parameters associated with the context menu",
@@ -6568,6 +6599,7 @@
             "disableDocument",
             "disableWindow",
             "disableWheel",
+            "touchGestures",
             "disableBeacon",
             "disableCSSTransitions",
             "playable",
