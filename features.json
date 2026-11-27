@@ -1,5 +1,5 @@
 {
-  "engineVersion": "74.9",
+  "engineVersion": "75.0",
   "source": "Generated from the CanvasXpress parameter registry (data/json/doc.json) and docs/llm-kb/feature-families.json by python/modules/features.py.",
   "counts": {
     "parameters": 1832,
@@ -6743,7 +6743,7 @@
         {
           "kind": "category",
           "name": "LLM",
-          "summary": "Generate or modify a chart config from plain English, with the built-in service or your own endpoint. The canvasxpress-mcp connector also renders charts and linked dashboards live inside the chat as an MCP App (one call from a bundled dataset such as penguins, iris or mtcars, or from your own table), with Save (spec as a JSON download) and Open in Builder. Data that is not already in the chat gets in by dragging the file (or several related files) onto the panel, which uploads it through the host in pieces, so no rows pass through the model. It installs in Claude as a plugin from its own marketplace (/plugin install canvasxpress --marketplace neuhausi/canvasxpress-mcp), bundling the remote connector plus a canvasxpress-charts skill that teaches the tool flow: select, generate, modify, validate, render.",
+          "summary": "Generate or modify a chart config from plain English, with the built-in service or your own endpoint. The canvasxpress-mcp connector also renders charts and linked dashboards live inside the chat as an MCP App (one call from a bundled dataset such as penguins, iris or mtcars, or from your own table), with Save (spec as a JSON download) and Open in Builder; when a generated chart config comes back with its data, a 'Visualize live' button renders it in place from the render-ready data array. Data that is not already in the chat gets in by dragging the file (or several related files) onto the panel, which uploads it through the host in pieces, so no rows pass through the model. It installs in Claude as a plugin from its own marketplace (/plugin install canvasxpress --marketplace neuhausi/canvasxpress-mcp), bundling the remote connector plus a canvasxpress-charts skill that teaches the tool flow: select, generate, modify, validate, render.",
           "params": [
             "llmServiceURL",
             "dashboardsServiceURL",
